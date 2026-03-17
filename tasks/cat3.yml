@@ -1,6 +1,7 @@
 ---
 - name: "LOW | V-248549 | OL 8 must have the 'policycoreutils' package installed."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -9,6 +10,7 @@
 
 - name: "LOW | V-248563 | The OL 8 SSH server must be configured to use strong entropy."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -17,6 +19,7 @@
 
 - name: "LOW | V-248579 | OL 8 must restrict access to the kernel message buffer."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -25,6 +28,7 @@
 
 - name: "LOW | V-248580 | OL 8 must prevent kernel profiling by nonprivileged users."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -33,6 +37,7 @@
 
 - name: "LOW | V-248586 | OL 8 must have the package required for multifactor authentication installed."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -41,6 +46,7 @@
 
 - name: "LOW | V-248595 | YUM must remove all software components after updated versions have been installed on OL 8."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -49,6 +55,7 @@
 
 - name: "LOW | V-248599 | OL 8 must enable the hardware random number generator entropy gatherer service."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -57,6 +64,7 @@
 
 - name: "LOW | V-248600 | OL 8 must have the packages required to use the hardware random number generator entropy gatherer service."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -65,6 +73,7 @@
 
 - name: "LOW | V-248608 | OL 8 must use a separate file system for '/var'."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -73,6 +82,7 @@
 
 - name: "LOW | V-248609 | OL 8 must use a separate file system for '/var/log'."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -81,6 +91,7 @@
 
 - name: "LOW | V-248610 | OL 8 must use a separate file system for the system audit data path."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -89,6 +100,7 @@
 
 - name: "LOW | V-248666 | OL 8 must limit the number of concurrent sessions to 10 for all accounts and/or account types."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -97,6 +109,7 @@
 
 - name: "LOW | V-248687 | OL 8 must enforce password complexity by requiring that at least one uppercase character be used."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -105,6 +118,7 @@
 
 - name: "LOW | V-248688 | OL 8 must enforce password complexity by requiring that at least one lowercase character be used."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -113,6 +127,7 @@
 
 - name: "LOW | V-248689 | OL 8 must enforce password complexity by requiring that at least one numeric character be used."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -121,6 +136,7 @@
 
 - name: "LOW | V-248693 | OL 8 must require the change of at least eight characters when passwords are changed."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -129,6 +145,7 @@
 
 - name: "LOW | V-248709 | All OL 8 passwords must contain at least one special character."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -137,6 +154,7 @@
 
 - name: "LOW | V-248804 | OL 8 must allocate an 'audit_backlog_limit' of sufficient size to capture processes that start prior to the audit daemon."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -145,6 +163,7 @@
 
 - name: "LOW | V-248821 | OL 8 must disable the chrony daemon from acting as a server."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -153,6 +172,7 @@
 
 - name: "LOW | V-248822 | OL 8 must disable network management of the chrony daemon."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -161,6 +181,7 @@
 
 - name: "LOW | V-248826 | OL 8 must enable mitigations against processor-based vulnerabilities."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -169,6 +190,7 @@
 
 - name: "LOW | V-248832 | OL 8 must disable the transparent inter-process communication (TIPC) protocol."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -177,6 +199,7 @@
 
 - name: "LOW | V-248833 | OL 8 must disable mounting of cramfs."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -185,6 +208,7 @@
 
 - name: "LOW | V-248834 | OL 8 must disable IEEE 1394 (FireWire) Support."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -193,6 +217,7 @@
 
 - name: "LOW | V-248872 | OL 8 must disable the debug-shell systemd service."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -201,6 +226,7 @@
 
 - name: "LOW | V-248896 | The OL 8 file integrity tool must be configured to verify extended attributes."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low
@@ -209,6 +235,7 @@
 
 - name: "LOW | V-248897 | The OL 8 file integrity tool must be configured to verify Access Control Lists (ACLs)."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat3
     - low

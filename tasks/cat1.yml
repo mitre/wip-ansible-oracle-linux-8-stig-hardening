@@ -1,6 +1,7 @@
 ---
 - name: "HIGH | V-248521 | OL 8 must be a vendor-supported release."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -9,6 +10,7 @@
 
 - name: "HIGH | V-248524 | OL 8 must implement NIST FIPS-validated cryptography for the following: To provision digital signatures, to generate cryptographic hashes, and to protect data requiring data-at-rest protections in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -17,6 +19,7 @@
 
 - name: "HIGH | V-248525 | All OL 8 local disk partitions must implement cryptographic mechanisms to prevent unauthorized disclosure or modification of all information that requires at-rest protection."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -25,6 +28,7 @@
 
 - name: "HIGH | V-248537 | OL 8 operating systems booted with United Extensible Firmware Interface (UEFI) must require authentication upon booting into single-user mode and maintenance."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -33,6 +37,7 @@
 
 - name: "HIGH | V-248540 | OL 8 operating systems booted with a BIOS must require authentication upon booting into single-user and maintenance modes."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -41,6 +46,7 @@
 
 - name: "HIGH | V-248574 | YUM must be configured to prevent the installation of patches, service packs, device drivers, or OL 8 system components that have not been digitally signed using a certificate that is recognized and approved by the organization."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -49,6 +55,7 @@
 
 - name: "HIGH | V-248575 | OL 8 must prevent the installation of software, patches, service packs, device drivers, or operating system components of local packages without verification they have been digitally signed using a certificate that is issued by a Certificate Authority (CA) that is recognized and approved by the organization."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -57,6 +64,7 @@
 
 - name: "HIGH | V-248597 | There must be no 'shosts.equiv' files on the OL 8 operating system."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -65,6 +73,7 @@
 
 - name: "HIGH | V-248598 | There must be no '.shosts' files on the OL 8 operating system."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -73,6 +82,7 @@
 
 - name: "HIGH | V-248649 | Unattended or automatic logon via the OL 8 graphical user interface must not be allowed."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -81,6 +91,7 @@
 
 - name: "HIGH | V-248650 | OL 8 must not allow users to override SSH environment variables."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -89,6 +100,7 @@
 
 - name: "HIGH | V-248714 | OL 8 must not allow accounts configured with blank or null passwords."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -97,6 +109,7 @@
 
 - name: "HIGH | V-248715 | OL 8 must not allow blank or null passwords in the system-auth file."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -105,6 +118,7 @@
 
 - name: "HIGH | V-248716 | OL 8 must not allow blank or null passwords in the password-auth file."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -113,6 +127,7 @@
 
 - name: "HIGH | V-248823 | OL 8 must not have the telnet-server package installed."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -121,6 +136,7 @@
 
 - name: "HIGH | V-248827 | OL 8 must not install packages from the Extra Packages for Enterprise Linux (EPEL) repository."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -129,6 +145,7 @@
 
 - name: "HIGH | V-248869 | The x86 Ctrl-Alt-Delete key sequence must be disabled on OL 8."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -137,6 +154,7 @@
 
 - name: "HIGH | V-248870 | The x86 Ctrl-Alt-Delete key sequence in OL 8 must be disabled if a graphical user interface is installed."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -145,6 +163,7 @@
 
 - name: "HIGH | V-248873 | The Trivial File Transfer Protocol (TFTP) server package must not be installed if not required for OL 8 operational support."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -153,6 +172,7 @@
 
 - name: "HIGH | V-248874 | The root account must be the only account having unrestricted access to the OL 8 system."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -161,6 +181,7 @@
 
 - name: "HIGH | V-248903 | A File Transfer Protocol (FTP) server package must not be installed unless mission essential on OL 8."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
@@ -169,6 +190,7 @@
 
 - name: "HIGH | V-252650 | The OL 8 operating system must not have accounts configured with blank or null passwords."
   command: /bin/true
+  ignore_errors: true
   tags:
     - cat1
     - high
