@@ -1,0 +1,6481 @@
+---
+- name: "MEDIUM | V-248519 | AUDIT | The OL 8 audit package must be installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248519
+    - audit
+
+- name: "MEDIUM | V-248519 | PATCH | The OL 8 audit package must be installed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248519
+    - patch
+
+- name: "MEDIUM | V-248520 | AUDIT | OL 8 audit records must contain information to establish what type of events occurred, the source of events, where events occurred, and the outcome of events."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248520
+    - audit
+
+- name: "MEDIUM | V-248520 | PATCH | OL 8 audit records must contain information to establish what type of events occurred, the source of events, where events occurred, and the outcome of events."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248520
+    - patch
+
+- name: "MEDIUM | V-248523 | AUDIT | OL 8 vendor-packaged system security patches and updates must be installed and up to date."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248523
+    - audit
+
+- name: "MEDIUM | V-248523 | PATCH | OL 8 vendor-packaged system security patches and updates must be installed and up to date."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248523
+    - patch
+
+- name: "MEDIUM | V-248526 | AUDIT | OL 8 must display the Standard Mandatory DOD Notice and Consent Banner before granting local or remote access to the system via an SSH logon."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248526
+    - audit
+
+- name: "MEDIUM | V-248526 | PATCH | OL 8 must display the Standard Mandatory DOD Notice and Consent Banner before granting local or remote access to the system via an SSH logon."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248526
+    - patch
+
+- name: "MEDIUM | V-248527 | AUDIT | OL 8 must display a banner before granting local or remote access to the system via a graphical user logon."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248527
+    - audit
+
+- name: "MEDIUM | V-248527 | PATCH | OL 8 must display a banner before granting local or remote access to the system via a graphical user logon."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248527
+    - patch
+
+- name: "MEDIUM | V-248528 | AUDIT | OL 8 must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248528
+    - audit
+
+- name: "MEDIUM | V-248528 | PATCH | OL 8 must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248528
+    - patch
+
+- name: "MEDIUM | V-248529 | AUDIT | OL 8 must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a command line user logon."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248529
+    - audit
+
+- name: "MEDIUM | V-248529 | PATCH | OL 8 must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a command line user logon."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248529
+    - patch
+
+- name: "MEDIUM | V-248530 | AUDIT | All OL 8 remote access methods must be monitored."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248530
+    - audit
+
+- name: "MEDIUM | V-248530 | PATCH | All OL 8 remote access methods must be monitored."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248530
+    - patch
+
+- name: "MEDIUM | V-248531 | AUDIT | OL 8, for PKI-based authentication, must validate certificates by constructing a certification path (which includes status information) to an accepted trust anchor."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248531
+    - audit
+
+- name: "MEDIUM | V-248531 | PATCH | OL 8, for PKI-based authentication, must validate certificates by constructing a certification path (which includes status information) to an accepted trust anchor."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248531
+    - patch
+
+- name: "MEDIUM | V-248532 | AUDIT | OL 8, for certificate-based authentication, must enforce authorized access to the corresponding private key."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248532
+    - audit
+
+- name: "MEDIUM | V-248532 | PATCH | OL 8, for certificate-based authentication, must enforce authorized access to the corresponding private key."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248532
+    - patch
+
+- name: "MEDIUM | V-248533 | AUDIT | OL 8 must encrypt all stored passwords with a FIPS 140-2 approved cryptographic hashing algorithm."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248533
+    - audit
+
+- name: "MEDIUM | V-248533 | PATCH | OL 8 must encrypt all stored passwords with a FIPS 140-2 approved cryptographic hashing algorithm."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248533
+    - patch
+
+- name: "MEDIUM | V-248534 | AUDIT | OL 8 must employ FIPS 140-2 approved cryptographic hashing algorithms for all stored passwords."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248534
+    - audit
+
+- name: "MEDIUM | V-248534 | PATCH | OL 8 must employ FIPS 140-2 approved cryptographic hashing algorithms for all stored passwords."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248534
+    - patch
+
+- name: "MEDIUM | V-248535 | AUDIT | The OL 8 shadow password suite must be configured to use a sufficient number of hashing rounds."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248535
+    - audit
+
+- name: "MEDIUM | V-248535 | PATCH | The OL 8 shadow password suite must be configured to use a sufficient number of hashing rounds."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248535
+    - patch
+
+- name: "MEDIUM | V-248538 | AUDIT | OL 8 operating systems booted with United Extensible Firmware Interface (UEFI) must have a unique name for the grub superusers account when booting into single-user mode and maintenance."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248538
+    - audit
+
+- name: "MEDIUM | V-248538 | PATCH | OL 8 operating systems booted with United Extensible Firmware Interface (UEFI) must have a unique name for the grub superusers account when booting into single-user mode and maintenance."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248538
+    - patch
+
+- name: "MEDIUM | V-248539 | AUDIT | OL 8 operating systems booted with a BIOS must have a unique name for the grub superusers account when booting into single-user and maintenance modes."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248539
+    - audit
+
+- name: "MEDIUM | V-248539 | PATCH | OL 8 operating systems booted with a BIOS must have a unique name for the grub superusers account when booting into single-user and maintenance modes."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248539
+    - patch
+
+- name: "MEDIUM | V-248541 | AUDIT | OL 8 operating systems must require authentication upon booting into rescue mode."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248541
+    - audit
+
+- name: "MEDIUM | V-248541 | PATCH | OL 8 operating systems must require authentication upon booting into rescue mode."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248541
+    - patch
+
+- name: "MEDIUM | V-248542 | AUDIT | OL 8 operating systems must require authentication upon booting into emergency mode."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248542
+    - audit
+
+- name: "MEDIUM | V-248542 | PATCH | OL 8 operating systems must require authentication upon booting into emergency mode."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248542
+    - patch
+
+- name: "MEDIUM | V-248543 | AUDIT | The OL 8 "pam_unix.so" module must be configured in the system-auth file to use a FIPS 140-2 approved cryptographic hashing algorithm for system authentication."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248543
+    - audit
+
+- name: "MEDIUM | V-248543 | PATCH | The OL 8 "pam_unix.so" module must be configured in the system-auth file to use a FIPS 140-2 approved cryptographic hashing algorithm for system authentication."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248543
+    - patch
+
+- name: "MEDIUM | V-248544 | AUDIT | The OL 8 "pam_unix.so" module must be configured in the password-auth file to use a FIPS 140-2 approved cryptographic hashing algorithm for system authentication."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248544
+    - audit
+
+- name: "MEDIUM | V-248544 | PATCH | The OL 8 "pam_unix.so" module must be configured in the password-auth file to use a FIPS 140-2 approved cryptographic hashing algorithm for system authentication."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248544
+    - patch
+
+- name: "MEDIUM | V-248545 | AUDIT | OL 8 must prevent system daemons from using Kerberos for authentication."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248545
+    - audit
+
+- name: "MEDIUM | V-248545 | PATCH | OL 8 must prevent system daemons from using Kerberos for authentication."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248545
+    - patch
+
+- name: "MEDIUM | V-248546 | AUDIT | The krb5-workstation package must not be installed on OL 8."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248546
+    - audit
+
+- name: "MEDIUM | V-248546 | PATCH | The krb5-workstation package must not be installed on OL 8."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248546
+    - patch
+
+- name: "MEDIUM | V-248547 | AUDIT | The krb5-server package must not be installed on OL 8."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248547
+    - audit
+
+- name: "MEDIUM | V-248547 | PATCH | The krb5-server package must not be installed on OL 8."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248547
+    - patch
+
+- name: "MEDIUM | V-248548 | AUDIT | OL 8 must use a Linux Security Module configured to enforce limits on system services."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248548
+    - audit
+
+- name: "MEDIUM | V-248548 | PATCH | OL 8 must use a Linux Security Module configured to enforce limits on system services."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248548
+    - patch
+
+- name: "MEDIUM | V-248551 | AUDIT | A sticky bit must be set on all OL 8 public directories to prevent unauthorized and unintended information transferred via shared system resources."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248551
+    - audit
+
+- name: "MEDIUM | V-248551 | PATCH | A sticky bit must be set on all OL 8 public directories to prevent unauthorized and unintended information transferred via shared system resources."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248551
+    - patch
+
+- name: "MEDIUM | V-248552 | AUDIT | OL 8 must be configured so that all network connections associated with SSH traffic terminate after becoming unresponsive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248552
+    - audit
+
+- name: "MEDIUM | V-248552 | PATCH | OL 8 must be configured so that all network connections associated with SSH traffic terminate after becoming unresponsive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248552
+    - patch
+
+- name: "MEDIUM | V-248553 | AUDIT | OL 8 must be configured so that all network connections associated with SSH traffic are terminated after 10 minutes of becoming unresponsive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248553
+    - audit
+
+- name: "MEDIUM | V-248553 | PATCH | OL 8 must be configured so that all network connections associated with SSH traffic are terminated after 10 minutes of becoming unresponsive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248553
+    - patch
+
+- name: "MEDIUM | V-248554 | AUDIT | The OL 8 "/var/log/messages" file must have mode 0640 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248554
+    - audit
+
+- name: "MEDIUM | V-248554 | PATCH | The OL 8 "/var/log/messages" file must have mode 0640 or less permissive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248554
+    - patch
+
+- name: "MEDIUM | V-248555 | AUDIT | The OL 8 "/var/log/messages" file must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248555
+    - audit
+
+- name: "MEDIUM | V-248555 | PATCH | The OL 8 "/var/log/messages" file must be owned by root."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248555
+    - patch
+
+- name: "MEDIUM | V-248556 | AUDIT | The OL 8 "/var/log/messages" file must be group-owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248556
+    - audit
+
+- name: "MEDIUM | V-248556 | PATCH | The OL 8 "/var/log/messages" file must be group-owned by root."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248556
+    - patch
+
+- name: "MEDIUM | V-248557 | AUDIT | The OL 8 "/var/log" directory must have mode 0755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248557
+    - audit
+
+- name: "MEDIUM | V-248557 | PATCH | The OL 8 "/var/log" directory must have mode 0755 or less permissive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248557
+    - patch
+
+- name: "MEDIUM | V-248558 | AUDIT | The OL 8 "/var/log" directory must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248558
+    - audit
+
+- name: "MEDIUM | V-248558 | PATCH | The OL 8 "/var/log" directory must be owned by root."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248558
+    - patch
+
+- name: "MEDIUM | V-248559 | AUDIT | The OL 8 "/var/log" directory must be group-owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248559
+    - audit
+
+- name: "MEDIUM | V-248559 | PATCH | The OL 8 "/var/log" directory must be group-owned by root."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248559
+    - patch
+
+- name: "MEDIUM | V-248560 | AUDIT | The OL 8 SSH daemon must be configured to use system-wide crypto policies."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248560
+    - audit
+
+- name: "MEDIUM | V-248560 | PATCH | The OL 8 SSH daemon must be configured to use system-wide crypto policies."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248560
+    - patch
+
+- name: "MEDIUM | V-248561 | AUDIT | The OL 8 SSH server must be configured to use only Message Authentication Codes (MACs) employing FIPS 140-3 validated cryptographic hash algorithms to protect the confidentiality of SSH server connections."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248561
+    - audit
+
+- name: "MEDIUM | V-248561 | PATCH | The OL 8 SSH server must be configured to use only Message Authentication Codes (MACs) employing FIPS 140-3 validated cryptographic hash algorithms to protect the confidentiality of SSH server connections."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248561
+    - patch
+
+- name: "MEDIUM | V-248562 | AUDIT | The OL 8 SSH server must be configured to use only DOD-approved encryption ciphers employing FIPS 140-3 validated cryptographic hash algorithms to protect the confidentiality of SSH server connections."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248562
+    - audit
+
+- name: "MEDIUM | V-248562 | PATCH | The OL 8 SSH server must be configured to use only DOD-approved encryption ciphers employing FIPS 140-3 validated cryptographic hash algorithms to protect the confidentiality of SSH server connections."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248562
+    - patch
+
+- name: "MEDIUM | V-248564 | AUDIT | The OL 8 operating system must implement DOD-approved encryption in the OpenSSL package."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248564
+    - audit
+
+- name: "MEDIUM | V-248564 | PATCH | The OL 8 operating system must implement DOD-approved encryption in the OpenSSL package."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248564
+    - patch
+
+- name: "MEDIUM | V-248565 | AUDIT | The OL 8 operating system must implement DoD-approved TLS encryption in the OpenSSL package."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248565
+    - audit
+
+- name: "MEDIUM | V-248565 | PATCH | The OL 8 operating system must implement DoD-approved TLS encryption in the OpenSSL package."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248565
+    - patch
+
+- name: "MEDIUM | V-248566 | AUDIT | The OL 8 operating system must implement DoD-approved TLS encryption in the GnuTLS package."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248566
+    - audit
+
+- name: "MEDIUM | V-248566 | PATCH | The OL 8 operating system must implement DoD-approved TLS encryption in the GnuTLS package."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248566
+    - patch
+
+- name: "MEDIUM | V-248567 | AUDIT | OL 8 system commands must have mode 755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248567
+    - audit
+
+- name: "MEDIUM | V-248567 | PATCH | OL 8 system commands must have mode 755 or less permissive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248567
+    - patch
+
+- name: "MEDIUM | V-248568 | AUDIT | OL 8 system commands must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248568
+    - audit
+
+- name: "MEDIUM | V-248568 | PATCH | OL 8 system commands must be owned by root."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248568
+    - patch
+
+- name: "MEDIUM | V-248569 | AUDIT | OL 8 system commands must be group-owned by root or a system account."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248569
+    - audit
+
+- name: "MEDIUM | V-248569 | PATCH | OL 8 system commands must be group-owned by root or a system account."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248569
+    - patch
+
+- name: "MEDIUM | V-248570 | AUDIT | OL 8 library files must have mode 755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248570
+    - audit
+
+- name: "MEDIUM | V-248570 | PATCH | OL 8 library files must have mode 755 or less permissive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248570
+    - patch
+
+- name: "MEDIUM | V-248571 | AUDIT | OL 8 library files must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248571
+    - audit
+
+- name: "MEDIUM | V-248571 | PATCH | OL 8 library files must be owned by root."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248571
+    - patch
+
+- name: "MEDIUM | V-248572 | AUDIT | OL 8 library files must be group-owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248572
+    - audit
+
+- name: "MEDIUM | V-248572 | PATCH | OL 8 library files must be group-owned by root."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248572
+    - patch
+
+- name: "MEDIUM | V-248573 | AUDIT | The OL 8 file integrity tool must notify the system administrator (SA) when changes to the baseline configuration or anomalies in the operation of any security functions are discovered within an organizationally defined frequency."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248573
+    - audit
+
+- name: "MEDIUM | V-248573 | PATCH | The OL 8 file integrity tool must notify the system administrator (SA) when changes to the baseline configuration or anomalies in the operation of any security functions are discovered within an organizationally defined frequency."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248573
+    - patch
+
+- name: "MEDIUM | V-248576 | AUDIT | OL 8 must prevent the loading of a new kernel for later execution."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248576
+    - audit
+
+- name: "MEDIUM | V-248576 | PATCH | OL 8 must prevent the loading of a new kernel for later execution."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248576
+    - patch
+
+- name: "MEDIUM | V-248577 | AUDIT | OL 8 must enable kernel parameters to enforce Discretionary Access Control (DAC) on symlinks."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248577
+    - audit
+
+- name: "MEDIUM | V-248577 | PATCH | OL 8 must enable kernel parameters to enforce Discretionary Access Control (DAC) on symlinks."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248577
+    - patch
+
+- name: "MEDIUM | V-248578 | AUDIT | OL 8 must enable kernel parameters to enforce Discretionary Access Control (DAC) on hardlinks."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248578
+    - audit
+
+- name: "MEDIUM | V-248578 | PATCH | OL 8 must enable kernel parameters to enforce Discretionary Access Control (DAC) on hardlinks."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248578
+    - patch
+
+- name: "MEDIUM | V-248581 | AUDIT | OL 8 must require users to provide a password for privilege escalation."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248581
+    - audit
+
+- name: "MEDIUM | V-248581 | PATCH | OL 8 must require users to provide a password for privilege escalation."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248581
+    - patch
+
+- name: "MEDIUM | V-248582 | AUDIT | OL 8 must require users to reauthenticate for privilege escalation and changing roles."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248582
+    - audit
+
+- name: "MEDIUM | V-248582 | PATCH | OL 8 must require users to reauthenticate for privilege escalation and changing roles."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248582
+    - patch
+
+- name: "MEDIUM | V-248583 | AUDIT | OL 8 must restrict privilege elevation to authorized personnel."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248583
+    - audit
+
+- name: "MEDIUM | V-248583 | PATCH | OL 8 must restrict privilege elevation to authorized personnel."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248583
+    - patch
+
+- name: "MEDIUM | V-248584 | AUDIT | OL 8 must use the invoking user's password for privilege escalation when using "sudo"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248584
+    - audit
+
+- name: "MEDIUM | V-248584 | PATCH | OL 8 must use the invoking user's password for privilege escalation when using "sudo"."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248584
+    - patch
+
+- name: "MEDIUM | V-248585 | AUDIT | OL 8 must require reauthentication when using the "sudo" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248585
+    - audit
+
+- name: "MEDIUM | V-248585 | PATCH | OL 8 must require reauthentication when using the "sudo" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248585
+    - patch
+
+- name: "MEDIUM | V-248587 | AUDIT | OL 8 must implement certificate status checking for multifactor authentication."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248587
+    - audit
+
+- name: "MEDIUM | V-248587 | PATCH | OL 8 must implement certificate status checking for multifactor authentication."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248587
+    - patch
+
+- name: "MEDIUM | V-248588 | AUDIT | OL 8 must accept Personal Identity Verification (PIV) credentials."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248588
+    - audit
+
+- name: "MEDIUM | V-248588 | PATCH | OL 8 must accept Personal Identity Verification (PIV) credentials."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248588
+    - patch
+
+- name: "MEDIUM | V-248589 | AUDIT | OL 8 must implement non-executable data to protect its memory from unauthorized code execution."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248589
+    - audit
+
+- name: "MEDIUM | V-248589 | PATCH | OL 8 must implement non-executable data to protect its memory from unauthorized code execution."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248589
+    - patch
+
+- name: "MEDIUM | V-248590 | AUDIT | OL 8 must clear the page allocator to prevent use-after-free attacks."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248590
+    - audit
+
+- name: "MEDIUM | V-248590 | PATCH | OL 8 must clear the page allocator to prevent use-after-free attacks."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248590
+    - patch
+
+- name: "MEDIUM | V-248591 | AUDIT | OL 8 must disable virtual syscalls."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248591
+    - audit
+
+- name: "MEDIUM | V-248591 | PATCH | OL 8 must disable virtual syscalls."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248591
+    - patch
+
+- name: "MEDIUM | V-248592 | AUDIT | OL 8 must clear memory when it is freed to prevent use-after-free attacks."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248592
+    - audit
+
+- name: "MEDIUM | V-248592 | PATCH | OL 8 must clear memory when it is freed to prevent use-after-free attacks."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248592
+    - patch
+
+- name: "MEDIUM | V-248593 | AUDIT | OL 8 must not let Meltdown and Spectre exploit critical vulnerabilities in modern processors."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248593
+    - audit
+
+- name: "MEDIUM | V-248593 | PATCH | OL 8 must not let Meltdown and Spectre exploit critical vulnerabilities in modern processors."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248593
+    - patch
+
+- name: "MEDIUM | V-248594 | AUDIT | OL 8 must implement address space layout randomization (ASLR) to protect its memory from unauthorized code execution."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248594
+    - audit
+
+- name: "MEDIUM | V-248594 | PATCH | OL 8 must implement address space layout randomization (ASLR) to protect its memory from unauthorized code execution."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248594
+    - patch
+
+- name: "MEDIUM | V-248596 | AUDIT | OL 8 must enable the SELinux targeted policy."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248596
+    - audit
+
+- name: "MEDIUM | V-248596 | PATCH | OL 8 must enable the SELinux targeted policy."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248596
+    - patch
+
+- name: "MEDIUM | V-248601 | AUDIT | The OL 8 SSH public host key files must have mode "0644" or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248601
+    - audit
+
+- name: "MEDIUM | V-248601 | PATCH | The OL 8 SSH public host key files must have mode "0644" or less permissive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248601
+    - patch
+
+- name: "MEDIUM | V-248602 | AUDIT | The OL 8 SSH private host key files must have mode "0640" or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248602
+    - audit
+
+- name: "MEDIUM | V-248602 | PATCH | The OL 8 SSH private host key files must have mode "0640" or less permissive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248602
+    - patch
+
+- name: "MEDIUM | V-248603 | AUDIT | The OL 8 SSH daemon must perform strict mode checking of home directory configuration files."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248603
+    - audit
+
+- name: "MEDIUM | V-248603 | PATCH | The OL 8 SSH daemon must perform strict mode checking of home directory configuration files."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248603
+    - patch
+
+- name: "MEDIUM | V-248605 | AUDIT | The OL 8 SSH daemon must not allow authentication using known host's authentication."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248605
+    - audit
+
+- name: "MEDIUM | V-248605 | PATCH | The OL 8 SSH daemon must not allow authentication using known host's authentication."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248605
+    - patch
+
+- name: "MEDIUM | V-248606 | AUDIT | The OL 8 SSH daemon must not allow Kerberos authentication, except to fulfill documented and validated mission requirements."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248606
+    - audit
+
+- name: "MEDIUM | V-248606 | PATCH | The OL 8 SSH daemon must not allow Kerberos authentication, except to fulfill documented and validated mission requirements."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248606
+    - patch
+
+- name: "MEDIUM | V-248607 | AUDIT | The OL 8 SSH daemon must not allow GSSAPI authentication, except to fulfill documented and validated mission requirements."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248607
+    - audit
+
+- name: "MEDIUM | V-248607 | PATCH | The OL 8 SSH daemon must not allow GSSAPI authentication, except to fulfill documented and validated mission requirements."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248607
+    - patch
+
+- name: "MEDIUM | V-248611 | AUDIT | OL 8 must use a separate file system for "/tmp"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248611
+    - audit
+
+- name: "MEDIUM | V-248611 | PATCH | OL 8 must use a separate file system for "/tmp"."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248611
+    - patch
+
+- name: "MEDIUM | V-248612 | AUDIT | OL 8 must use a separate file system for /var/tmp."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248612
+    - audit
+
+- name: "MEDIUM | V-248612 | PATCH | OL 8 must use a separate file system for /var/tmp."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248612
+    - patch
+
+- name: "MEDIUM | V-248613 | AUDIT | OL 8 must not permit direct logons to the root account using remote access via SSH."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248613
+    - audit
+
+- name: "MEDIUM | V-248613 | PATCH | OL 8 must not permit direct logons to the root account using remote access via SSH."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248613
+    - patch
+
+- name: "MEDIUM | V-248615 | AUDIT | OL 8 must have the rsyslog service enabled and active."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248615
+    - audit
+
+- name: "MEDIUM | V-248615 | PATCH | OL 8 must have the rsyslog service enabled and active."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248615
+    - patch
+
+- name: "MEDIUM | V-248616 | AUDIT | OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that contain user home directories."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248616
+    - audit
+
+- name: "MEDIUM | V-248616 | PATCH | OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that contain user home directories."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248616
+    - patch
+
+- name: "MEDIUM | V-248617 | AUDIT | OL 8 must prevent files with the setuid and setgid bit set from being executed on the /boot directory."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248617
+    - audit
+
+- name: "MEDIUM | V-248617 | PATCH | OL 8 must prevent files with the setuid and setgid bit set from being executed on the /boot directory."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248617
+    - patch
+
+- name: "MEDIUM | V-248618 | AUDIT | OL 8 must prevent files with the setuid and setgid bit set from being executed on the /boot/efi directory."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248618
+    - audit
+
+- name: "MEDIUM | V-248618 | PATCH | OL 8 must prevent files with the setuid and setgid bit set from being executed on the /boot/efi directory."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248618
+    - patch
+
+- name: "MEDIUM | V-248619 | AUDIT | OL 8 must prevent special devices on nonroot local partitions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248619
+    - audit
+
+- name: "MEDIUM | V-248619 | PATCH | OL 8 must prevent special devices on nonroot local partitions."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248619
+    - patch
+
+- name: "MEDIUM | V-248620 | AUDIT | OL 8 file systems that contain user home directories must not execute binary files."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248620
+    - audit
+
+- name: "MEDIUM | V-248620 | PATCH | OL 8 file systems that contain user home directories must not execute binary files."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248620
+    - patch
+
+- name: "MEDIUM | V-248621 | AUDIT | OL 8 file systems must not interpret character or block special devices from untrusted file systems."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248621
+    - audit
+
+- name: "MEDIUM | V-248621 | PATCH | OL 8 file systems must not interpret character or block special devices from untrusted file systems."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248621
+    - patch
+
+- name: "MEDIUM | V-248622 | AUDIT | OL 8 file systems must not execute binary files on removable media."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248622
+    - audit
+
+- name: "MEDIUM | V-248622 | PATCH | OL 8 file systems must not execute binary files on removable media."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248622
+    - patch
+
+- name: "MEDIUM | V-248623 | AUDIT | OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that are used with removable media."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248623
+    - audit
+
+- name: "MEDIUM | V-248623 | PATCH | OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that are used with removable media."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248623
+    - patch
+
+- name: "MEDIUM | V-248624 | AUDIT | OL 8 file systems must not execute binary files that are imported via Network File System (NFS)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248624
+    - audit
+
+- name: "MEDIUM | V-248624 | PATCH | OL 8 file systems must not execute binary files that are imported via Network File System (NFS)."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248624
+    - patch
+
+- name: "MEDIUM | V-248625 | AUDIT | OL 8 file systems must not interpret character or block special devices that are imported via Network File System (NFS)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248625
+    - audit
+
+- name: "MEDIUM | V-248625 | PATCH | OL 8 file systems must not interpret character or block special devices that are imported via Network File System (NFS)."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248625
+    - patch
+
+- name: "MEDIUM | V-248626 | AUDIT | OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that are imported via Network File System (NFS)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248626
+    - audit
+
+- name: "MEDIUM | V-248626 | PATCH | OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that are imported via Network File System (NFS)."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248626
+    - patch
+
+- name: "MEDIUM | V-248628 | AUDIT | OL 8 must disable kernel dumps unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248628
+    - audit
+
+- name: "MEDIUM | V-248628 | PATCH | OL 8 must disable kernel dumps unless needed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248628
+    - patch
+
+- name: "MEDIUM | V-248629 | AUDIT | OL 8 must disable the "kernel.core_pattern"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248629
+    - audit
+
+- name: "MEDIUM | V-248629 | PATCH | OL 8 must disable the "kernel.core_pattern"."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248629
+    - patch
+
+- name: "MEDIUM | V-248630 | AUDIT | OL 8 must disable acquiring, saving, and processing core dumps."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248630
+    - audit
+
+- name: "MEDIUM | V-248630 | PATCH | OL 8 must disable acquiring, saving, and processing core dumps."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248630
+    - patch
+
+- name: "MEDIUM | V-248631 | AUDIT | OL 8 must disable core dumps for all users."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248631
+    - audit
+
+- name: "MEDIUM | V-248631 | PATCH | OL 8 must disable core dumps for all users."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248631
+    - patch
+
+- name: "MEDIUM | V-248632 | AUDIT | OL 8 must disable storing core dumps."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248632
+    - audit
+
+- name: "MEDIUM | V-248632 | PATCH | OL 8 must disable storing core dumps."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248632
+    - patch
+
+- name: "MEDIUM | V-248633 | AUDIT | OL 8 must disable core dump backtraces."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248633
+    - audit
+
+- name: "MEDIUM | V-248633 | PATCH | OL 8 must disable core dump backtraces."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248633
+    - patch
+
+- name: "MEDIUM | V-248634 | AUDIT | For OL 8 systems using Domain Name Servers (DNS) resolution, at least two name servers must be configured."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248634
+    - audit
+
+- name: "MEDIUM | V-248634 | PATCH | For OL 8 systems using Domain Name Servers (DNS) resolution, at least two name servers must be configured."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248634
+    - patch
+
+- name: "MEDIUM | V-248635 | AUDIT | Executable search paths within the initialization files of all local interactive OL 8 users must only contain paths that resolve to the system default or the user's home directory."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248635
+    - audit
+
+- name: "MEDIUM | V-248635 | PATCH | Executable search paths within the initialization files of all local interactive OL 8 users must only contain paths that resolve to the system default or the user's home directory."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248635
+    - patch
+
+- name: "MEDIUM | V-248636 | AUDIT | All OL 8 world-writable directories must be owned by root, sys, bin, or an application user."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248636
+    - audit
+
+- name: "MEDIUM | V-248636 | PATCH | All OL 8 world-writable directories must be owned by root, sys, bin, or an application user."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248636
+    - patch
+
+- name: "MEDIUM | V-248637 | AUDIT | All OL 8 world-writable directories must be group-owned by root, sys, bin, or an application group."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248637
+    - audit
+
+- name: "MEDIUM | V-248637 | PATCH | All OL 8 world-writable directories must be group-owned by root, sys, bin, or an application group."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248637
+    - patch
+
+- name: "MEDIUM | V-248638 | AUDIT | All OL 8 local interactive users must have a home directory assigned in the "/etc/passwd" file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248638
+    - audit
+
+- name: "MEDIUM | V-248638 | PATCH | All OL 8 local interactive users must have a home directory assigned in the "/etc/passwd" file."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248638
+    - patch
+
+- name: "MEDIUM | V-248639 | AUDIT | All OL 8 local interactive user home directories must have mode "0750" or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248639
+    - audit
+
+- name: "MEDIUM | V-248639 | PATCH | All OL 8 local interactive user home directories must have mode "0750" or less permissive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248639
+    - patch
+
+- name: "MEDIUM | V-248640 | AUDIT | All OL 8 local interactive user home directory files must have mode "0750" or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248640
+    - audit
+
+- name: "MEDIUM | V-248640 | PATCH | All OL 8 local interactive user home directory files must have mode "0750" or less permissive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248640
+    - patch
+
+- name: "MEDIUM | V-248641 | AUDIT | All OL 8 local interactive user home directories must be group-owned by the home directory owner's primary group."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248641
+    - audit
+
+- name: "MEDIUM | V-248641 | PATCH | All OL 8 local interactive user home directories must be group-owned by the home directory owner's primary group."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248641
+    - patch
+
+- name: "MEDIUM | V-248642 | AUDIT | OL 8 must be configured so that all files and directories contained in local interactive user home directories are group-owned by a group of which the home directory owner is a member."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248642
+    - audit
+
+- name: "MEDIUM | V-248642 | PATCH | OL 8 must be configured so that all files and directories contained in local interactive user home directories are group-owned by a group of which the home directory owner is a member."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248642
+    - patch
+
+- name: "MEDIUM | V-248643 | AUDIT | All OL 8 local interactive user home directories defined in the "/etc/passwd" file must exist."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248643
+    - audit
+
+- name: "MEDIUM | V-248643 | PATCH | All OL 8 local interactive user home directories defined in the "/etc/passwd" file must exist."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248643
+    - patch
+
+- name: "MEDIUM | V-248644 | AUDIT | All OL 8 local interactive user accounts must be assigned a home directory upon creation."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248644
+    - audit
+
+- name: "MEDIUM | V-248644 | PATCH | All OL 8 local interactive user accounts must be assigned a home directory upon creation."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248644
+    - patch
+
+- name: "MEDIUM | V-248645 | AUDIT | All OL 8 local initialization files must have mode "0740" or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248645
+    - audit
+
+- name: "MEDIUM | V-248645 | PATCH | All OL 8 local initialization files must have mode "0740" or less permissive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248645
+    - patch
+
+- name: "MEDIUM | V-248646 | AUDIT | All OL 8 files and directories must have a valid owner."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248646
+    - audit
+
+- name: "MEDIUM | V-248646 | PATCH | All OL 8 files and directories must have a valid owner."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248646
+    - patch
+
+- name: "MEDIUM | V-248647 | AUDIT | All OL 8 files and directories must have a valid group owner."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248647
+    - audit
+
+- name: "MEDIUM | V-248647 | PATCH | All OL 8 files and directories must have a valid group owner."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248647
+    - patch
+
+- name: "MEDIUM | V-248648 | AUDIT | A separate OL 8 filesystem must be used for user home directories (such as "/home" or an equivalent)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248648
+    - audit
+
+- name: "MEDIUM | V-248648 | PATCH | A separate OL 8 filesystem must be used for user home directories (such as "/home" or an equivalent)."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248648
+    - patch
+
+- name: "MEDIUM | V-248651 | AUDIT | OL 8 temporary user accounts must be provisioned with an expiration time of 72 hours or less."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248651
+    - audit
+
+- name: "MEDIUM | V-248651 | PATCH | OL 8 temporary user accounts must be provisioned with an expiration time of 72 hours or less."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248651
+    - patch
+
+- name: "MEDIUM | V-248652 | AUDIT | OL 8 systems below version 8.2 must automatically lock an account when three unsuccessful logon attempts occur."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248652
+    - audit
+
+- name: "MEDIUM | V-248652 | PATCH | OL 8 systems below version 8.2 must automatically lock an account when three unsuccessful logon attempts occur."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248652
+    - patch
+
+- name: "MEDIUM | V-248653 | AUDIT | OL 8 systems, versions 8.2 and above, must automatically lock an account when three unsuccessful logon attempts occur."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248653
+    - audit
+
+- name: "MEDIUM | V-248653 | PATCH | OL 8 systems, versions 8.2 and above, must automatically lock an account when three unsuccessful logon attempts occur."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248653
+    - patch
+
+- name: "MEDIUM | V-248654 | AUDIT | OL 8 systems below version 8.2 must automatically lock an account when three unsuccessful logon attempts occur during a 15-minute time period."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248654
+    - audit
+
+- name: "MEDIUM | V-248654 | PATCH | OL 8 systems below version 8.2 must automatically lock an account when three unsuccessful logon attempts occur during a 15-minute time period."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248654
+    - patch
+
+- name: "MEDIUM | V-248655 | AUDIT | OL 8 systems, versions 8.2 and above, must automatically lock an account when three unsuccessful logon attempts occur during a 15-minute time period."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248655
+    - audit
+
+- name: "MEDIUM | V-248655 | PATCH | OL 8 systems, versions 8.2 and above, must automatically lock an account when three unsuccessful logon attempts occur during a 15-minute time period."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248655
+    - patch
+
+- name: "MEDIUM | V-248656 | AUDIT | OL 8 systems below version 8.2 must automatically lock an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248656
+    - audit
+
+- name: "MEDIUM | V-248656 | PATCH | OL 8 systems below version 8.2 must automatically lock an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248656
+    - patch
+
+- name: "MEDIUM | V-248657 | AUDIT | OL 8 systems, versions 8.2 and above, must automatically lock an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248657
+    - audit
+
+- name: "MEDIUM | V-248657 | PATCH | OL 8 systems, versions 8.2 and above, must automatically lock an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248657
+    - patch
+
+- name: "MEDIUM | V-248658 | AUDIT | OL 8 systems below version 8.2 must ensure account lockouts persist."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248658
+    - audit
+
+- name: "MEDIUM | V-248658 | PATCH | OL 8 systems below version 8.2 must ensure account lockouts persist."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248658
+    - patch
+
+- name: "MEDIUM | V-248659 | AUDIT | OL 8 systems, versions 8.2 and above, must ensure account lockouts persist."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248659
+    - audit
+
+- name: "MEDIUM | V-248659 | PATCH | OL 8 systems, versions 8.2 and above, must ensure account lockouts persist."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248659
+    - patch
+
+- name: "MEDIUM | V-248660 | AUDIT | OL 8 systems below version 8.2 must prevent system messages from being presented when three unsuccessful logon attempts occur."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248660
+    - audit
+
+- name: "MEDIUM | V-248660 | PATCH | OL 8 systems below version 8.2 must prevent system messages from being presented when three unsuccessful logon attempts occur."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248660
+    - patch
+
+- name: "MEDIUM | V-248661 | AUDIT | OL 8 systems, versions 8.2 and above, must prevent system messages from being presented when three unsuccessful logon attempts occur."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248661
+    - audit
+
+- name: "MEDIUM | V-248661 | PATCH | OL 8 systems, versions 8.2 and above, must prevent system messages from being presented when three unsuccessful logon attempts occur."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248661
+    - patch
+
+- name: "MEDIUM | V-248662 | AUDIT | OL 8 systems below version 8.2 must log user name information when unsuccessful logon attempts occur."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248662
+    - audit
+
+- name: "MEDIUM | V-248662 | PATCH | OL 8 systems below version 8.2 must log user name information when unsuccessful logon attempts occur."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248662
+    - patch
+
+- name: "MEDIUM | V-248663 | AUDIT | OL 8 systems, versions 8.2 and above, must log user name information when unsuccessful logon attempts occur."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248663
+    - audit
+
+- name: "MEDIUM | V-248663 | PATCH | OL 8 systems, versions 8.2 and above, must log user name information when unsuccessful logon attempts occur."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248663
+    - patch
+
+- name: "MEDIUM | V-248664 | AUDIT | OL 8 systems below version 8.2 must include root when automatically locking an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248664
+    - audit
+
+- name: "MEDIUM | V-248664 | PATCH | OL 8 systems below version 8.2 must include root when automatically locking an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248664
+    - patch
+
+- name: "MEDIUM | V-248665 | AUDIT | OL 8 systems, versions 8.2 and above, must include root when automatically locking an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248665
+    - audit
+
+- name: "MEDIUM | V-248665 | PATCH | OL 8 systems, versions 8.2 and above, must include root when automatically locking an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248665
+    - patch
+
+- name: "MEDIUM | V-248667 | AUDIT | OL 8 must configure the use of the pam_faillock.so module in the /etc/pam.d/system-auth file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248667
+    - audit
+
+- name: "MEDIUM | V-248667 | PATCH | OL 8 must configure the use of the pam_faillock.so module in the /etc/pam.d/system-auth file."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248667
+    - patch
+
+- name: "MEDIUM | V-248668 | AUDIT | OL 8 must configure the use of the pam_faillock.so module in the /etc/pam.d/password-auth file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248668
+    - audit
+
+- name: "MEDIUM | V-248668 | PATCH | OL 8 must configure the use of the pam_faillock.so module in the /etc/pam.d/password-auth file."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248668
+    - patch
+
+- name: "MEDIUM | V-248669 | AUDIT | OL 8 systems, versions 8.2 and above, must configure SELinux context type to allow the use of a non-default faillock tally directory."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248669
+    - audit
+
+- name: "MEDIUM | V-248669 | PATCH | OL 8 systems, versions 8.2 and above, must configure SELinux context type to allow the use of a non-default faillock tally directory."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248669
+    - patch
+
+- name: "MEDIUM | V-248670 | AUDIT | OL 8 systems below version 8.2 must configure SELinux context type to allow the use of a non-default faillock tally directory."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248670
+    - audit
+
+- name: "MEDIUM | V-248670 | PATCH | OL 8 systems below version 8.2 must configure SELinux context type to allow the use of a non-default faillock tally directory."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248670
+    - patch
+
+- name: "MEDIUM | V-248671 | AUDIT | OL 8 must enable a user session lock until that user reestablishes access using established identification and authentication procedures for graphical user sessions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248671
+    - audit
+
+- name: "MEDIUM | V-248671 | PATCH | OL 8 must enable a user session lock until that user reestablishes access using established identification and authentication procedures for graphical user sessions."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248671
+    - patch
+
+- name: "MEDIUM | V-248672 | AUDIT | OL 8 must initiate a session lock for graphical user interfaces when the screensaver is activated."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248672
+    - audit
+
+- name: "MEDIUM | V-248672 | PATCH | OL 8 must initiate a session lock for graphical user interfaces when the screensaver is activated."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248672
+    - patch
+
+- name: "MEDIUM | V-248673 | AUDIT | OL 8 must disable the user list at logon for graphical user interfaces."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248673
+    - audit
+
+- name: "MEDIUM | V-248673 | PATCH | OL 8 must disable the user list at logon for graphical user interfaces."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248673
+    - patch
+
+- name: "MEDIUM | V-248678 | AUDIT | OL 8 must enable a user session lock until that user reestablishes access using established identification and authentication procedures for command line sessions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248678
+    - audit
+
+- name: "MEDIUM | V-248678 | PATCH | OL 8 must enable a user session lock until that user reestablishes access using established identification and authentication procedures for command line sessions."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248678
+    - patch
+
+- name: "MEDIUM | V-248679 | AUDIT | OL 8 must be able to initiate directly a session lock for all connection types using smartcard when the smartcard is removed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248679
+    - audit
+
+- name: "MEDIUM | V-248679 | PATCH | OL 8 must be able to initiate directly a session lock for all connection types using smartcard when the smartcard is removed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248679
+    - patch
+
+- name: "MEDIUM | V-248680 | AUDIT | OL 8 must automatically lock graphical user sessions after 15 minutes of inactivity."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248680
+    - audit
+
+- name: "MEDIUM | V-248680 | PATCH | OL 8 must automatically lock graphical user sessions after 15 minutes of inactivity."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248680
+    - patch
+
+- name: "MEDIUM | V-248682 | AUDIT | OL 8 must prevent a user from overriding the session lock-delay setting for the graphical user interface."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248682
+    - audit
+
+- name: "MEDIUM | V-248682 | PATCH | OL 8 must prevent a user from overriding the session lock-delay setting for the graphical user interface."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248682
+    - patch
+
+- name: "MEDIUM | V-248683 | AUDIT | OL 8 must prevent a user from overriding the session idle-delay setting for the graphical user interface."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248683
+    - audit
+
+- name: "MEDIUM | V-248683 | PATCH | OL 8 must prevent a user from overriding the session idle-delay setting for the graphical user interface."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248683
+    - patch
+
+- name: "MEDIUM | V-248684 | AUDIT | OL 8 must prevent a user from overriding the session lock-enabled setting for the graphical user interface."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248684
+    - audit
+
+- name: "MEDIUM | V-248684 | PATCH | OL 8 must prevent a user from overriding the session lock-enabled setting for the graphical user interface."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248684
+    - patch
+
+- name: "MEDIUM | V-248685 | AUDIT | OL 8 must map the authenticated identity to the user or group account for PKI-based authentication."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248685
+    - audit
+
+- name: "MEDIUM | V-248685 | PATCH | OL 8 must map the authenticated identity to the user or group account for PKI-based authentication."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248685
+    - patch
+
+- name: "MEDIUM | V-248686 | AUDIT | OL 8 must ensure the password complexity module is enabled in the password-auth file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248686
+    - audit
+
+- name: "MEDIUM | V-248686 | PATCH | OL 8 must ensure the password complexity module is enabled in the password-auth file."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248686
+    - patch
+
+- name: "MEDIUM | V-248690 | AUDIT | OL 8 must require the maximum number of repeating characters of the same character class be limited to four when passwords are changed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248690
+    - audit
+
+- name: "MEDIUM | V-248690 | PATCH | OL 8 must require the maximum number of repeating characters of the same character class be limited to four when passwords are changed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248690
+    - patch
+
+- name: "MEDIUM | V-248691 | AUDIT | OL 8 must require the maximum number of repeating characters be limited to three when passwords are changed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248691
+    - audit
+
+- name: "MEDIUM | V-248691 | PATCH | OL 8 must require the maximum number of repeating characters be limited to three when passwords are changed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248691
+    - patch
+
+- name: "MEDIUM | V-248692 | AUDIT | OL 8 must require the change of at least four character classes when passwords are changed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248692
+    - audit
+
+- name: "MEDIUM | V-248692 | PATCH | OL 8 must require the change of at least four character classes when passwords are changed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248692
+    - patch
+
+- name: "MEDIUM | V-248694 | AUDIT | OL 8 passwords for new users or password changes must have a 24 hours/one day minimum password lifetime restriction in "/etc/shadow"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248694
+    - audit
+
+- name: "MEDIUM | V-248694 | PATCH | OL 8 passwords for new users or password changes must have a 24 hours/one day minimum password lifetime restriction in "/etc/shadow"."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248694
+    - patch
+
+- name: "MEDIUM | V-248695 | AUDIT | OL 8 passwords for new users or password changes must have a 24 hours/one day minimum password lifetime restriction in "/etc/login.defs"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248695
+    - audit
+
+- name: "MEDIUM | V-248695 | PATCH | OL 8 passwords for new users or password changes must have a 24 hours/one day minimum password lifetime restriction in "/etc/login.defs"."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248695
+    - patch
+
+- name: "MEDIUM | V-248696 | AUDIT | OL 8 user account passwords must have a 60-day maximum password lifetime restriction."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248696
+    - audit
+
+- name: "MEDIUM | V-248696 | PATCH | OL 8 user account passwords must have a 60-day maximum password lifetime restriction."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248696
+    - patch
+
+- name: "MEDIUM | V-248697 | AUDIT | OL 8 user account passwords must be configured so that existing passwords are restricted to a 60-day maximum lifetime."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248697
+    - audit
+
+- name: "MEDIUM | V-248697 | PATCH | OL 8 user account passwords must be configured so that existing passwords are restricted to a 60-day maximum lifetime."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248697
+    - patch
+
+- name: "MEDIUM | V-248699 | AUDIT | OL 8 passwords must have a minimum of 15 characters."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248699
+    - audit
+
+- name: "MEDIUM | V-248699 | PATCH | OL 8 passwords must have a minimum of 15 characters."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248699
+    - patch
+
+- name: "MEDIUM | V-248700 | AUDIT | OL 8 passwords for new users must have a minimum of 15 characters."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248700
+    - audit
+
+- name: "MEDIUM | V-248700 | PATCH | OL 8 passwords for new users must have a minimum of 15 characters."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248700
+    - patch
+
+- name: "MEDIUM | V-248701 | AUDIT | OL 8 duplicate User IDs (UIDs) must not exist for interactive users."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248701
+    - audit
+
+- name: "MEDIUM | V-248701 | PATCH | OL 8 duplicate User IDs (UIDs) must not exist for interactive users."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248701
+    - patch
+
+- name: "MEDIUM | V-248702 | AUDIT | OL 8 must implement multifactor authentication for access to interactive accounts."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248702
+    - audit
+
+- name: "MEDIUM | V-248702 | PATCH | OL 8 must implement multifactor authentication for access to interactive accounts."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248702
+    - patch
+
+- name: "MEDIUM | V-248703 | AUDIT | The OL 8 system-auth file must disable access to the system for account identifiers (individuals, groups, roles, and devices) with 35 days of inactivity."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248703
+    - audit
+
+- name: "MEDIUM | V-248703 | PATCH | The OL 8 system-auth file must disable access to the system for account identifiers (individuals, groups, roles, and devices) with 35 days of inactivity."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248703
+    - patch
+
+- name: "MEDIUM | V-248704 | AUDIT | The OL 8 password-auth file must disable access to the system for account identifiers (individuals, groups, roles, and devices) with 35 days of inactivity."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248704
+    - audit
+
+- name: "MEDIUM | V-248704 | PATCH | The OL 8 password-auth file must disable access to the system for account identifiers (individuals, groups, roles, and devices) with 35 days of inactivity."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248704
+    - patch
+
+- name: "MEDIUM | V-248705 | AUDIT | The OL 8 lastlog command must have a mode of "0750" or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248705
+    - audit
+
+- name: "MEDIUM | V-248705 | PATCH | The OL 8 lastlog command must have a mode of "0750" or less permissive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248705
+    - patch
+
+- name: "MEDIUM | V-248706 | AUDIT | The OL 8 lastlog command must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248706
+    - audit
+
+- name: "MEDIUM | V-248706 | PATCH | The OL 8 lastlog command must be owned by root."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248706
+    - patch
+
+- name: "MEDIUM | V-248707 | AUDIT | The OL 8 lastlog command must be group-owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248707
+    - audit
+
+- name: "MEDIUM | V-248707 | PATCH | The OL 8 lastlog command must be group-owned by root."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248707
+    - patch
+
+- name: "MEDIUM | V-248708 | AUDIT | OL 8 must automatically expire temporary accounts within 72 hours."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248708
+    - audit
+
+- name: "MEDIUM | V-248708 | PATCH | OL 8 must automatically expire temporary accounts within 72 hours."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248708
+    - patch
+
+- name: "MEDIUM | V-248710 | AUDIT | OL 8 must prohibit the use of cached authentications after one day."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248710
+    - audit
+
+- name: "MEDIUM | V-248710 | PATCH | OL 8 must prohibit the use of cached authentications after one day."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248710
+    - patch
+
+- name: "MEDIUM | V-248711 | AUDIT | OL 8 must prevent the use of dictionary words for passwords."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248711
+    - audit
+
+- name: "MEDIUM | V-248711 | PATCH | OL 8 must prevent the use of dictionary words for passwords."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248711
+    - patch
+
+- name: "MEDIUM | V-248712 | AUDIT | OL 8 must enforce a delay of at least four seconds between logon prompts following a failed logon attempt."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248712
+    - audit
+
+- name: "MEDIUM | V-248712 | PATCH | OL 8 must enforce a delay of at least four seconds between logon prompts following a failed logon attempt."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248712
+    - patch
+
+- name: "MEDIUM | V-248713 | AUDIT | OL 8 must not have unnecessary accounts."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248713
+    - audit
+
+- name: "MEDIUM | V-248713 | PATCH | OL 8 must not have unnecessary accounts."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248713
+    - patch
+
+- name: "MEDIUM | V-248718 | AUDIT | OL 8 must display the date and time of the last successful account logon upon an SSH logon."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248718
+    - audit
+
+- name: "MEDIUM | V-248718 | PATCH | OL 8 must display the date and time of the last successful account logon upon an SSH logon."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248718
+    - patch
+
+- name: "MEDIUM | V-248719 | AUDIT | OL 8 default permissions must be defined in such a way that all authenticated users can read and modify only their own files."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248719
+    - audit
+
+- name: "MEDIUM | V-248719 | PATCH | OL 8 default permissions must be defined in such a way that all authenticated users can read and modify only their own files."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248719
+    - patch
+
+- name: "MEDIUM | V-248720 | AUDIT | OL 8 must set the umask value to 077 for all local interactive user accounts."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248720
+    - audit
+
+- name: "MEDIUM | V-248720 | PATCH | OL 8 must set the umask value to 077 for all local interactive user accounts."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248720
+    - patch
+
+- name: "MEDIUM | V-248721 | AUDIT | OL 8 must define default permissions for logon and non-logon shells."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248721
+    - audit
+
+- name: "MEDIUM | V-248721 | PATCH | OL 8 must define default permissions for logon and non-logon shells."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248721
+    - patch
+
+- name: "MEDIUM | V-248722 | AUDIT | The OL 8 audit system must be configured to audit the execution of privileged functions and prevent all software from executing at higher privilege levels than users executing the software."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248722
+    - audit
+
+- name: "MEDIUM | V-248722 | PATCH | The OL 8 audit system must be configured to audit the execution of privileged functions and prevent all software from executing at higher privilege levels than users executing the software."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248722
+    - patch
+
+- name: "MEDIUM | V-248723 | AUDIT | Cron logging must be implemented in OL 8."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248723
+    - audit
+
+- name: "MEDIUM | V-248723 | PATCH | Cron logging must be implemented in OL 8."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248723
+    - patch
+
+- name: "MEDIUM | V-248724 | AUDIT | The OL 8 System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) must be alerted of an audit processing failure event."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248724
+    - audit
+
+- name: "MEDIUM | V-248724 | PATCH | The OL 8 System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) must be alerted of an audit processing failure event."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248724
+    - patch
+
+- name: "MEDIUM | V-248725 | AUDIT | The OL 8 Information System Security Officer (ISSO) and System Administrator (SA) (at a minimum) must have mail aliases to be notified of an audit processing failure."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248725
+    - audit
+
+- name: "MEDIUM | V-248725 | PATCH | The OL 8 Information System Security Officer (ISSO) and System Administrator (SA) (at a minimum) must have mail aliases to be notified of an audit processing failure."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248725
+    - patch
+
+- name: "MEDIUM | V-248726 | AUDIT | The OL 8 System must take appropriate action when an audit processing failure occurs."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248726
+    - audit
+
+- name: "MEDIUM | V-248726 | PATCH | The OL 8 System must take appropriate action when an audit processing failure occurs."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248726
+    - patch
+
+- name: "MEDIUM | V-248728 | AUDIT | The OL 8 audit system must take appropriate action when the audit storage volume is full."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248728
+    - audit
+
+- name: "MEDIUM | V-248728 | PATCH | The OL 8 audit system must take appropriate action when the audit storage volume is full."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248728
+    - patch
+
+- name: "MEDIUM | V-248729 | AUDIT | The OL 8 audit system must audit local events."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248729
+    - audit
+
+- name: "MEDIUM | V-248729 | PATCH | The OL 8 audit system must audit local events."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248729
+    - patch
+
+- name: "MEDIUM | V-248730 | AUDIT | OL 8 must label all offloaded audit logs before sending them to the central log server."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248730
+    - audit
+
+- name: "MEDIUM | V-248730 | PATCH | OL 8 must label all offloaded audit logs before sending them to the central log server."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248730
+    - patch
+
+- name: "MEDIUM | V-248731 | AUDIT | OL 8 must resolve audit information before writing to disk."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248731
+    - audit
+
+- name: "MEDIUM | V-248731 | PATCH | OL 8 must resolve audit information before writing to disk."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248731
+    - patch
+
+- name: "MEDIUM | V-248732 | AUDIT | OL 8 audit logs must have a mode of "0600" or less permissive to prevent unauthorized read access."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248732
+    - audit
+
+- name: "MEDIUM | V-248732 | PATCH | OL 8 audit logs must have a mode of "0600" or less permissive to prevent unauthorized read access."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248732
+    - patch
+
+- name: "MEDIUM | V-248733 | AUDIT | OL 8 audit logs must be owned by root to prevent unauthorized read access."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248733
+    - audit
+
+- name: "MEDIUM | V-248733 | PATCH | OL 8 audit logs must be owned by root to prevent unauthorized read access."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248733
+    - patch
+
+- name: "MEDIUM | V-248734 | AUDIT | OL 8 audit logs must be group-owned by root to prevent unauthorized read access."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248734
+    - audit
+
+- name: "MEDIUM | V-248734 | PATCH | OL 8 audit logs must be group-owned by root to prevent unauthorized read access."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248734
+    - patch
+
+- name: "MEDIUM | V-248735 | AUDIT | The OL 8 audit log directory must be owned by root to prevent unauthorized read access."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248735
+    - audit
+
+- name: "MEDIUM | V-248735 | PATCH | The OL 8 audit log directory must be owned by root to prevent unauthorized read access."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248735
+    - patch
+
+- name: "MEDIUM | V-248736 | AUDIT | The OL 8 audit log directory must be group-owned by root to prevent unauthorized read access."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248736
+    - audit
+
+- name: "MEDIUM | V-248736 | PATCH | The OL 8 audit log directory must be group-owned by root to prevent unauthorized read access."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248736
+    - patch
+
+- name: "MEDIUM | V-248737 | AUDIT | The OL 8 audit log directory must have a mode of 0700 or less permissive to prevent unauthorized read access."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248737
+    - audit
+
+- name: "MEDIUM | V-248737 | PATCH | The OL 8 audit log directory must have a mode of 0700 or less permissive to prevent unauthorized read access."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248737
+    - patch
+
+- name: "MEDIUM | V-248738 | AUDIT | The OL 8 audit system must protect auditing rules from unauthorized change."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248738
+    - audit
+
+- name: "MEDIUM | V-248738 | PATCH | The OL 8 audit system must protect auditing rules from unauthorized change."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248738
+    - patch
+
+- name: "MEDIUM | V-248739 | AUDIT | The OL 8 audit system must protect logon UIDs from unauthorized change."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248739
+    - audit
+
+- name: "MEDIUM | V-248739 | PATCH | The OL 8 audit system must protect logon UIDs from unauthorized change."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248739
+    - patch
+
+- name: "MEDIUM | V-248740 | AUDIT | OL 8 must generate audit records for all account creation events that affect "/etc/shadow"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248740
+    - audit
+
+- name: "MEDIUM | V-248740 | PATCH | OL 8 must generate audit records for all account creation events that affect "/etc/shadow"."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248740
+    - patch
+
+- name: "MEDIUM | V-248741 | AUDIT | OL 8 must generate audit records for all account creation events that affect "/etc/security/opasswd"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248741
+    - audit
+
+- name: "MEDIUM | V-248741 | PATCH | OL 8 must generate audit records for all account creation events that affect "/etc/security/opasswd"."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248741
+    - patch
+
+- name: "MEDIUM | V-248742 | AUDIT | OL 8 must generate audit records for all account creation events that affect "/etc/passwd"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248742
+    - audit
+
+- name: "MEDIUM | V-248742 | PATCH | OL 8 must generate audit records for all account creation events that affect "/etc/passwd"."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248742
+    - patch
+
+- name: "MEDIUM | V-248743 | AUDIT | OL 8 must generate audit records for all account creation events that affect "/etc/gshadow"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248743
+    - audit
+
+- name: "MEDIUM | V-248743 | PATCH | OL 8 must generate audit records for all account creation events that affect "/etc/gshadow"."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248743
+    - patch
+
+- name: "MEDIUM | V-248744 | AUDIT | OL 8 must generate audit records for all account creation events that affect "/etc/group"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248744
+    - audit
+
+- name: "MEDIUM | V-248744 | PATCH | OL 8 must generate audit records for all account creation events that affect "/etc/group"."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248744
+    - patch
+
+- name: "MEDIUM | V-248745 | AUDIT | OL 8 must generate audit records for all account creations, modifications, disabling, and termination events that affect "/etc/sudoers"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248745
+    - audit
+
+- name: "MEDIUM | V-248745 | PATCH | OL 8 must generate audit records for all account creations, modifications, disabling, and termination events that affect "/etc/sudoers"."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248745
+    - patch
+
+- name: "MEDIUM | V-248746 | AUDIT | OL 8 must generate audit records for all account creations, modifications, disabling, and termination events that affect "/etc/sudoers.d/"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248746
+    - audit
+
+- name: "MEDIUM | V-248746 | PATCH | OL 8 must generate audit records for all account creations, modifications, disabling, and termination events that affect "/etc/sudoers.d/"."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248746
+    - patch
+
+- name: "MEDIUM | V-248747 | AUDIT | OL 8 must generate audit records for any use of the "su" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248747
+    - audit
+
+- name: "MEDIUM | V-248747 | PATCH | OL 8 must generate audit records for any use of the "su" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248747
+    - patch
+
+- name: "MEDIUM | V-248748 | AUDIT | The OL 8 audit system must be configured to audit any use of the "setxattr", "fsetxattr", "lsetxattr", "removexattr", "fremovexattr", and "lremovexattr" system calls."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248748
+    - audit
+
+- name: "MEDIUM | V-248748 | PATCH | The OL 8 audit system must be configured to audit any use of the "setxattr", "fsetxattr", "lsetxattr", "removexattr", "fremovexattr", and "lremovexattr" system calls."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248748
+    - patch
+
+- name: "MEDIUM | V-248753 | AUDIT | OL 8 must generate audit records for any use of the "chage" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248753
+    - audit
+
+- name: "MEDIUM | V-248753 | PATCH | OL 8 must generate audit records for any use of the "chage" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248753
+    - patch
+
+- name: "MEDIUM | V-248754 | AUDIT | OL 8 must generate audit records for any uses of the "chcon" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248754
+    - audit
+
+- name: "MEDIUM | V-248754 | PATCH | OL 8 must generate audit records for any uses of the "chcon" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248754
+    - patch
+
+- name: "MEDIUM | V-248756 | AUDIT | OL 8 must generate audit records for any use of the "ssh-agent" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248756
+    - audit
+
+- name: "MEDIUM | V-248756 | PATCH | OL 8 must generate audit records for any use of the "ssh-agent" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248756
+    - patch
+
+- name: "MEDIUM | V-248757 | AUDIT | OL 8 must generate audit records for any use of the "passwd" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248757
+    - audit
+
+- name: "MEDIUM | V-248757 | PATCH | OL 8 must generate audit records for any use of the "passwd" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248757
+    - patch
+
+- name: "MEDIUM | V-248758 | AUDIT | OL 8 must generate audit records for any use of the "mount" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248758
+    - audit
+
+- name: "MEDIUM | V-248758 | PATCH | OL 8 must generate audit records for any use of the "mount" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248758
+    - patch
+
+- name: "MEDIUM | V-248759 | AUDIT | OL 8 must generate audit records for any use of the "umount" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248759
+    - audit
+
+- name: "MEDIUM | V-248759 | PATCH | OL 8 must generate audit records for any use of the "umount" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248759
+    - patch
+
+- name: "MEDIUM | V-248760 | AUDIT | OL 8 must generate audit records for any use of the "mount" syscall."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248760
+    - audit
+
+- name: "MEDIUM | V-248760 | PATCH | OL 8 must generate audit records for any use of the "mount" syscall."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248760
+    - patch
+
+- name: "MEDIUM | V-248761 | AUDIT | OL 8 must generate audit records for any use of the "unix_update" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248761
+    - audit
+
+- name: "MEDIUM | V-248761 | PATCH | OL 8 must generate audit records for any use of the "unix_update" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248761
+    - patch
+
+- name: "MEDIUM | V-248762 | AUDIT | OL 8 must generate audit records for any use of the "postdrop" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248762
+    - audit
+
+- name: "MEDIUM | V-248762 | PATCH | OL 8 must generate audit records for any use of the "postdrop" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248762
+    - patch
+
+- name: "MEDIUM | V-248763 | AUDIT | OL 8 must generate audit records for any use of the "postqueue" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248763
+    - audit
+
+- name: "MEDIUM | V-248763 | PATCH | OL 8 must generate audit records for any use of the "postqueue" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248763
+    - patch
+
+- name: "MEDIUM | V-248764 | AUDIT | OL 8 must generate audit records for any use of the "semanage" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248764
+    - audit
+
+- name: "MEDIUM | V-248764 | PATCH | OL 8 must generate audit records for any use of the "semanage" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248764
+    - patch
+
+- name: "MEDIUM | V-248765 | AUDIT | OL 8 must generate audit records for any use of the "setfiles" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248765
+    - audit
+
+- name: "MEDIUM | V-248765 | PATCH | OL 8 must generate audit records for any use of the "setfiles" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248765
+    - patch
+
+- name: "MEDIUM | V-248766 | AUDIT | OL 8 must generate audit records for any use of the "userhelper" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248766
+    - audit
+
+- name: "MEDIUM | V-248766 | PATCH | OL 8 must generate audit records for any use of the "userhelper" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248766
+    - patch
+
+- name: "MEDIUM | V-248767 | AUDIT | OL 8 must generate audit records for any use of the "setsebool" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248767
+    - audit
+
+- name: "MEDIUM | V-248767 | PATCH | OL 8 must generate audit records for any use of the "setsebool" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248767
+    - patch
+
+- name: "MEDIUM | V-248768 | AUDIT | OL 8 must generate audit records for any use of the "unix_chkpwd" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248768
+    - audit
+
+- name: "MEDIUM | V-248768 | PATCH | OL 8 must generate audit records for any use of the "unix_chkpwd" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248768
+    - patch
+
+- name: "MEDIUM | V-248769 | AUDIT | OL 8 must generate audit records for any use of the "ssh-keysign" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248769
+    - audit
+
+- name: "MEDIUM | V-248769 | PATCH | OL 8 must generate audit records for any use of the "ssh-keysign" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248769
+    - patch
+
+- name: "MEDIUM | V-248770 | AUDIT | OL 8 must generate audit records for any use of the "setfacl" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248770
+    - audit
+
+- name: "MEDIUM | V-248770 | PATCH | OL 8 must generate audit records for any use of the "setfacl" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248770
+    - patch
+
+- name: "MEDIUM | V-248771 | AUDIT | OL 8 must generate audit records for any use of the "pam_timestamp_check" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248771
+    - audit
+
+- name: "MEDIUM | V-248771 | PATCH | OL 8 must generate audit records for any use of the "pam_timestamp_check" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248771
+    - patch
+
+- name: "MEDIUM | V-248772 | AUDIT | OL 8 must generate audit records for any use of the "newgrp" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248772
+    - audit
+
+- name: "MEDIUM | V-248772 | PATCH | OL 8 must generate audit records for any use of the "newgrp" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248772
+    - patch
+
+- name: "MEDIUM | V-248773 | AUDIT | OL 8 must generate audit records for any use of the "init_module" and "finit_module" system calls."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248773
+    - audit
+
+- name: "MEDIUM | V-248773 | PATCH | OL 8 must generate audit records for any use of the "init_module" and "finit_module" system calls."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248773
+    - patch
+
+- name: "MEDIUM | V-248774 | AUDIT | OL 8 must generate audit records for any use of the "rename", "unlink", "rmdir", "renameat", and "unlinkat" system calls."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248774
+    - audit
+
+- name: "MEDIUM | V-248774 | PATCH | OL 8 must generate audit records for any use of the "rename", "unlink", "rmdir", "renameat", and "unlinkat" system calls."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248774
+    - patch
+
+- name: "MEDIUM | V-248779 | AUDIT | OL 8 must generate audit records for any use of the "gpasswd" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248779
+    - audit
+
+- name: "MEDIUM | V-248779 | PATCH | OL 8 must generate audit records for any use of the "gpasswd" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248779
+    - patch
+
+- name: "MEDIUM | V-248781 | AUDIT | OL 8 must generate audit records for any use of the delete_module syscall."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248781
+    - audit
+
+- name: "MEDIUM | V-248781 | PATCH | OL 8 must generate audit records for any use of the delete_module syscall."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248781
+    - patch
+
+- name: "MEDIUM | V-248782 | AUDIT | OL 8 must generate audit records for any use of the "crontab" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248782
+    - audit
+
+- name: "MEDIUM | V-248782 | PATCH | OL 8 must generate audit records for any use of the "crontab" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248782
+    - patch
+
+- name: "MEDIUM | V-248783 | AUDIT | OL 8 must generate audit records for any use of the "chsh" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248783
+    - audit
+
+- name: "MEDIUM | V-248783 | PATCH | OL 8 must generate audit records for any use of the "chsh" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248783
+    - patch
+
+- name: "MEDIUM | V-248784 | AUDIT | OL 8 must generate audit records for any use of the "truncate", "ftruncate", "creat", "open", "openat", and "open_by_handle_at" system calls."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248784
+    - audit
+
+- name: "MEDIUM | V-248784 | PATCH | OL 8 must generate audit records for any use of the "truncate", "ftruncate", "creat", "open", "openat", and "open_by_handle_at" system calls."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248784
+    - patch
+
+- name: "MEDIUM | V-248790 | AUDIT | OL 8 must generate audit records for any use of the "chown", "fchown", "fchownat", and "lchown" system calls."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248790
+    - audit
+
+- name: "MEDIUM | V-248790 | PATCH | OL 8 must generate audit records for any use of the "chown", "fchown", "fchownat", and "lchown" system calls."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248790
+    - patch
+
+- name: "MEDIUM | V-248791 | AUDIT | OL 8 must generate audit records for any use of the "chmod", "fchmod", and "fchmodat" system calls."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248791
+    - audit
+
+- name: "MEDIUM | V-248791 | PATCH | OL 8 must generate audit records for any use of the "chmod", "fchmod", and "fchmodat" system calls."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248791
+    - patch
+
+- name: "MEDIUM | V-248797 | AUDIT | OL 8 must generate audit records for any use of the "sudo" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248797
+    - audit
+
+- name: "MEDIUM | V-248797 | PATCH | OL 8 must generate audit records for any use of the "sudo" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248797
+    - patch
+
+- name: "MEDIUM | V-248798 | AUDIT | OL 8 must generate audit records for any use of the "usermod" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248798
+    - audit
+
+- name: "MEDIUM | V-248798 | PATCH | OL 8 must generate audit records for any use of the "usermod" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248798
+    - patch
+
+- name: "MEDIUM | V-248799 | AUDIT | OL 8 must generate audit records for any use of the "chacl" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248799
+    - audit
+
+- name: "MEDIUM | V-248799 | PATCH | OL 8 must generate audit records for any use of the "chacl" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248799
+    - patch
+
+- name: "MEDIUM | V-248800 | AUDIT | OL 8 must generate audit records for any use of the "kmod" command."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248800
+    - audit
+
+- name: "MEDIUM | V-248800 | PATCH | OL 8 must generate audit records for any use of the "kmod" command."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248800
+    - patch
+
+- name: "MEDIUM | V-248801 | AUDIT | OL 8 must generate audit records for any attempted modifications to the "faillock" log file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248801
+    - audit
+
+- name: "MEDIUM | V-248801 | PATCH | OL 8 must generate audit records for any attempted modifications to the "faillock" log file."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248801
+    - patch
+
+- name: "MEDIUM | V-248802 | AUDIT | OL 8 must generate audit records for any attempted modifications to the "lastlog" file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248802
+    - audit
+
+- name: "MEDIUM | V-248802 | PATCH | OL 8 must generate audit records for any attempted modifications to the "lastlog" file."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248802
+    - patch
+
+- name: "MEDIUM | V-248803 | AUDIT | OL 8 must enable auditing of processes that start prior to the audit daemon."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248803
+    - audit
+
+- name: "MEDIUM | V-248803 | PATCH | OL 8 must enable auditing of processes that start prior to the audit daemon."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248803
+    - patch
+
+- name: "MEDIUM | V-248805 | AUDIT | OL 8 must enable Linux audit logging for the USBGuard daemon."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248805
+    - audit
+
+- name: "MEDIUM | V-248805 | PATCH | OL 8 must enable Linux audit logging for the USBGuard daemon."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248805
+    - patch
+
+- name: "MEDIUM | V-248806 | AUDIT | OL 8 must allow only the Information System Security Manager (ISSM) (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248806
+    - audit
+
+- name: "MEDIUM | V-248806 | PATCH | OL 8 must allow only the Information System Security Manager (ISSM) (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248806
+    - patch
+
+- name: "MEDIUM | V-248807 | AUDIT | OL 8 audit tools must have a mode of "0755" or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248807
+    - audit
+
+- name: "MEDIUM | V-248807 | PATCH | OL 8 audit tools must have a mode of "0755" or less permissive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248807
+    - patch
+
+- name: "MEDIUM | V-248808 | AUDIT | OL 8 audit tools must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248808
+    - audit
+
+- name: "MEDIUM | V-248808 | PATCH | OL 8 audit tools must be owned by root."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248808
+    - patch
+
+- name: "MEDIUM | V-248809 | AUDIT | OL 8 audit tools must be group-owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248809
+    - audit
+
+- name: "MEDIUM | V-248809 | PATCH | OL 8 audit tools must be group-owned by root."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248809
+    - patch
+
+- name: "MEDIUM | V-248810 | AUDIT | OL 8 must use cryptographic mechanisms to protect the integrity of audit tools."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248810
+    - audit
+
+- name: "MEDIUM | V-248810 | PATCH | OL 8 must use cryptographic mechanisms to protect the integrity of audit tools."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248810
+    - patch
+
+- name: "MEDIUM | V-248811 | AUDIT | OL 8 must allocate audit record storage capacity to store at least one week of audit records when audit records are not immediately sent to a central audit record storage facility."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248811
+    - audit
+
+- name: "MEDIUM | V-248811 | PATCH | OL 8 must allocate audit record storage capacity to store at least one week of audit records when audit records are not immediately sent to a central audit record storage facility."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248811
+    - patch
+
+- name: "MEDIUM | V-248812 | AUDIT | OL 8 must have the packages required for offloading audit logs installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248812
+    - audit
+
+- name: "MEDIUM | V-248812 | PATCH | OL 8 must have the packages required for offloading audit logs installed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248812
+    - patch
+
+- name: "MEDIUM | V-248813 | AUDIT | OL 8 must have the packages required for encrypting offloaded audit logs installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248813
+    - audit
+
+- name: "MEDIUM | V-248813 | PATCH | OL 8 must have the packages required for encrypting offloaded audit logs installed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248813
+    - patch
+
+- name: "MEDIUM | V-248814 | AUDIT | The OL 8 audit records must be offloaded onto a different system or storage media from the system being audited."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248814
+    - audit
+
+- name: "MEDIUM | V-248814 | PATCH | The OL 8 audit records must be offloaded onto a different system or storage media from the system being audited."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248814
+    - patch
+
+- name: "MEDIUM | V-248815 | AUDIT | OL 8 must take appropriate action when the internal event queue is full."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248815
+    - audit
+
+- name: "MEDIUM | V-248815 | PATCH | OL 8 must take appropriate action when the internal event queue is full."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248815
+    - patch
+
+- name: "MEDIUM | V-248816 | AUDIT | OL 8 must encrypt the transfer of audit records offloaded onto a different system or media from the system being audited."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248816
+    - audit
+
+- name: "MEDIUM | V-248816 | PATCH | OL 8 must encrypt the transfer of audit records offloaded onto a different system or media from the system being audited."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248816
+    - patch
+
+- name: "MEDIUM | V-248817 | AUDIT | OL 8 must authenticate the remote logging server for offloading audit logs."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248817
+    - audit
+
+- name: "MEDIUM | V-248817 | PATCH | OL 8 must authenticate the remote logging server for offloading audit logs."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248817
+    - patch
+
+- name: "MEDIUM | V-248818 | AUDIT | OL 8 must take action when allocated audit record storage volume reaches 75 percent of the repository maximum audit record storage capacity."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248818
+    - audit
+
+- name: "MEDIUM | V-248818 | PATCH | OL 8 must take action when allocated audit record storage volume reaches 75 percent of the repository maximum audit record storage capacity."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248818
+    - patch
+
+- name: "MEDIUM | V-248819 | AUDIT | OL 8 must notify the System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) when allocated audit record storage volume 75 percent utilization."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248819
+    - audit
+
+- name: "MEDIUM | V-248819 | PATCH | OL 8 must notify the System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) when allocated audit record storage volume 75 percent utilization."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248819
+    - patch
+
+- name: "MEDIUM | V-248820 | AUDIT | OL 8 must compare internal information system clocks at least every 24 hours with a server synchronized to an authoritative time source, such as the United States Naval Observatory (USNO) time servers, or a time server designated for the appropriate DOD network (NIPRNet/SIPRNet), and/or the Global Positioning System (GPS)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248820
+    - audit
+
+- name: "MEDIUM | V-248820 | PATCH | OL 8 must compare internal information system clocks at least every 24 hours with a server synchronized to an authoritative time source, such as the United States Naval Observatory (USNO) time servers, or a time server designated for the appropriate DOD network (NIPRNet/SIPRNet), and/or the Global Positioning System (GPS)."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248820
+    - patch
+
+- name: "MEDIUM | V-248824 | AUDIT | OL 8 must not have any automated bug reporting tools installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248824
+    - audit
+
+- name: "MEDIUM | V-248824 | PATCH | OL 8 must not have any automated bug reporting tools installed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248824
+    - patch
+
+- name: "MEDIUM | V-248825 | AUDIT | OL 8 must not have the sendmail package installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248825
+    - audit
+
+- name: "MEDIUM | V-248825 | PATCH | OL 8 must not have the sendmail package installed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248825
+    - patch
+
+- name: "MEDIUM | V-248828 | AUDIT | OL 8 must cover or disable the built-in or attached camera when not in use."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248828
+    - audit
+
+- name: "MEDIUM | V-248828 | PATCH | OL 8 must cover or disable the built-in or attached camera when not in use."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248828
+    - patch
+
+- name: "MEDIUM | V-248829 | AUDIT | OL 8 must not have the asynchronous transfer mode (ATM) kernel module installed if not required for operational support."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248829
+    - audit
+
+- name: "MEDIUM | V-248829 | PATCH | OL 8 must not have the asynchronous transfer mode (ATM) kernel module installed if not required for operational support."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248829
+    - patch
+
+- name: "MEDIUM | V-248830 | AUDIT | OL 8 must not have the Controller Area Network (CAN) kernel module installed if not required for operational support."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248830
+    - audit
+
+- name: "MEDIUM | V-248830 | PATCH | OL 8 must not have the Controller Area Network (CAN) kernel module installed if not required for operational support."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248830
+    - patch
+
+- name: "MEDIUM | V-248831 | AUDIT | OL 8 must not have the stream control transmission protocol (SCTP) kernel module installed if not required for operational support."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248831
+    - audit
+
+- name: "MEDIUM | V-248831 | PATCH | OL 8 must not have the stream control transmission protocol (SCTP) kernel module installed if not required for operational support."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248831
+    - patch
+
+- name: "MEDIUM | V-248835 | AUDIT | OL 8 must be configured to prohibit or restrict the use of functions, ports, protocols, and/or services as defined in the Ports, Protocols, and Services Management (PPSM) Category Assignments List (CAL) and vulnerability assessments."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248835
+    - audit
+
+- name: "MEDIUM | V-248835 | PATCH | OL 8 must be configured to prohibit or restrict the use of functions, ports, protocols, and/or services as defined in the Ports, Protocols, and Services Management (PPSM) Category Assignments List (CAL) and vulnerability assessments."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248835
+    - patch
+
+- name: "MEDIUM | V-248836 | AUDIT | The OL 8 file system automounter must be disabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248836
+    - audit
+
+- name: "MEDIUM | V-248836 | PATCH | The OL 8 file system automounter must be disabled."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248836
+    - patch
+
+- name: "MEDIUM | V-248837 | AUDIT | OL 8 must be configured to disable the ability to use USB mass storage devices."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248837
+    - audit
+
+- name: "MEDIUM | V-248837 | PATCH | OL 8 must be configured to disable the ability to use USB mass storage devices."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248837
+    - patch
+
+- name: "MEDIUM | V-248839 | AUDIT | An OL 8 firewall must employ a deny-all, allow-by-exception policy for allowing connections to other systems."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248839
+    - audit
+
+- name: "MEDIUM | V-248839 | PATCH | An OL 8 firewall must employ a deny-all, allow-by-exception policy for allowing connections to other systems."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248839
+    - patch
+
+- name: "MEDIUM | V-248840 | AUDIT | A firewall must be installed on OL 8."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248840
+    - audit
+
+- name: "MEDIUM | V-248840 | PATCH | A firewall must be installed on OL 8."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248840
+    - patch
+
+- name: "MEDIUM | V-248841 | AUDIT | A firewall must be active on OL 8."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248841
+    - audit
+
+- name: "MEDIUM | V-248841 | PATCH | A firewall must be active on OL 8."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248841
+    - patch
+
+- name: "MEDIUM | V-248842 | AUDIT | OL 8 wireless network adapters must be disabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248842
+    - audit
+
+- name: "MEDIUM | V-248842 | PATCH | OL 8 wireless network adapters must be disabled."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248842
+    - patch
+
+- name: "MEDIUM | V-248843 | AUDIT | OL 8 Bluetooth must be disabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248843
+    - audit
+
+- name: "MEDIUM | V-248843 | PATCH | OL 8 Bluetooth must be disabled."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248843
+    - patch
+
+- name: "MEDIUM | V-248844 | AUDIT | OL 8 must mount "/dev/shm" with the "nodev" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248844
+    - audit
+
+- name: "MEDIUM | V-248844 | PATCH | OL 8 must mount "/dev/shm" with the "nodev" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248844
+    - patch
+
+- name: "MEDIUM | V-248845 | AUDIT | OL 8 must mount "/dev/shm" with the "nosuid" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248845
+    - audit
+
+- name: "MEDIUM | V-248845 | PATCH | OL 8 must mount "/dev/shm" with the "nosuid" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248845
+    - patch
+
+- name: "MEDIUM | V-248846 | AUDIT | OL 8 must mount "/dev/shm" with the "noexec" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248846
+    - audit
+
+- name: "MEDIUM | V-248846 | PATCH | OL 8 must mount "/dev/shm" with the "noexec" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248846
+    - patch
+
+- name: "MEDIUM | V-248847 | AUDIT | OL 8 must mount "/tmp" with the "nodev" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248847
+    - audit
+
+- name: "MEDIUM | V-248847 | PATCH | OL 8 must mount "/tmp" with the "nodev" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248847
+    - patch
+
+- name: "MEDIUM | V-248848 | AUDIT | OL 8 must mount "/tmp" with the "nosuid" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248848
+    - audit
+
+- name: "MEDIUM | V-248848 | PATCH | OL 8 must mount "/tmp" with the "nosuid" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248848
+    - patch
+
+- name: "MEDIUM | V-248849 | AUDIT | OL 8 must mount "/tmp" with the "noexec" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248849
+    - audit
+
+- name: "MEDIUM | V-248849 | PATCH | OL 8 must mount "/tmp" with the "noexec" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248849
+    - patch
+
+- name: "MEDIUM | V-248850 | AUDIT | OL 8 must mount "/var/log" with the "nodev" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248850
+    - audit
+
+- name: "MEDIUM | V-248850 | PATCH | OL 8 must mount "/var/log" with the "nodev" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248850
+    - patch
+
+- name: "MEDIUM | V-248851 | AUDIT | OL 8 must mount "/var/log" with the "nosuid" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248851
+    - audit
+
+- name: "MEDIUM | V-248851 | PATCH | OL 8 must mount "/var/log" with the "nosuid" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248851
+    - patch
+
+- name: "MEDIUM | V-248852 | AUDIT | OL 8 must mount "/var/log" with the "noexec" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248852
+    - audit
+
+- name: "MEDIUM | V-248852 | PATCH | OL 8 must mount "/var/log" with the "noexec" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248852
+    - patch
+
+- name: "MEDIUM | V-248853 | AUDIT | OL 8 must mount "/var/log/audit" with the "nodev" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248853
+    - audit
+
+- name: "MEDIUM | V-248853 | PATCH | OL 8 must mount "/var/log/audit" with the "nodev" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248853
+    - patch
+
+- name: "MEDIUM | V-248854 | AUDIT | OL 8 must mount "/var/log/audit" with the "nosuid" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248854
+    - audit
+
+- name: "MEDIUM | V-248854 | PATCH | OL 8 must mount "/var/log/audit" with the "nosuid" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248854
+    - patch
+
+- name: "MEDIUM | V-248855 | AUDIT | OL 8 must mount "/var/log/audit" with the "noexec" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248855
+    - audit
+
+- name: "MEDIUM | V-248855 | PATCH | OL 8 must mount "/var/log/audit" with the "noexec" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248855
+    - patch
+
+- name: "MEDIUM | V-248856 | AUDIT | OL 8 must mount "/var/tmp" with the "nodev" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248856
+    - audit
+
+- name: "MEDIUM | V-248856 | PATCH | OL 8 must mount "/var/tmp" with the "nodev" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248856
+    - patch
+
+- name: "MEDIUM | V-248857 | AUDIT | OL 8 must mount "/var/tmp" with the "nosuid" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248857
+    - audit
+
+- name: "MEDIUM | V-248857 | PATCH | OL 8 must mount "/var/tmp" with the "nosuid" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248857
+    - patch
+
+- name: "MEDIUM | V-248858 | AUDIT | OL 8 must mount "/var/tmp" with the "noexec" option."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248858
+    - audit
+
+- name: "MEDIUM | V-248858 | PATCH | OL 8 must mount "/var/tmp" with the "noexec" option."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248858
+    - patch
+
+- name: "MEDIUM | V-248859 | AUDIT | The OL 8 "fapolicy" module must be installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248859
+    - audit
+
+- name: "MEDIUM | V-248859 | PATCH | The OL 8 "fapolicy" module must be installed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248859
+    - patch
+
+- name: "MEDIUM | V-248860 | AUDIT | The OL 8 "fapolicy" module must be enabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248860
+    - audit
+
+- name: "MEDIUM | V-248860 | PATCH | The OL 8 "fapolicy" module must be enabled."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248860
+    - patch
+
+- name: "MEDIUM | V-248861 | AUDIT | The OL 8 fapolicy module must be configured to employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248861
+    - audit
+
+- name: "MEDIUM | V-248861 | PATCH | The OL 8 fapolicy module must be configured to employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248861
+    - patch
+
+- name: "MEDIUM | V-248862 | AUDIT | OL 8 must have the USBGuard installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248862
+    - audit
+
+- name: "MEDIUM | V-248862 | PATCH | OL 8 must have the USBGuard installed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248862
+    - patch
+
+- name: "MEDIUM | V-248863 | AUDIT | OL 8 must block unauthorized peripherals before establishing a connection."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248863
+    - audit
+
+- name: "MEDIUM | V-248863 | PATCH | OL 8 must block unauthorized peripherals before establishing a connection."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248863
+    - patch
+
+- name: "MEDIUM | V-248864 | AUDIT | OL 8 must enable the USBGuard."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248864
+    - audit
+
+- name: "MEDIUM | V-248864 | PATCH | OL 8 must enable the USBGuard."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248864
+    - patch
+
+- name: "MEDIUM | V-248865 | AUDIT | A firewall must be able to protect against or limit the effects of denial-of-service (DoS) attacks by ensuring OL 8 can implement rate-limiting measures on impacted network interfaces."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248865
+    - audit
+
+- name: "MEDIUM | V-248865 | PATCH | A firewall must be able to protect against or limit the effects of denial-of-service (DoS) attacks by ensuring OL 8 can implement rate-limiting measures on impacted network interfaces."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248865
+    - patch
+
+- name: "MEDIUM | V-248866 | AUDIT | All OL 8 networked systems must have SSH installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248866
+    - audit
+
+- name: "MEDIUM | V-248866 | PATCH | All OL 8 networked systems must have SSH installed."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248866
+    - patch
+
+- name: "MEDIUM | V-248867 | AUDIT | All OL 8 networked systems must have and implement SSH to protect the confidentiality and integrity of transmitted and received information, as well as information during preparation for transmission."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248867
+    - audit
+
+- name: "MEDIUM | V-248867 | PATCH | All OL 8 networked systems must have and implement SSH to protect the confidentiality and integrity of transmitted and received information, as well as information during preparation for transmission."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248867
+    - patch
+
+- name: "MEDIUM | V-248868 | AUDIT | OL 8 must force a frequent session key renegotiation for SSH connections to the server."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248868
+    - audit
+
+- name: "MEDIUM | V-248868 | PATCH | OL 8 must force a frequent session key renegotiation for SSH connections to the server."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248868
+    - patch
+
+- name: "MEDIUM | V-248871 | AUDIT | OL 8 must disable the systemd Ctrl-Alt-Delete burst key sequence."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248871
+    - audit
+
+- name: "MEDIUM | V-248871 | PATCH | OL 8 must disable the systemd Ctrl-Alt-Delete burst key sequence."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248871
+    - patch
+
+- name: "MEDIUM | V-248875 | AUDIT | OL 8 must prevent IPv4 Internet Control Message Protocol (ICMP) redirect messages from being accepted."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248875
+    - audit
+
+- name: "MEDIUM | V-248875 | PATCH | OL 8 must prevent IPv4 Internet Control Message Protocol (ICMP) redirect messages from being accepted."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248875
+    - patch
+
+- name: "MEDIUM | V-248876 | AUDIT | OL 8 must prevent IPv6 Internet Control Message Protocol (ICMP) redirect messages from being accepted."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248876
+    - audit
+
+- name: "MEDIUM | V-248876 | PATCH | OL 8 must prevent IPv6 Internet Control Message Protocol (ICMP) redirect messages from being accepted."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248876
+    - patch
+
+- name: "MEDIUM | V-248877 | AUDIT | OL 8 must not send Internet Control Message Protocol (ICMP) redirects."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248877
+    - audit
+
+- name: "MEDIUM | V-248877 | PATCH | OL 8 must not send Internet Control Message Protocol (ICMP) redirects."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248877
+    - patch
+
+- name: "MEDIUM | V-248878 | AUDIT | OL 8 must not respond to Internet Control Message Protocol (ICMP) echoes sent to a broadcast address."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248878
+    - audit
+
+- name: "MEDIUM | V-248878 | PATCH | OL 8 must not respond to Internet Control Message Protocol (ICMP) echoes sent to a broadcast address."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248878
+    - patch
+
+- name: "MEDIUM | V-248879 | AUDIT | OL 8 must not forward IPv4 source-routed packets."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248879
+    - audit
+
+- name: "MEDIUM | V-248879 | PATCH | OL 8 must not forward IPv4 source-routed packets."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248879
+    - patch
+
+- name: "MEDIUM | V-248880 | AUDIT | OL 8 must not forward IPv6 source-routed packets."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248880
+    - audit
+
+- name: "MEDIUM | V-248880 | PATCH | OL 8 must not forward IPv6 source-routed packets."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248880
+    - patch
+
+- name: "MEDIUM | V-248881 | AUDIT | OL 8 must not forward IPv4 source-routed packets by default."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248881
+    - audit
+
+- name: "MEDIUM | V-248881 | PATCH | OL 8 must not forward IPv4 source-routed packets by default."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248881
+    - patch
+
+- name: "MEDIUM | V-248882 | AUDIT | OL 8 must not forward IPv6 source-routed packets by default."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248882
+    - audit
+
+- name: "MEDIUM | V-248882 | PATCH | OL 8 must not forward IPv6 source-routed packets by default."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248882
+    - patch
+
+- name: "MEDIUM | V-248883 | AUDIT | OL 8 must not enable IPv6 packet forwarding unless the system is a router."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248883
+    - audit
+
+- name: "MEDIUM | V-248883 | PATCH | OL 8 must not enable IPv6 packet forwarding unless the system is a router."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248883
+    - patch
+
+- name: "MEDIUM | V-248884 | AUDIT | OL 8 must not accept router advertisements on all IPv6 interfaces."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248884
+    - audit
+
+- name: "MEDIUM | V-248884 | PATCH | OL 8 must not accept router advertisements on all IPv6 interfaces."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248884
+    - patch
+
+- name: "MEDIUM | V-248885 | AUDIT | OL 8 must not accept router advertisements on all IPv6 interfaces by default."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248885
+    - audit
+
+- name: "MEDIUM | V-248885 | PATCH | OL 8 must not accept router advertisements on all IPv6 interfaces by default."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248885
+    - patch
+
+- name: "MEDIUM | V-248886 | AUDIT | OL 8 must not allow interfaces to perform Internet Control Message Protocol (ICMP) redirects by default."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248886
+    - audit
+
+- name: "MEDIUM | V-248886 | PATCH | OL 8 must not allow interfaces to perform Internet Control Message Protocol (ICMP) redirects by default."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248886
+    - patch
+
+- name: "MEDIUM | V-248887 | AUDIT | OL 8 must ignore IPv4 Internet Control Message Protocol (ICMP) redirect messages."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248887
+    - audit
+
+- name: "MEDIUM | V-248887 | PATCH | OL 8 must ignore IPv4 Internet Control Message Protocol (ICMP) redirect messages."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248887
+    - patch
+
+- name: "MEDIUM | V-248888 | AUDIT | OL 8 must ignore IPv6 Internet Control Message Protocol (ICMP) redirect messages."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248888
+    - audit
+
+- name: "MEDIUM | V-248888 | PATCH | OL 8 must ignore IPv6 Internet Control Message Protocol (ICMP) redirect messages."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248888
+    - patch
+
+- name: "MEDIUM | V-248889 | AUDIT | OL 8 must disable access to the network "bpf" syscall from nonprivileged processes."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248889
+    - audit
+
+- name: "MEDIUM | V-248889 | PATCH | OL 8 must disable access to the network "bpf" syscall from nonprivileged processes."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248889
+    - patch
+
+- name: "MEDIUM | V-248890 | AUDIT | OL 8 must restrict the use of "ptrace" to descendant processes."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248890
+    - audit
+
+- name: "MEDIUM | V-248890 | PATCH | OL 8 must restrict the use of "ptrace" to descendant processes."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248890
+    - patch
+
+- name: "MEDIUM | V-248891 | AUDIT | OL 8 must restrict exposed kernel pointer addresses access."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248891
+    - audit
+
+- name: "MEDIUM | V-248891 | PATCH | OL 8 must restrict exposed kernel pointer addresses access."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248891
+    - patch
+
+- name: "MEDIUM | V-248892 | AUDIT | OL 8 must disable the use of user namespaces."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248892
+    - audit
+
+- name: "MEDIUM | V-248892 | PATCH | OL 8 must disable the use of user namespaces."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248892
+    - patch
+
+- name: "MEDIUM | V-248893 | AUDIT | OL 8 must use reverse path filtering on all IPv4 interfaces."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248893
+    - audit
+
+- name: "MEDIUM | V-248893 | PATCH | OL 8 must use reverse path filtering on all IPv4 interfaces."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248893
+    - patch
+
+- name: "MEDIUM | V-248894 | AUDIT | OL 8 must enable hardening for the Berkeley Packet Filter Just-in-time compiler."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248894
+    - audit
+
+- name: "MEDIUM | V-248894 | PATCH | OL 8 must enable hardening for the Berkeley Packet Filter Just-in-time compiler."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248894
+    - patch
+
+- name: "MEDIUM | V-248895 | AUDIT | OL 8 must be configured to prevent unrestricted mail relaying."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248895
+    - audit
+
+- name: "MEDIUM | V-248895 | PATCH | OL 8 must be configured to prevent unrestricted mail relaying."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248895
+    - patch
+
+- name: "MEDIUM | V-248898 | AUDIT | The graphical display manager must not be installed on OL 8 unless approved."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248898
+    - audit
+
+- name: "MEDIUM | V-248898 | PATCH | The graphical display manager must not be installed on OL 8 unless approved."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248898
+    - patch
+
+- name: "MEDIUM | V-248899 | AUDIT | OL 8 network interfaces must not be in promiscuous mode."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248899
+    - audit
+
+- name: "MEDIUM | V-248899 | PATCH | OL 8 network interfaces must not be in promiscuous mode."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248899
+    - patch
+
+- name: "MEDIUM | V-248900 | AUDIT | OL 8 remote X connections for interactive users must be disabled unless to fulfill documented and validated mission requirements."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248900
+    - audit
+
+- name: "MEDIUM | V-248900 | PATCH | OL 8 remote X connections for interactive users must be disabled unless to fulfill documented and validated mission requirements."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248900
+    - patch
+
+- name: "MEDIUM | V-248901 | AUDIT | The OL 8 SSH daemon must prevent remote hosts from connecting to the proxy display."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248901
+    - audit
+
+- name: "MEDIUM | V-248901 | PATCH | The OL 8 SSH daemon must prevent remote hosts from connecting to the proxy display."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248901
+    - patch
+
+- name: "MEDIUM | V-248902 | AUDIT | If the Trivial File Transfer Protocol (TFTP) server is required, the OL 8 TFTP daemon must be configured to operate in secure mode."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248902
+    - audit
+
+- name: "MEDIUM | V-248902 | PATCH | If the Trivial File Transfer Protocol (TFTP) server is required, the OL 8 TFTP daemon must be configured to operate in secure mode."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248902
+    - patch
+
+- name: "MEDIUM | V-248904 | AUDIT | OL 8 must not have the "gssproxy" package installed if not required for operational support."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248904
+    - audit
+
+- name: "MEDIUM | V-248904 | PATCH | OL 8 must not have the "gssproxy" package installed if not required for operational support."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248904
+    - patch
+
+- name: "MEDIUM | V-248905 | AUDIT | OL 8 must not have the "iprutils" package installed if not required for operational support."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248905
+    - audit
+
+- name: "MEDIUM | V-248905 | PATCH | OL 8 must not have the "iprutils" package installed if not required for operational support."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248905
+    - patch
+
+- name: "MEDIUM | V-248906 | AUDIT | OL 8 must not have the "tuned" package installed if not required for operational support."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248906
+    - audit
+
+- name: "MEDIUM | V-248906 | PATCH | OL 8 must not have the "tuned" package installed if not required for operational support."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248906
+    - patch
+
+- name: "MEDIUM | V-248907 | AUDIT | OL 8 must prevent nonprivileged users from executing privileged functions, including disabling, circumventing, or altering implemented security safeguards/countermeasures."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-248907
+    - audit
+
+- name: "MEDIUM | V-248907 | PATCH | OL 8 must prevent nonprivileged users from executing privileged functions, including disabling, circumventing, or altering implemented security safeguards/countermeasures."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-248907
+    - patch
+
+- name: "MEDIUM | V-252651 | AUDIT | OL 8 library directories must have mode 755 or less permissive."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-252651
+    - audit
+
+- name: "MEDIUM | V-252651 | PATCH | OL 8 library directories must have mode 755 or less permissive."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-252651
+    - patch
+
+- name: "MEDIUM | V-252652 | AUDIT | OL 8 library directories must be owned by root."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-252652
+    - audit
+
+- name: "MEDIUM | V-252652 | PATCH | OL 8 library directories must be owned by root."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-252652
+    - patch
+
+- name: "MEDIUM | V-252653 | AUDIT | OL 8 library directories must be group-owned by root or a system account."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-252653
+    - audit
+
+- name: "MEDIUM | V-252653 | PATCH | OL 8 library directories must be group-owned by root or a system account."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-252653
+    - patch
+
+- name: "MEDIUM | V-252654 | AUDIT | The OL 8 operating system must use a file integrity tool to verify correct operation of all security functions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-252654
+    - audit
+
+- name: "MEDIUM | V-252654 | PATCH | The OL 8 operating system must use a file integrity tool to verify correct operation of all security functions."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-252654
+    - patch
+
+- name: "MEDIUM | V-252655 | AUDIT | OL 8 must specify the default "include" directory for the /etc/sudoers file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-252655
+    - audit
+
+- name: "MEDIUM | V-252655 | PATCH | OL 8 must specify the default "include" directory for the /etc/sudoers file."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-252655
+    - patch
+
+- name: "MEDIUM | V-252656 | AUDIT | The OL 8 operating system must not be configured to bypass password requirements for privilege escalation."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-252656
+    - audit
+
+- name: "MEDIUM | V-252656 | PATCH | The OL 8 operating system must not be configured to bypass password requirements for privilege escalation."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-252656
+    - patch
+
+- name: "MEDIUM | V-252657 | AUDIT | OL 8 must ensure the password complexity module is enabled in the system-auth file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-252657
+    - audit
+
+- name: "MEDIUM | V-252657 | PATCH | OL 8 must ensure the password complexity module is enabled in the system-auth file."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-252657
+    - patch
+
+- name: "MEDIUM | V-252658 | AUDIT | OL 8 systems below version 8.4 must ensure the password complexity module in the system-auth file is configured for three retries or less."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-252658
+    - audit
+
+- name: "MEDIUM | V-252658 | PATCH | OL 8 systems below version 8.4 must ensure the password complexity module in the system-auth file is configured for three retries or less."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-252658
+    - patch
+
+- name: "MEDIUM | V-252659 | AUDIT | OL 8 systems below version 8.4 must ensure the password complexity module in the password-auth file is configured for three retries or less."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-252659
+    - audit
+
+- name: "MEDIUM | V-252659 | PATCH | OL 8 systems below version 8.4 must ensure the password complexity module in the password-auth file is configured for three retries or less."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-252659
+    - patch
+
+- name: "MEDIUM | V-252660 | AUDIT | OL 8 systems, version 8.4 and above, must ensure the password complexity module is configured for three retries or less."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-252660
+    - audit
+
+- name: "MEDIUM | V-252660 | PATCH | OL 8 systems, version 8.4 and above, must ensure the password complexity module is configured for three retries or less."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-252660
+    - patch
+
+- name: "MEDIUM | V-252662 | AUDIT | OL 8 must not enable IPv4 packet forwarding unless the system is a router."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-252662
+    - audit
+
+- name: "MEDIUM | V-252662 | PATCH | OL 8 must not enable IPv4 packet forwarding unless the system is a router."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-252662
+    - patch
+
+- name: "MEDIUM | V-252663 | AUDIT | The graphical display manager must not be the default target on OL 8 unless approved."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-252663
+    - audit
+
+- name: "MEDIUM | V-252663 | PATCH | The graphical display manager must not be the default target on OL 8 unless approved."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-252663
+    - patch
+
+- name: "MEDIUM | V-255898 | AUDIT | OL 8 SSH server must be configured to use only FIPS-validated key exchange algorithms."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-255898
+    - audit
+
+- name: "MEDIUM | V-255898 | PATCH | OL 8 SSH server must be configured to use only FIPS-validated key exchange algorithms."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-255898
+    - patch
+
+- name: "MEDIUM | V-256978 | AUDIT | OL 8 must ensure cryptographic verification of vendor software packages."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-256978
+    - audit
+
+- name: "MEDIUM | V-256978 | PATCH | OL 8 must ensure cryptographic verification of vendor software packages."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-256978
+    - patch
+
+- name: "MEDIUM | V-256979 | AUDIT | OL 8 must be configured to allow sending email notifications of unauthorized configuration changes to designated personnel."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-256979
+    - audit
+
+- name: "MEDIUM | V-256979 | PATCH | OL 8 must be configured to allow sending email notifications of unauthorized configuration changes to designated personnel."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-256979
+    - patch
+
+- name: "MEDIUM | V-257259 | AUDIT | OL 8 must terminate idle user sessions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-257259
+    - audit
+
+- name: "MEDIUM | V-257259 | PATCH | OL 8 must terminate idle user sessions."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-257259
+    - patch
+
+- name: "MEDIUM | V-274876 | AUDIT | OL 8  must audit any script or executable called by cron as root or by any privileged user."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-274876
+    - audit
+
+- name: "MEDIUM | V-274876 | PATCH | OL 8  must audit any script or executable called by cron as root or by any privileged user."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-274876
+    - patch
+
+- name: "MEDIUM | V-279934 | AUDIT | OL 8 must automatically exit interactive command shell user sessions after 10 minutes of inactivity."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat2
+    - medium
+    - V-279934
+    - audit
+
+- name: "MEDIUM | V-279934 | PATCH | OL 8 must automatically exit interactive command shell user sessions after 10 minutes of inactivity."
+  command: true
+  tags:
+    - cat2
+    - medium
+    - V-279934
+    - patch
+

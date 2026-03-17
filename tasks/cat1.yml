@@ -1,0 +1,441 @@
+---
+- name: "HIGH | V-248521 | AUDIT | OL 8 must be a vendor-supported release."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248521
+    - audit
+
+- name: "HIGH | V-248521 | PATCH | OL 8 must be a vendor-supported release."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248521
+    - patch
+
+- name: "HIGH | V-248524 | AUDIT | OL 8 must implement NIST FIPS-validated cryptography for the following: To provision digital signatures, to generate cryptographic hashes, and to protect data requiring data-at-rest protections in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248524
+    - audit
+
+- name: "HIGH | V-248524 | PATCH | OL 8 must implement NIST FIPS-validated cryptography for the following: To provision digital signatures, to generate cryptographic hashes, and to protect data requiring data-at-rest protections in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248524
+    - patch
+
+- name: "HIGH | V-248525 | AUDIT | All OL 8 local disk partitions must implement cryptographic mechanisms to prevent unauthorized disclosure or modification of all information that requires at-rest protection."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248525
+    - audit
+
+- name: "HIGH | V-248525 | PATCH | All OL 8 local disk partitions must implement cryptographic mechanisms to prevent unauthorized disclosure or modification of all information that requires at-rest protection."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248525
+    - patch
+
+- name: "HIGH | V-248537 | AUDIT | OL 8 operating systems booted with United Extensible Firmware Interface (UEFI) must require authentication upon booting into single-user mode and maintenance."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248537
+    - audit
+
+- name: "HIGH | V-248537 | PATCH | OL 8 operating systems booted with United Extensible Firmware Interface (UEFI) must require authentication upon booting into single-user mode and maintenance."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248537
+    - patch
+
+- name: "HIGH | V-248540 | AUDIT | OL 8 operating systems booted with a BIOS must require authentication upon booting into single-user and maintenance modes."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248540
+    - audit
+
+- name: "HIGH | V-248540 | PATCH | OL 8 operating systems booted with a BIOS must require authentication upon booting into single-user and maintenance modes."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248540
+    - patch
+
+- name: "HIGH | V-248574 | AUDIT | YUM must be configured to prevent the installation of patches, service packs, device drivers, or OL 8 system components that have not been digitally signed using a certificate that is recognized and approved by the organization."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248574
+    - audit
+
+- name: "HIGH | V-248574 | PATCH | YUM must be configured to prevent the installation of patches, service packs, device drivers, or OL 8 system components that have not been digitally signed using a certificate that is recognized and approved by the organization."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248574
+    - patch
+
+- name: "HIGH | V-248575 | AUDIT | OL 8 must prevent the installation of software, patches, service packs, device drivers, or operating system components of local packages without verification they have been digitally signed using a certificate that is issued by a Certificate Authority (CA) that is recognized and approved by the organization."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248575
+    - audit
+
+- name: "HIGH | V-248575 | PATCH | OL 8 must prevent the installation of software, patches, service packs, device drivers, or operating system components of local packages without verification they have been digitally signed using a certificate that is issued by a Certificate Authority (CA) that is recognized and approved by the organization."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248575
+    - patch
+
+- name: "HIGH | V-248597 | AUDIT | There must be no "shosts.equiv" files on the OL 8 operating system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248597
+    - audit
+
+- name: "HIGH | V-248597 | PATCH | There must be no "shosts.equiv" files on the OL 8 operating system."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248597
+    - patch
+
+- name: "HIGH | V-248598 | AUDIT | There must be no ".shosts" files on the OL 8 operating system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248598
+    - audit
+
+- name: "HIGH | V-248598 | PATCH | There must be no ".shosts" files on the OL 8 operating system."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248598
+    - patch
+
+- name: "HIGH | V-248649 | AUDIT | Unattended or automatic logon via the OL 8 graphical user interface must not be allowed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248649
+    - audit
+
+- name: "HIGH | V-248649 | PATCH | Unattended or automatic logon via the OL 8 graphical user interface must not be allowed."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248649
+    - patch
+
+- name: "HIGH | V-248650 | AUDIT | OL 8 must not allow users to override SSH environment variables."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248650
+    - audit
+
+- name: "HIGH | V-248650 | PATCH | OL 8 must not allow users to override SSH environment variables."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248650
+    - patch
+
+- name: "HIGH | V-248714 | AUDIT | OL 8 must not allow accounts configured with blank or null passwords."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248714
+    - audit
+
+- name: "HIGH | V-248714 | PATCH | OL 8 must not allow accounts configured with blank or null passwords."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248714
+    - patch
+
+- name: "HIGH | V-248715 | AUDIT | OL 8 must not allow blank or null passwords in the system-auth file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248715
+    - audit
+
+- name: "HIGH | V-248715 | PATCH | OL 8 must not allow blank or null passwords in the system-auth file."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248715
+    - patch
+
+- name: "HIGH | V-248716 | AUDIT | OL 8 must not allow blank or null passwords in the password-auth file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248716
+    - audit
+
+- name: "HIGH | V-248716 | PATCH | OL 8 must not allow blank or null passwords in the password-auth file."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248716
+    - patch
+
+- name: "HIGH | V-248823 | AUDIT | OL 8 must not have the telnet-server package installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248823
+    - audit
+
+- name: "HIGH | V-248823 | PATCH | OL 8 must not have the telnet-server package installed."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248823
+    - patch
+
+- name: "HIGH | V-248827 | AUDIT | OL 8 must not install packages from the Extra Packages for Enterprise Linux (EPEL) repository."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248827
+    - audit
+
+- name: "HIGH | V-248827 | PATCH | OL 8 must not install packages from the Extra Packages for Enterprise Linux (EPEL) repository."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248827
+    - patch
+
+- name: "HIGH | V-248869 | AUDIT | The x86 Ctrl-Alt-Delete key sequence must be disabled on OL 8."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248869
+    - audit
+
+- name: "HIGH | V-248869 | PATCH | The x86 Ctrl-Alt-Delete key sequence must be disabled on OL 8."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248869
+    - patch
+
+- name: "HIGH | V-248870 | AUDIT | The x86 Ctrl-Alt-Delete key sequence in OL 8 must be disabled if a graphical user interface is installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248870
+    - audit
+
+- name: "HIGH | V-248870 | PATCH | The x86 Ctrl-Alt-Delete key sequence in OL 8 must be disabled if a graphical user interface is installed."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248870
+    - patch
+
+- name: "HIGH | V-248873 | AUDIT | The Trivial File Transfer Protocol (TFTP) server package must not be installed if not required for OL 8 operational support."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248873
+    - audit
+
+- name: "HIGH | V-248873 | PATCH | The Trivial File Transfer Protocol (TFTP) server package must not be installed if not required for OL 8 operational support."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248873
+    - patch
+
+- name: "HIGH | V-248874 | AUDIT | The root account must be the only account having unrestricted access to the OL 8 system."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248874
+    - audit
+
+- name: "HIGH | V-248874 | PATCH | The root account must be the only account having unrestricted access to the OL 8 system."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248874
+    - patch
+
+- name: "HIGH | V-248903 | AUDIT | A File Transfer Protocol (FTP) server package must not be installed unless mission essential on OL 8."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-248903
+    - audit
+
+- name: "HIGH | V-248903 | PATCH | A File Transfer Protocol (FTP) server package must not be installed unless mission essential on OL 8."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-248903
+    - patch
+
+- name: "HIGH | V-252650 | AUDIT | The OL 8 operating system must not have accounts configured with blank or null passwords."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat1
+    - high
+    - V-252650
+    - audit
+
+- name: "HIGH | V-252650 | PATCH | The OL 8 operating system must not have accounts configured with blank or null passwords."
+  command: true
+  tags:
+    - cat1
+    - high
+    - V-252650
+    - patch
+

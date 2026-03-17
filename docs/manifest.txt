@@ -1,0 +1,379 @@
+
+high
+V-248521 - high - OL 8 must be a vendor-supported release.
+V-248524 - high - OL 8 must implement NIST FIPS-validated cryptography for the following: To provision digital signatures, to generate cryptographic hashes, and to protect data requiring data-at-rest protections in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards.
+V-248525 - high - All OL 8 local disk partitions must implement cryptographic mechanisms to prevent unauthorized disclosure or modification of all information that requires at-rest protection.
+V-248537 - high - OL 8 operating systems booted with United Extensible Firmware Interface (UEFI) must require authentication upon booting into single-user mode and maintenance.
+V-248540 - high - OL 8 operating systems booted with a BIOS must require authentication upon booting into single-user and maintenance modes.
+V-248574 - high - YUM must be configured to prevent the installation of patches, service packs, device drivers, or OL 8 system components that have not been digitally signed using a certificate that is recognized and approved by the organization.
+V-248575 - high - OL 8 must prevent the installation of software, patches, service packs, device drivers, or operating system components of local packages without verification they have been digitally signed using a certificate that is issued by a Certificate Authority (CA) that is recognized and approved by the organization.
+V-248597 - high - There must be no "shosts.equiv" files on the OL 8 operating system.
+V-248598 - high - There must be no ".shosts" files on the OL 8 operating system.
+V-248649 - high - Unattended or automatic logon via the OL 8 graphical user interface must not be allowed.
+V-248650 - high - OL 8 must not allow users to override SSH environment variables.
+V-248714 - high - OL 8 must not allow accounts configured with blank or null passwords.
+V-248715 - high - OL 8 must not allow blank or null passwords in the system-auth file.
+V-248716 - high - OL 8 must not allow blank or null passwords in the password-auth file.
+V-248823 - high - OL 8 must not have the telnet-server package installed.
+V-248827 - high - OL 8 must not install packages from the Extra Packages for Enterprise Linux (EPEL) repository.
+V-248869 - high - The x86 Ctrl-Alt-Delete key sequence must be disabled on OL 8.
+V-248870 - high - The x86 Ctrl-Alt-Delete key sequence in OL 8 must be disabled if a graphical user interface is installed.
+V-248873 - high - The Trivial File Transfer Protocol (TFTP) server package must not be installed if not required for OL 8 operational support.
+V-248874 - high - The root account must be the only account having unrestricted access to the OL 8 system.
+V-248903 - high - A File Transfer Protocol (FTP) server package must not be installed unless mission essential on OL 8.
+V-252650 - high - The OL 8 operating system must not have accounts configured with blank or null passwords.
+
+medium
+V-248519 - medium - The OL 8 audit package must be installed.
+V-248520 - medium - OL 8 audit records must contain information to establish what type of events occurred, the source of events, where events occurred, and the outcome of events.
+V-248523 - medium - OL 8 vendor-packaged system security patches and updates must be installed and up to date.
+V-248526 - medium - OL 8 must display the Standard Mandatory DOD Notice and Consent Banner before granting local or remote access to the system via an SSH logon.
+V-248527 - medium - OL 8 must display a banner before granting local or remote access to the system via a graphical user logon.
+V-248528 - medium - OL 8 must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon.
+V-248529 - medium - OL 8 must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a command line user logon.
+V-248530 - medium - All OL 8 remote access methods must be monitored.
+V-248531 - medium - OL 8, for PKI-based authentication, must validate certificates by constructing a certification path (which includes status information) to an accepted trust anchor.
+V-248532 - medium - OL 8, for certificate-based authentication, must enforce authorized access to the corresponding private key.
+V-248533 - medium - OL 8 must encrypt all stored passwords with a FIPS 140-2 approved cryptographic hashing algorithm.
+V-248534 - medium - OL 8 must employ FIPS 140-2 approved cryptographic hashing algorithms for all stored passwords.
+V-248535 - medium - The OL 8 shadow password suite must be configured to use a sufficient number of hashing rounds.
+V-248538 - medium - OL 8 operating systems booted with United Extensible Firmware Interface (UEFI) must have a unique name for the grub superusers account when booting into single-user mode and maintenance.
+V-248539 - medium - OL 8 operating systems booted with a BIOS must have a unique name for the grub superusers account when booting into single-user and maintenance modes.
+V-248541 - medium - OL 8 operating systems must require authentication upon booting into rescue mode.
+V-248542 - medium - OL 8 operating systems must require authentication upon booting into emergency mode.
+V-248543 - medium - The OL 8 "pam_unix.so" module must be configured in the system-auth file to use a FIPS 140-2 approved cryptographic hashing algorithm for system authentication.
+V-248544 - medium - The OL 8 "pam_unix.so" module must be configured in the password-auth file to use a FIPS 140-2 approved cryptographic hashing algorithm for system authentication.
+V-248545 - medium - OL 8 must prevent system daemons from using Kerberos for authentication.
+V-248546 - medium - The krb5-workstation package must not be installed on OL 8.
+V-248547 - medium - The krb5-server package must not be installed on OL 8.
+V-248548 - medium - OL 8 must use a Linux Security Module configured to enforce limits on system services.
+V-248551 - medium - A sticky bit must be set on all OL 8 public directories to prevent unauthorized and unintended information transferred via shared system resources.
+V-248552 - medium - OL 8 must be configured so that all network connections associated with SSH traffic terminate after becoming unresponsive.
+V-248553 - medium - OL 8 must be configured so that all network connections associated with SSH traffic are terminated after 10 minutes of becoming unresponsive.
+V-248554 - medium - The OL 8 "/var/log/messages" file must have mode 0640 or less permissive.
+V-248555 - medium - The OL 8 "/var/log/messages" file must be owned by root.
+V-248556 - medium - The OL 8 "/var/log/messages" file must be group-owned by root.
+V-248557 - medium - The OL 8 "/var/log" directory must have mode 0755 or less permissive.
+V-248558 - medium - The OL 8 "/var/log" directory must be owned by root.
+V-248559 - medium - The OL 8 "/var/log" directory must be group-owned by root.
+V-248560 - medium - The OL 8 SSH daemon must be configured to use system-wide crypto policies.
+V-248561 - medium - The OL 8 SSH server must be configured to use only Message Authentication Codes (MACs) employing FIPS 140-3 validated cryptographic hash algorithms to protect the confidentiality of SSH server connections.
+V-248562 - medium - The OL 8 SSH server must be configured to use only DOD-approved encryption ciphers employing FIPS 140-3 validated cryptographic hash algorithms to protect the confidentiality of SSH server connections.
+V-248564 - medium - The OL 8 operating system must implement DOD-approved encryption in the OpenSSL package.
+V-248565 - medium - The OL 8 operating system must implement DoD-approved TLS encryption in the OpenSSL package.
+V-248566 - medium - The OL 8 operating system must implement DoD-approved TLS encryption in the GnuTLS package.
+V-248567 - medium - OL 8 system commands must have mode 755 or less permissive.
+V-248568 - medium - OL 8 system commands must be owned by root.
+V-248569 - medium - OL 8 system commands must be group-owned by root or a system account.
+V-248570 - medium - OL 8 library files must have mode 755 or less permissive.
+V-248571 - medium - OL 8 library files must be owned by root.
+V-248572 - medium - OL 8 library files must be group-owned by root.
+V-248573 - medium - The OL 8 file integrity tool must notify the system administrator (SA) when changes to the baseline configuration or anomalies in the operation of any security functions are discovered within an organizationally defined frequency.
+V-248576 - medium - OL 8 must prevent the loading of a new kernel for later execution.
+V-248577 - medium - OL 8 must enable kernel parameters to enforce Discretionary Access Control (DAC) on symlinks.
+V-248578 - medium - OL 8 must enable kernel parameters to enforce Discretionary Access Control (DAC) on hardlinks.
+V-248581 - medium - OL 8 must require users to provide a password for privilege escalation.
+V-248582 - medium - OL 8 must require users to reauthenticate for privilege escalation and changing roles.
+V-248583 - medium - OL 8 must restrict privilege elevation to authorized personnel.
+V-248584 - medium - OL 8 must use the invoking user's password for privilege escalation when using "sudo".
+V-248585 - medium - OL 8 must require reauthentication when using the "sudo" command.
+V-248587 - medium - OL 8 must implement certificate status checking for multifactor authentication.
+V-248588 - medium - OL 8 must accept Personal Identity Verification (PIV) credentials.
+V-248589 - medium - OL 8 must implement non-executable data to protect its memory from unauthorized code execution.
+V-248590 - medium - OL 8 must clear the page allocator to prevent use-after-free attacks.
+V-248591 - medium - OL 8 must disable virtual syscalls.
+V-248592 - medium - OL 8 must clear memory when it is freed to prevent use-after-free attacks.
+V-248593 - medium - OL 8 must not let Meltdown and Spectre exploit critical vulnerabilities in modern processors.
+V-248594 - medium - OL 8 must implement address space layout randomization (ASLR) to protect its memory from unauthorized code execution.
+V-248596 - medium - OL 8 must enable the SELinux targeted policy.
+V-248601 - medium - The OL 8 SSH public host key files must have mode "0644" or less permissive.
+V-248602 - medium - The OL 8 SSH private host key files must have mode "0640" or less permissive.
+V-248603 - medium - The OL 8 SSH daemon must perform strict mode checking of home directory configuration files.
+V-248605 - medium - The OL 8 SSH daemon must not allow authentication using known host's authentication.
+V-248606 - medium - The OL 8 SSH daemon must not allow Kerberos authentication, except to fulfill documented and validated mission requirements.
+V-248607 - medium - The OL 8 SSH daemon must not allow GSSAPI authentication, except to fulfill documented and validated mission requirements.
+V-248611 - medium - OL 8 must use a separate file system for "/tmp".
+V-248612 - medium - OL 8 must use a separate file system for /var/tmp.
+V-248613 - medium - OL 8 must not permit direct logons to the root account using remote access via SSH.
+V-248615 - medium - OL 8 must have the rsyslog service enabled and active.
+V-248616 - medium - OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that contain user home directories.
+V-248617 - medium - OL 8 must prevent files with the setuid and setgid bit set from being executed on the /boot directory.
+V-248618 - medium - OL 8 must prevent files with the setuid and setgid bit set from being executed on the /boot/efi directory.
+V-248619 - medium - OL 8 must prevent special devices on nonroot local partitions.
+V-248620 - medium - OL 8 file systems that contain user home directories must not execute binary files.
+V-248621 - medium - OL 8 file systems must not interpret character or block special devices from untrusted file systems.
+V-248622 - medium - OL 8 file systems must not execute binary files on removable media.
+V-248623 - medium - OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that are used with removable media.
+V-248624 - medium - OL 8 file systems must not execute binary files that are imported via Network File System (NFS).
+V-248625 - medium - OL 8 file systems must not interpret character or block special devices that are imported via Network File System (NFS).
+V-248626 - medium - OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that are imported via Network File System (NFS).
+V-248628 - medium - OL 8 must disable kernel dumps unless needed.
+V-248629 - medium - OL 8 must disable the "kernel.core_pattern".
+V-248630 - medium - OL 8 must disable acquiring, saving, and processing core dumps.
+V-248631 - medium - OL 8 must disable core dumps for all users.
+V-248632 - medium - OL 8 must disable storing core dumps.
+V-248633 - medium - OL 8 must disable core dump backtraces.
+V-248634 - medium - For OL 8 systems using Domain Name Servers (DNS) resolution, at least two name servers must be configured.
+V-248635 - medium - Executable search paths within the initialization files of all local interactive OL 8 users must only contain paths that resolve to the system default or the user's home directory.
+V-248636 - medium - All OL 8 world-writable directories must be owned by root, sys, bin, or an application user.
+V-248637 - medium - All OL 8 world-writable directories must be group-owned by root, sys, bin, or an application group.
+V-248638 - medium - All OL 8 local interactive users must have a home directory assigned in the "/etc/passwd" file.
+V-248639 - medium - All OL 8 local interactive user home directories must have mode "0750" or less permissive.
+V-248640 - medium - All OL 8 local interactive user home directory files must have mode "0750" or less permissive.
+V-248641 - medium - All OL 8 local interactive user home directories must be group-owned by the home directory owner's primary group.
+V-248642 - medium - OL 8 must be configured so that all files and directories contained in local interactive user home directories are group-owned by a group of which the home directory owner is a member.
+V-248643 - medium - All OL 8 local interactive user home directories defined in the "/etc/passwd" file must exist.
+V-248644 - medium - All OL 8 local interactive user accounts must be assigned a home directory upon creation.
+V-248645 - medium - All OL 8 local initialization files must have mode "0740" or less permissive.
+V-248646 - medium - All OL 8 files and directories must have a valid owner.
+V-248647 - medium - All OL 8 files and directories must have a valid group owner.
+V-248648 - medium - A separate OL 8 filesystem must be used for user home directories (such as "/home" or an equivalent).
+V-248651 - medium - OL 8 temporary user accounts must be provisioned with an expiration time of 72 hours or less.
+V-248652 - medium - OL 8 systems below version 8.2 must automatically lock an account when three unsuccessful logon attempts occur.
+V-248653 - medium - OL 8 systems, versions 8.2 and above, must automatically lock an account when three unsuccessful logon attempts occur.
+V-248654 - medium - OL 8 systems below version 8.2 must automatically lock an account when three unsuccessful logon attempts occur during a 15-minute time period.
+V-248655 - medium - OL 8 systems, versions 8.2 and above, must automatically lock an account when three unsuccessful logon attempts occur during a 15-minute time period.
+V-248656 - medium - OL 8 systems below version 8.2 must automatically lock an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period.
+V-248657 - medium - OL 8 systems, versions 8.2 and above, must automatically lock an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period.
+V-248658 - medium - OL 8 systems below version 8.2 must ensure account lockouts persist.
+V-248659 - medium - OL 8 systems, versions 8.2 and above, must ensure account lockouts persist.
+V-248660 - medium - OL 8 systems below version 8.2 must prevent system messages from being presented when three unsuccessful logon attempts occur.
+V-248661 - medium - OL 8 systems, versions 8.2 and above, must prevent system messages from being presented when three unsuccessful logon attempts occur.
+V-248662 - medium - OL 8 systems below version 8.2 must log user name information when unsuccessful logon attempts occur.
+V-248663 - medium - OL 8 systems, versions 8.2 and above, must log user name information when unsuccessful logon attempts occur.
+V-248664 - medium - OL 8 systems below version 8.2 must include root when automatically locking an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period.
+V-248665 - medium - OL 8 systems, versions 8.2 and above, must include root when automatically locking an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period.
+V-248667 - medium - OL 8 must configure the use of the pam_faillock.so module in the /etc/pam.d/system-auth file.
+V-248668 - medium - OL 8 must configure the use of the pam_faillock.so module in the /etc/pam.d/password-auth file.
+V-248669 - medium - OL 8 systems, versions 8.2 and above, must configure SELinux context type to allow the use of a non-default faillock tally directory.
+V-248670 - medium - OL 8 systems below version 8.2 must configure SELinux context type to allow the use of a non-default faillock tally directory.
+V-248671 - medium - OL 8 must enable a user session lock until that user reestablishes access using established identification and authentication procedures for graphical user sessions.
+V-248672 - medium - OL 8 must initiate a session lock for graphical user interfaces when the screensaver is activated.
+V-248673 - medium - OL 8 must disable the user list at logon for graphical user interfaces.
+V-248678 - medium - OL 8 must enable a user session lock until that user reestablishes access using established identification and authentication procedures for command line sessions.
+V-248679 - medium - OL 8 must be able to initiate directly a session lock for all connection types using smartcard when the smartcard is removed.
+V-248680 - medium - OL 8 must automatically lock graphical user sessions after 15 minutes of inactivity.
+V-248682 - medium - OL 8 must prevent a user from overriding the session lock-delay setting for the graphical user interface.
+V-248683 - medium - OL 8 must prevent a user from overriding the session idle-delay setting for the graphical user interface.
+V-248684 - medium - OL 8 must prevent a user from overriding the session lock-enabled setting for the graphical user interface.
+V-248685 - medium - OL 8 must map the authenticated identity to the user or group account for PKI-based authentication.
+V-248686 - medium - OL 8 must ensure the password complexity module is enabled in the password-auth file.
+V-248690 - medium - OL 8 must require the maximum number of repeating characters of the same character class be limited to four when passwords are changed.
+V-248691 - medium - OL 8 must require the maximum number of repeating characters be limited to three when passwords are changed.
+V-248692 - medium - OL 8 must require the change of at least four character classes when passwords are changed.
+V-248694 - medium - OL 8 passwords for new users or password changes must have a 24 hours/one day minimum password lifetime restriction in "/etc/shadow".
+V-248695 - medium - OL 8 passwords for new users or password changes must have a 24 hours/one day minimum password lifetime restriction in "/etc/login.defs".
+V-248696 - medium - OL 8 user account passwords must have a 60-day maximum password lifetime restriction.
+V-248697 - medium - OL 8 user account passwords must be configured so that existing passwords are restricted to a 60-day maximum lifetime.
+V-248699 - medium - OL 8 passwords must have a minimum of 15 characters.
+V-248700 - medium - OL 8 passwords for new users must have a minimum of 15 characters.
+V-248701 - medium - OL 8 duplicate User IDs (UIDs) must not exist for interactive users.
+V-248702 - medium - OL 8 must implement multifactor authentication for access to interactive accounts.
+V-248703 - medium - The OL 8 system-auth file must disable access to the system for account identifiers (individuals, groups, roles, and devices) with 35 days of inactivity.
+V-248704 - medium - The OL 8 password-auth file must disable access to the system for account identifiers (individuals, groups, roles, and devices) with 35 days of inactivity.
+V-248705 - medium - The OL 8 lastlog command must have a mode of "0750" or less permissive.
+V-248706 - medium - The OL 8 lastlog command must be owned by root.
+V-248707 - medium - The OL 8 lastlog command must be group-owned by root.
+V-248708 - medium - OL 8 must automatically expire temporary accounts within 72 hours.
+V-248710 - medium - OL 8 must prohibit the use of cached authentications after one day.
+V-248711 - medium - OL 8 must prevent the use of dictionary words for passwords.
+V-248712 - medium - OL 8 must enforce a delay of at least four seconds between logon prompts following a failed logon attempt.
+V-248713 - medium - OL 8 must not have unnecessary accounts.
+V-248718 - medium - OL 8 must display the date and time of the last successful account logon upon an SSH logon.
+V-248719 - medium - OL 8 default permissions must be defined in such a way that all authenticated users can read and modify only their own files.
+V-248720 - medium - OL 8 must set the umask value to 077 for all local interactive user accounts.
+V-248721 - medium - OL 8 must define default permissions for logon and non-logon shells.
+V-248722 - medium - The OL 8 audit system must be configured to audit the execution of privileged functions and prevent all software from executing at higher privilege levels than users executing the software.
+V-248723 - medium - Cron logging must be implemented in OL 8.
+V-248724 - medium - The OL 8 System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) must be alerted of an audit processing failure event.
+V-248725 - medium - The OL 8 Information System Security Officer (ISSO) and System Administrator (SA) (at a minimum) must have mail aliases to be notified of an audit processing failure.
+V-248726 - medium - The OL 8 System must take appropriate action when an audit processing failure occurs.
+V-248728 - medium - The OL 8 audit system must take appropriate action when the audit storage volume is full.
+V-248729 - medium - The OL 8 audit system must audit local events.
+V-248730 - medium - OL 8 must label all offloaded audit logs before sending them to the central log server.
+V-248731 - medium - OL 8 must resolve audit information before writing to disk.
+V-248732 - medium - OL 8 audit logs must have a mode of "0600" or less permissive to prevent unauthorized read access.
+V-248733 - medium - OL 8 audit logs must be owned by root to prevent unauthorized read access.
+V-248734 - medium - OL 8 audit logs must be group-owned by root to prevent unauthorized read access.
+V-248735 - medium - The OL 8 audit log directory must be owned by root to prevent unauthorized read access.
+V-248736 - medium - The OL 8 audit log directory must be group-owned by root to prevent unauthorized read access.
+V-248737 - medium - The OL 8 audit log directory must have a mode of 0700 or less permissive to prevent unauthorized read access.
+V-248738 - medium - The OL 8 audit system must protect auditing rules from unauthorized change.
+V-248739 - medium - The OL 8 audit system must protect logon UIDs from unauthorized change.
+V-248740 - medium - OL 8 must generate audit records for all account creation events that affect "/etc/shadow".
+V-248741 - medium - OL 8 must generate audit records for all account creation events that affect "/etc/security/opasswd".
+V-248742 - medium - OL 8 must generate audit records for all account creation events that affect "/etc/passwd".
+V-248743 - medium - OL 8 must generate audit records for all account creation events that affect "/etc/gshadow".
+V-248744 - medium - OL 8 must generate audit records for all account creation events that affect "/etc/group".
+V-248745 - medium - OL 8 must generate audit records for all account creations, modifications, disabling, and termination events that affect "/etc/sudoers".
+V-248746 - medium - OL 8 must generate audit records for all account creations, modifications, disabling, and termination events that affect "/etc/sudoers.d/".
+V-248747 - medium - OL 8 must generate audit records for any use of the "su" command.
+V-248748 - medium - The OL 8 audit system must be configured to audit any use of the "setxattr", "fsetxattr", "lsetxattr", "removexattr", "fremovexattr", and "lremovexattr" system calls.
+V-248753 - medium - OL 8 must generate audit records for any use of the "chage" command.
+V-248754 - medium - OL 8 must generate audit records for any uses of the "chcon" command.
+V-248756 - medium - OL 8 must generate audit records for any use of the "ssh-agent" command.
+V-248757 - medium - OL 8 must generate audit records for any use of the "passwd" command.
+V-248758 - medium - OL 8 must generate audit records for any use of the "mount" command.
+V-248759 - medium - OL 8 must generate audit records for any use of the "umount" command.
+V-248760 - medium - OL 8 must generate audit records for any use of the "mount" syscall.
+V-248761 - medium - OL 8 must generate audit records for any use of the "unix_update" command.
+V-248762 - medium - OL 8 must generate audit records for any use of the "postdrop" command.
+V-248763 - medium - OL 8 must generate audit records for any use of the "postqueue" command.
+V-248764 - medium - OL 8 must generate audit records for any use of the "semanage" command.
+V-248765 - medium - OL 8 must generate audit records for any use of the "setfiles" command.
+V-248766 - medium - OL 8 must generate audit records for any use of the "userhelper" command.
+V-248767 - medium - OL 8 must generate audit records for any use of the "setsebool" command.
+V-248768 - medium - OL 8 must generate audit records for any use of the "unix_chkpwd" command.
+V-248769 - medium - OL 8 must generate audit records for any use of the "ssh-keysign" command.
+V-248770 - medium - OL 8 must generate audit records for any use of the "setfacl" command.
+V-248771 - medium - OL 8 must generate audit records for any use of the "pam_timestamp_check" command.
+V-248772 - medium - OL 8 must generate audit records for any use of the "newgrp" command.
+V-248773 - medium - OL 8 must generate audit records for any use of the "init_module" and "finit_module" system calls.
+V-248774 - medium - OL 8 must generate audit records for any use of the "rename", "unlink", "rmdir", "renameat", and "unlinkat" system calls.
+V-248779 - medium - OL 8 must generate audit records for any use of the "gpasswd" command.
+V-248781 - medium - OL 8 must generate audit records for any use of the delete_module syscall.
+V-248782 - medium - OL 8 must generate audit records for any use of the "crontab" command.
+V-248783 - medium - OL 8 must generate audit records for any use of the "chsh" command.
+V-248784 - medium - OL 8 must generate audit records for any use of the "truncate", "ftruncate", "creat", "open", "openat", and "open_by_handle_at" system calls.
+V-248790 - medium - OL 8 must generate audit records for any use of the "chown", "fchown", "fchownat", and "lchown" system calls.
+V-248791 - medium - OL 8 must generate audit records for any use of the "chmod", "fchmod", and "fchmodat" system calls.
+V-248797 - medium - OL 8 must generate audit records for any use of the "sudo" command.
+V-248798 - medium - OL 8 must generate audit records for any use of the "usermod" command.
+V-248799 - medium - OL 8 must generate audit records for any use of the "chacl" command.
+V-248800 - medium - OL 8 must generate audit records for any use of the "kmod" command.
+V-248801 - medium - OL 8 must generate audit records for any attempted modifications to the "faillock" log file.
+V-248802 - medium - OL 8 must generate audit records for any attempted modifications to the "lastlog" file.
+V-248803 - medium - OL 8 must enable auditing of processes that start prior to the audit daemon.
+V-248805 - medium - OL 8 must enable Linux audit logging for the USBGuard daemon.
+V-248806 - medium - OL 8 must allow only the Information System Security Manager (ISSM) (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited.
+V-248807 - medium - OL 8 audit tools must have a mode of "0755" or less permissive.
+V-248808 - medium - OL 8 audit tools must be owned by root.
+V-248809 - medium - OL 8 audit tools must be group-owned by root.
+V-248810 - medium - OL 8 must use cryptographic mechanisms to protect the integrity of audit tools.
+V-248811 - medium - OL 8 must allocate audit record storage capacity to store at least one week of audit records when audit records are not immediately sent to a central audit record storage facility.
+V-248812 - medium - OL 8 must have the packages required for offloading audit logs installed.
+V-248813 - medium - OL 8 must have the packages required for encrypting offloaded audit logs installed.
+V-248814 - medium - The OL 8 audit records must be offloaded onto a different system or storage media from the system being audited.
+V-248815 - medium - OL 8 must take appropriate action when the internal event queue is full.
+V-248816 - medium - OL 8 must encrypt the transfer of audit records offloaded onto a different system or media from the system being audited.
+V-248817 - medium - OL 8 must authenticate the remote logging server for offloading audit logs.
+V-248818 - medium - OL 8 must take action when allocated audit record storage volume reaches 75 percent of the repository maximum audit record storage capacity.
+V-248819 - medium - OL 8 must notify the System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) when allocated audit record storage volume 75 percent utilization.
+V-248820 - medium - OL 8 must compare internal information system clocks at least every 24 hours with a server synchronized to an authoritative time source, such as the United States Naval Observatory (USNO) time servers, or a time server designated for the appropriate DOD network (NIPRNet/SIPRNet), and/or the Global Positioning System (GPS).
+V-248824 - medium - OL 8 must not have any automated bug reporting tools installed.
+V-248825 - medium - OL 8 must not have the sendmail package installed.
+V-248828 - medium - OL 8 must cover or disable the built-in or attached camera when not in use.
+V-248829 - medium - OL 8 must not have the asynchronous transfer mode (ATM) kernel module installed if not required for operational support.
+V-248830 - medium - OL 8 must not have the Controller Area Network (CAN) kernel module installed if not required for operational support.
+V-248831 - medium - OL 8 must not have the stream control transmission protocol (SCTP) kernel module installed if not required for operational support.
+V-248835 - medium - OL 8 must be configured to prohibit or restrict the use of functions, ports, protocols, and/or services as defined in the Ports, Protocols, and Services Management (PPSM) Category Assignments List (CAL) and vulnerability assessments.
+V-248836 - medium - The OL 8 file system automounter must be disabled.
+V-248837 - medium - OL 8 must be configured to disable the ability to use USB mass storage devices.
+V-248839 - medium - An OL 8 firewall must employ a deny-all, allow-by-exception policy for allowing connections to other systems.
+V-248840 - medium - A firewall must be installed on OL 8.
+V-248841 - medium - A firewall must be active on OL 8.
+V-248842 - medium - OL 8 wireless network adapters must be disabled.
+V-248843 - medium - OL 8 Bluetooth must be disabled.
+V-248844 - medium - OL 8 must mount "/dev/shm" with the "nodev" option.
+V-248845 - medium - OL 8 must mount "/dev/shm" with the "nosuid" option.
+V-248846 - medium - OL 8 must mount "/dev/shm" with the "noexec" option.
+V-248847 - medium - OL 8 must mount "/tmp" with the "nodev" option.
+V-248848 - medium - OL 8 must mount "/tmp" with the "nosuid" option.
+V-248849 - medium - OL 8 must mount "/tmp" with the "noexec" option.
+V-248850 - medium - OL 8 must mount "/var/log" with the "nodev" option.
+V-248851 - medium - OL 8 must mount "/var/log" with the "nosuid" option.
+V-248852 - medium - OL 8 must mount "/var/log" with the "noexec" option.
+V-248853 - medium - OL 8 must mount "/var/log/audit" with the "nodev" option.
+V-248854 - medium - OL 8 must mount "/var/log/audit" with the "nosuid" option.
+V-248855 - medium - OL 8 must mount "/var/log/audit" with the "noexec" option.
+V-248856 - medium - OL 8 must mount "/var/tmp" with the "nodev" option.
+V-248857 - medium - OL 8 must mount "/var/tmp" with the "nosuid" option.
+V-248858 - medium - OL 8 must mount "/var/tmp" with the "noexec" option.
+V-248859 - medium - The OL 8 "fapolicy" module must be installed.
+V-248860 - medium - The OL 8 "fapolicy" module must be enabled.
+V-248861 - medium - The OL 8 fapolicy module must be configured to employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs.
+V-248862 - medium - OL 8 must have the USBGuard installed.
+V-248863 - medium - OL 8 must block unauthorized peripherals before establishing a connection.
+V-248864 - medium - OL 8 must enable the USBGuard.
+V-248865 - medium - A firewall must be able to protect against or limit the effects of denial-of-service (DoS) attacks by ensuring OL 8 can implement rate-limiting measures on impacted network interfaces.
+V-248866 - medium - All OL 8 networked systems must have SSH installed.
+V-248867 - medium - All OL 8 networked systems must have and implement SSH to protect the confidentiality and integrity of transmitted and received information, as well as information during preparation for transmission.
+V-248868 - medium - OL 8 must force a frequent session key renegotiation for SSH connections to the server.
+V-248871 - medium - OL 8 must disable the systemd Ctrl-Alt-Delete burst key sequence.
+V-248875 - medium - OL 8 must prevent IPv4 Internet Control Message Protocol (ICMP) redirect messages from being accepted.
+V-248876 - medium - OL 8 must prevent IPv6 Internet Control Message Protocol (ICMP) redirect messages from being accepted.
+V-248877 - medium - OL 8 must not send Internet Control Message Protocol (ICMP) redirects.
+V-248878 - medium - OL 8 must not respond to Internet Control Message Protocol (ICMP) echoes sent to a broadcast address.
+V-248879 - medium - OL 8 must not forward IPv4 source-routed packets.
+V-248880 - medium - OL 8 must not forward IPv6 source-routed packets.
+V-248881 - medium - OL 8 must not forward IPv4 source-routed packets by default.
+V-248882 - medium - OL 8 must not forward IPv6 source-routed packets by default.
+V-248883 - medium - OL 8 must not enable IPv6 packet forwarding unless the system is a router.
+V-248884 - medium - OL 8 must not accept router advertisements on all IPv6 interfaces.
+V-248885 - medium - OL 8 must not accept router advertisements on all IPv6 interfaces by default.
+V-248886 - medium - OL 8 must not allow interfaces to perform Internet Control Message Protocol (ICMP) redirects by default.
+V-248887 - medium - OL 8 must ignore IPv4 Internet Control Message Protocol (ICMP) redirect messages.
+V-248888 - medium - OL 8 must ignore IPv6 Internet Control Message Protocol (ICMP) redirect messages.
+V-248889 - medium - OL 8 must disable access to the network "bpf" syscall from nonprivileged processes.
+V-248890 - medium - OL 8 must restrict the use of "ptrace" to descendant processes.
+V-248891 - medium - OL 8 must restrict exposed kernel pointer addresses access.
+V-248892 - medium - OL 8 must disable the use of user namespaces.
+V-248893 - medium - OL 8 must use reverse path filtering on all IPv4 interfaces.
+V-248894 - medium - OL 8 must enable hardening for the Berkeley Packet Filter Just-in-time compiler.
+V-248895 - medium - OL 8 must be configured to prevent unrestricted mail relaying.
+V-248898 - medium - The graphical display manager must not be installed on OL 8 unless approved.
+V-248899 - medium - OL 8 network interfaces must not be in promiscuous mode.
+V-248900 - medium - OL 8 remote X connections for interactive users must be disabled unless to fulfill documented and validated mission requirements.
+V-248901 - medium - The OL 8 SSH daemon must prevent remote hosts from connecting to the proxy display.
+V-248902 - medium - If the Trivial File Transfer Protocol (TFTP) server is required, the OL 8 TFTP daemon must be configured to operate in secure mode.
+V-248904 - medium - OL 8 must not have the "gssproxy" package installed if not required for operational support.
+V-248905 - medium - OL 8 must not have the "iprutils" package installed if not required for operational support.
+V-248906 - medium - OL 8 must not have the "tuned" package installed if not required for operational support.
+V-248907 - medium - OL 8 must prevent nonprivileged users from executing privileged functions, including disabling, circumventing, or altering implemented security safeguards/countermeasures.
+V-252651 - medium - OL 8 library directories must have mode 755 or less permissive.
+V-252652 - medium - OL 8 library directories must be owned by root.
+V-252653 - medium - OL 8 library directories must be group-owned by root or a system account.
+V-252654 - medium - The OL 8 operating system must use a file integrity tool to verify correct operation of all security functions.
+V-252655 - medium - OL 8 must specify the default "include" directory for the /etc/sudoers file.
+V-252656 - medium - The OL 8 operating system must not be configured to bypass password requirements for privilege escalation.
+V-252657 - medium - OL 8 must ensure the password complexity module is enabled in the system-auth file.
+V-252658 - medium - OL 8 systems below version 8.4 must ensure the password complexity module in the system-auth file is configured for three retries or less.
+V-252659 - medium - OL 8 systems below version 8.4 must ensure the password complexity module in the password-auth file is configured for three retries or less.
+V-252660 - medium - OL 8 systems, version 8.4 and above, must ensure the password complexity module is configured for three retries or less.
+V-252662 - medium - OL 8 must not enable IPv4 packet forwarding unless the system is a router.
+V-252663 - medium - The graphical display manager must not be the default target on OL 8 unless approved.
+V-255898 - medium - OL 8 SSH server must be configured to use only FIPS-validated key exchange algorithms.
+V-256978 - medium - OL 8 must ensure cryptographic verification of vendor software packages.
+V-256979 - medium - OL 8 must be configured to allow sending email notifications of unauthorized configuration changes to designated personnel.
+V-257259 - medium - OL 8 must terminate idle user sessions.
+V-274876 - medium - OL 8  must audit any script or executable called by cron as root or by any privileged user.
+V-279934 - medium - OL 8 must automatically exit interactive command shell user sessions after 10 minutes of inactivity.
+
+low
+V-248549 - low - OL 8 must have the "policycoreutils" package installed.
+V-248563 - low - The OL 8 SSH server must be configured to use strong entropy.
+V-248579 - low - OL 8 must restrict access to the kernel message buffer.
+V-248580 - low - OL 8 must prevent kernel profiling by nonprivileged users.
+V-248586 - low - OL 8 must have the package required for multifactor authentication installed.
+V-248595 - low - YUM must remove all software components after updated versions have been installed on OL 8.
+V-248599 - low - OL 8 must enable the hardware random number generator entropy gatherer service.
+V-248600 - low - OL 8 must have the packages required to use the hardware random number generator entropy gatherer service.
+V-248608 - low - OL 8 must use a separate file system for "/var".
+V-248609 - low - OL 8 must use a separate file system for "/var/log".
+V-248610 - low - OL 8 must use a separate file system for the system audit data path.
+V-248666 - low - OL 8 must limit the number of concurrent sessions to 10 for all accounts and/or account types.
+V-248687 - low - OL 8 must enforce password complexity by requiring that at least one uppercase character be used.
+V-248688 - low - OL 8 must enforce password complexity by requiring that at least one lowercase character be used.
+V-248689 - low - OL 8 must enforce password complexity by requiring that at least one numeric character be used.
+V-248693 - low - OL 8 must require the change of at least eight characters when passwords are changed.
+V-248709 - low - All OL 8 passwords must contain at least one special character.
+V-248804 - low - OL 8 must allocate an "audit_backlog_limit" of sufficient size to capture processes that start prior to the audit daemon.
+V-248821 - low - OL 8 must disable the chrony daemon from acting as a server.
+V-248822 - low - OL 8 must disable network management of the chrony daemon.
+V-248826 - low - OL 8 must enable mitigations against processor-based vulnerabilities.
+V-248832 - low - OL 8 must disable the transparent inter-process communication (TIPC) protocol.
+V-248833 - low - OL 8 must disable mounting of cramfs.
+V-248834 - low - OL 8 must disable IEEE 1394 (FireWire) Support.
+V-248872 - low - OL 8 must disable the debug-shell systemd service.
+V-248896 - low - The OL 8 file integrity tool must be configured to verify extended attributes.
+V-248897 - low - The OL 8 file integrity tool must be configured to verify Access Control Lists (ACLs).

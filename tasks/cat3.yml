@@ -1,0 +1,541 @@
+---
+- name: "LOW | V-248549 | AUDIT | OL 8 must have the "policycoreutils" package installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248549
+    - audit
+
+- name: "LOW | V-248549 | PATCH | OL 8 must have the "policycoreutils" package installed."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248549
+    - patch
+
+- name: "LOW | V-248563 | AUDIT | The OL 8 SSH server must be configured to use strong entropy."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248563
+    - audit
+
+- name: "LOW | V-248563 | PATCH | The OL 8 SSH server must be configured to use strong entropy."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248563
+    - patch
+
+- name: "LOW | V-248579 | AUDIT | OL 8 must restrict access to the kernel message buffer."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248579
+    - audit
+
+- name: "LOW | V-248579 | PATCH | OL 8 must restrict access to the kernel message buffer."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248579
+    - patch
+
+- name: "LOW | V-248580 | AUDIT | OL 8 must prevent kernel profiling by nonprivileged users."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248580
+    - audit
+
+- name: "LOW | V-248580 | PATCH | OL 8 must prevent kernel profiling by nonprivileged users."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248580
+    - patch
+
+- name: "LOW | V-248586 | AUDIT | OL 8 must have the package required for multifactor authentication installed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248586
+    - audit
+
+- name: "LOW | V-248586 | PATCH | OL 8 must have the package required for multifactor authentication installed."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248586
+    - patch
+
+- name: "LOW | V-248595 | AUDIT | YUM must remove all software components after updated versions have been installed on OL 8."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248595
+    - audit
+
+- name: "LOW | V-248595 | PATCH | YUM must remove all software components after updated versions have been installed on OL 8."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248595
+    - patch
+
+- name: "LOW | V-248599 | AUDIT | OL 8 must enable the hardware random number generator entropy gatherer service."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248599
+    - audit
+
+- name: "LOW | V-248599 | PATCH | OL 8 must enable the hardware random number generator entropy gatherer service."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248599
+    - patch
+
+- name: "LOW | V-248600 | AUDIT | OL 8 must have the packages required to use the hardware random number generator entropy gatherer service."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248600
+    - audit
+
+- name: "LOW | V-248600 | PATCH | OL 8 must have the packages required to use the hardware random number generator entropy gatherer service."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248600
+    - patch
+
+- name: "LOW | V-248608 | AUDIT | OL 8 must use a separate file system for "/var"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248608
+    - audit
+
+- name: "LOW | V-248608 | PATCH | OL 8 must use a separate file system for "/var"."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248608
+    - patch
+
+- name: "LOW | V-248609 | AUDIT | OL 8 must use a separate file system for "/var/log"."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248609
+    - audit
+
+- name: "LOW | V-248609 | PATCH | OL 8 must use a separate file system for "/var/log"."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248609
+    - patch
+
+- name: "LOW | V-248610 | AUDIT | OL 8 must use a separate file system for the system audit data path."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248610
+    - audit
+
+- name: "LOW | V-248610 | PATCH | OL 8 must use a separate file system for the system audit data path."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248610
+    - patch
+
+- name: "LOW | V-248666 | AUDIT | OL 8 must limit the number of concurrent sessions to 10 for all accounts and/or account types."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248666
+    - audit
+
+- name: "LOW | V-248666 | PATCH | OL 8 must limit the number of concurrent sessions to 10 for all accounts and/or account types."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248666
+    - patch
+
+- name: "LOW | V-248687 | AUDIT | OL 8 must enforce password complexity by requiring that at least one uppercase character be used."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248687
+    - audit
+
+- name: "LOW | V-248687 | PATCH | OL 8 must enforce password complexity by requiring that at least one uppercase character be used."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248687
+    - patch
+
+- name: "LOW | V-248688 | AUDIT | OL 8 must enforce password complexity by requiring that at least one lowercase character be used."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248688
+    - audit
+
+- name: "LOW | V-248688 | PATCH | OL 8 must enforce password complexity by requiring that at least one lowercase character be used."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248688
+    - patch
+
+- name: "LOW | V-248689 | AUDIT | OL 8 must enforce password complexity by requiring that at least one numeric character be used."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248689
+    - audit
+
+- name: "LOW | V-248689 | PATCH | OL 8 must enforce password complexity by requiring that at least one numeric character be used."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248689
+    - patch
+
+- name: "LOW | V-248693 | AUDIT | OL 8 must require the change of at least eight characters when passwords are changed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248693
+    - audit
+
+- name: "LOW | V-248693 | PATCH | OL 8 must require the change of at least eight characters when passwords are changed."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248693
+    - patch
+
+- name: "LOW | V-248709 | AUDIT | All OL 8 passwords must contain at least one special character."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248709
+    - audit
+
+- name: "LOW | V-248709 | PATCH | All OL 8 passwords must contain at least one special character."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248709
+    - patch
+
+- name: "LOW | V-248804 | AUDIT | OL 8 must allocate an "audit_backlog_limit" of sufficient size to capture processes that start prior to the audit daemon."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248804
+    - audit
+
+- name: "LOW | V-248804 | PATCH | OL 8 must allocate an "audit_backlog_limit" of sufficient size to capture processes that start prior to the audit daemon."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248804
+    - patch
+
+- name: "LOW | V-248821 | AUDIT | OL 8 must disable the chrony daemon from acting as a server."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248821
+    - audit
+
+- name: "LOW | V-248821 | PATCH | OL 8 must disable the chrony daemon from acting as a server."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248821
+    - patch
+
+- name: "LOW | V-248822 | AUDIT | OL 8 must disable network management of the chrony daemon."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248822
+    - audit
+
+- name: "LOW | V-248822 | PATCH | OL 8 must disable network management of the chrony daemon."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248822
+    - patch
+
+- name: "LOW | V-248826 | AUDIT | OL 8 must enable mitigations against processor-based vulnerabilities."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248826
+    - audit
+
+- name: "LOW | V-248826 | PATCH | OL 8 must enable mitigations against processor-based vulnerabilities."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248826
+    - patch
+
+- name: "LOW | V-248832 | AUDIT | OL 8 must disable the transparent inter-process communication (TIPC) protocol."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248832
+    - audit
+
+- name: "LOW | V-248832 | PATCH | OL 8 must disable the transparent inter-process communication (TIPC) protocol."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248832
+    - patch
+
+- name: "LOW | V-248833 | AUDIT | OL 8 must disable mounting of cramfs."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248833
+    - audit
+
+- name: "LOW | V-248833 | PATCH | OL 8 must disable mounting of cramfs."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248833
+    - patch
+
+- name: "LOW | V-248834 | AUDIT | OL 8 must disable IEEE 1394 (FireWire) Support."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248834
+    - audit
+
+- name: "LOW | V-248834 | PATCH | OL 8 must disable IEEE 1394 (FireWire) Support."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248834
+    - patch
+
+- name: "LOW | V-248872 | AUDIT | OL 8 must disable the debug-shell systemd service."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248872
+    - audit
+
+- name: "LOW | V-248872 | PATCH | OL 8 must disable the debug-shell systemd service."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248872
+    - patch
+
+- name: "LOW | V-248896 | AUDIT | The OL 8 file integrity tool must be configured to verify extended attributes."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248896
+    - audit
+
+- name: "LOW | V-248896 | PATCH | The OL 8 file integrity tool must be configured to verify extended attributes."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248896
+    - patch
+
+- name: "LOW | V-248897 | AUDIT | The OL 8 file integrity tool must be configured to verify Access Control Lists (ACLs)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+    - cat3
+    - low
+    - V-248897
+    - audit
+
+- name: "LOW | V-248897 | PATCH | The OL 8 file integrity tool must be configured to verify Access Control Lists (ACLs)."
+  command: true
+  tags:
+    - cat3
+    - low
+    - V-248897
+    - patch
+
