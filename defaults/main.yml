@@ -1,3 +1,8 @@
+# CONFIGURATION FLAGS
+ol8stig_cat1: true
+ol8stig_cat2: true
+ol8stig_cat3: true
+
 # R-248519 OL08-00-030180
 ol8STIG_stigrule_248519_Manage: True
 ol8STIG_stigrule_248519_audit_State: installed
