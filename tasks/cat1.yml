@@ -1,198 +1,198 @@
 ---
-- name: "HIGH | V-248521 | OL 8 must be a vendor-supported release."
+- name: "HIGH | SV-248521 | OL 8 must be a vendor-supported release."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248521
+    - SV-248521
     - patch
 
-- name: "HIGH | V-248524 | OL 8 must implement NIST FIPS-validated cryptography for the following: To provision digital signatures, to generate cryptographic hashes, and to protect data requiring data-at-rest protections in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards."
+- name: "HIGH | SV-248524 | OL 8 must implement NIST FIPS-validated cryptography for the following: To provision digital signatures, to generate cryptographic hashes, and to protect data requiring data-at-rest protections in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248524
+    - SV-248524
     - patch
 
-- name: "HIGH | V-248525 | All OL 8 local disk partitions must implement cryptographic mechanisms to prevent unauthorized disclosure or modification of all information that requires at-rest protection."
+- name: "HIGH | SV-248525 | All OL 8 local disk partitions must implement cryptographic mechanisms to prevent unauthorized disclosure or modification of all information that requires at-rest protection."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248525
+    - SV-248525
     - patch
 
-- name: "HIGH | V-248537 | OL 8 operating systems booted with United Extensible Firmware Interface (UEFI) must require authentication upon booting into single-user mode and maintenance."
+- name: "HIGH | SV-248537 | OL 8 operating systems booted with United Extensible Firmware Interface (UEFI) must require authentication upon booting into single-user mode and maintenance."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248537
+    - SV-248537
     - patch
 
-- name: "HIGH | V-248540 | OL 8 operating systems booted with a BIOS must require authentication upon booting into single-user and maintenance modes."
+- name: "HIGH | SV-248540 | OL 8 operating systems booted with a BIOS must require authentication upon booting into single-user and maintenance modes."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248540
+    - SV-248540
     - patch
 
-- name: "HIGH | V-248574 | YUM must be configured to prevent the installation of patches, service packs, device drivers, or OL 8 system components that have not been digitally signed using a certificate that is recognized and approved by the organization."
+- name: "HIGH | SV-248574 | YUM must be configured to prevent the installation of patches, service packs, device drivers, or OL 8 system components that have not been digitally signed using a certificate that is recognized and approved by the organization."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248574
+    - SV-248574
     - patch
 
-- name: "HIGH | V-248575 | OL 8 must prevent the installation of software, patches, service packs, device drivers, or operating system components of local packages without verification they have been digitally signed using a certificate that is issued by a Certificate Authority (CA) that is recognized and approved by the organization."
+- name: "HIGH | SV-248575 | OL 8 must prevent the installation of software, patches, service packs, device drivers, or operating system components of local packages without verification they have been digitally signed using a certificate that is issued by a Certificate Authority (CA) that is recognized and approved by the organization."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248575
+    - SV-248575
     - patch
 
-- name: "HIGH | V-248597 | There must be no 'shosts.equiv' files on the OL 8 operating system."
+- name: "HIGH | SV-248597 | There must be no 'shosts.equiv' files on the OL 8 operating system."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248597
+    - SV-248597
     - patch
 
-- name: "HIGH | V-248598 | There must be no '.shosts' files on the OL 8 operating system."
+- name: "HIGH | SV-248598 | There must be no '.shosts' files on the OL 8 operating system."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248598
+    - SV-248598
     - patch
 
-- name: "HIGH | V-248649 | Unattended or automatic logon via the OL 8 graphical user interface must not be allowed."
+- name: "HIGH | SV-248649 | Unattended or automatic logon via the OL 8 graphical user interface must not be allowed."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248649
+    - SV-248649
     - patch
 
-- name: "HIGH | V-248650 | OL 8 must not allow users to override SSH environment variables."
+- name: "HIGH | SV-248650 | OL 8 must not allow users to override SSH environment variables."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248650
+    - SV-248650
     - patch
 
-- name: "HIGH | V-248714 | OL 8 must not allow accounts configured with blank or null passwords."
+- name: "HIGH | SV-248714 | OL 8 must not allow accounts configured with blank or null passwords."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248714
+    - SV-248714
     - patch
 
-- name: "HIGH | V-248715 | OL 8 must not allow blank or null passwords in the system-auth file."
+- name: "HIGH | SV-248715 | OL 8 must not allow blank or null passwords in the system-auth file."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248715
+    - SV-248715
     - patch
 
-- name: "HIGH | V-248716 | OL 8 must not allow blank or null passwords in the password-auth file."
+- name: "HIGH | SV-248716 | OL 8 must not allow blank or null passwords in the password-auth file."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248716
+    - SV-248716
     - patch
 
-- name: "HIGH | V-248823 | OL 8 must not have the telnet-server package installed."
+- name: "HIGH | SV-248823 | OL 8 must not have the telnet-server package installed."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248823
+    - SV-248823
     - patch
 
-- name: "HIGH | V-248827 | OL 8 must not install packages from the Extra Packages for Enterprise Linux (EPEL) repository."
+- name: "HIGH | SV-248827 | OL 8 must not install packages from the Extra Packages for Enterprise Linux (EPEL) repository."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248827
+    - SV-248827
     - patch
 
-- name: "HIGH | V-248869 | The x86 Ctrl-Alt-Delete key sequence must be disabled on OL 8."
+- name: "HIGH | SV-248869 | The x86 Ctrl-Alt-Delete key sequence must be disabled on OL 8."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248869
+    - SV-248869
     - patch
 
-- name: "HIGH | V-248870 | The x86 Ctrl-Alt-Delete key sequence in OL 8 must be disabled if a graphical user interface is installed."
+- name: "HIGH | SV-248870 | The x86 Ctrl-Alt-Delete key sequence in OL 8 must be disabled if a graphical user interface is installed."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248870
+    - SV-248870
     - patch
 
-- name: "HIGH | V-248873 | The Trivial File Transfer Protocol (TFTP) server package must not be installed if not required for OL 8 operational support."
+- name: "HIGH | SV-248873 | The Trivial File Transfer Protocol (TFTP) server package must not be installed if not required for OL 8 operational support."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248873
+    - SV-248873
     - patch
 
-- name: "HIGH | V-248874 | The root account must be the only account having unrestricted access to the OL 8 system."
+- name: "HIGH | SV-248874 | The root account must be the only account having unrestricted access to the OL 8 system."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248874
+    - SV-248874
     - patch
 
-- name: "HIGH | V-248903 | A File Transfer Protocol (FTP) server package must not be installed unless mission essential on OL 8."
+- name: "HIGH | SV-248903 | A File Transfer Protocol (FTP) server package must not be installed unless mission essential on OL 8."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-248903
+    - SV-248903
     - patch
 
-- name: "HIGH | V-252650 | The OL 8 operating system must not have accounts configured with blank or null passwords."
+- name: "HIGH | SV-252650 | The OL 8 operating system must not have accounts configured with blank or null passwords."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat1
     - high
-    - V-252650
+    - SV-252650
     - patch

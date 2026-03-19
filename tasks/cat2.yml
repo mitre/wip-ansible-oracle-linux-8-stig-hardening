@@ -1,5 +1,5 @@
 ---
-- name: "MEDIUM | V-248519 | The OL 8 audit package must be installed."
+- name: "MEDIUM | SV-248519 | The OL 8 audit package must be installed."
   block:
     - name: stigrule_248519_audit
       yum:
@@ -10,10 +10,10 @@
   tags:
     - cat2
     - medium
-    - V-248519
+    - SV-248519
     - patch
 
-- name: "MEDIUM | V-248520 | OL 8 audit records must contain information to establish what type of events occurred, the source of events, where events occurred, and the outcome of events."
+- name: "MEDIUM | SV-248520 | OL 8 audit records must contain information to establish what type of events occurred, the source of events, where events occurred, and the outcome of events."
   block:
     - name: check if auditd.service is installed
       shell: ! systemctl list-unit-files | grep "^auditd.service[ \t]\+"
@@ -45,19 +45,19 @@
   tags:
     - cat2
     - medium
-    - V-248520
+    - SV-248520
     - patch
 
-- name: "MEDIUM | V-248523 | OL 8 vendor-packaged system security patches and updates must be installed and up to date."
+- name: "MEDIUM | SV-248523 | OL 8 vendor-packaged system security patches and updates must be installed and up to date."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248523
+    - SV-248523
     - patch
 
-- name: "MEDIUM | V-248526 | OL 8 must display the Standard Mandatory DOD Notice and Consent Banner before granting local or remote access to the system via an SSH logon."
+- name: "MEDIUM | SV-248526 | OL 8 must display the Standard Mandatory DOD Notice and Consent Banner before granting local or remote access to the system via an SSH logon."
   block:
     - name: stigrule_248526_banner
       lineinfile:
@@ -72,10 +72,10 @@
   tags:
     - cat2
     - medium
-    - V-248526
+    - SV-248526
     - patch
 
-- name: "MEDIUM | V-248527 | OL 8 must display a banner before granting local or remote access to the system via a graphical user logon."
+- name: "MEDIUM | SV-248527 | OL 8 must display a banner before granting local or remote access to the system via a graphical user logon."
   block:
     - name: stigrule_248527__etc_dconf_db_local_d_01_banner_message
       ini_file:
@@ -92,10 +92,10 @@
   tags:
     - cat2
     - medium
-    - V-248527
+    - SV-248527
     - patch
 
-- name: "MEDIUM | V-248528 | OL 8 must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon."
+- name: "MEDIUM | SV-248528 | OL 8 must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a graphical user logon."
   block:
     - name: stigrule_248528__etc_dconf_db_local_d_01_banner_message
       ini_file:
@@ -112,10 +112,10 @@
   tags:
     - cat2
     - medium
-    - V-248528
+    - SV-248528
     - patch
 
-- name: "MEDIUM | V-248529 | OL 8 must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a command line user logon."
+- name: "MEDIUM | SV-248529 | OL 8 must display the Standard Mandatory DoD Notice and Consent Banner before granting local or remote access to the system via a command line user logon."
   block:
     - name: stigrule_248529__etc_issue
       copy:
@@ -127,10 +127,10 @@
   tags:
     - cat2
     - medium
-    - V-248529
+    - SV-248529
     - patch
 
-- name: "MEDIUM | V-248530 | All OL 8 remote access methods must be monitored."
+- name: "MEDIUM | SV-248530 | All OL 8 remote access methods must be monitored."
   block:
     - name: stigrule_248530__etc_rsyslog_conf
       lineinfile:
@@ -143,28 +143,28 @@
   tags:
     - cat2
     - medium
-    - V-248530
+    - SV-248530
     - patch
 
-- name: "MEDIUM | V-248531 | OL 8, for PKI-based authentication, must validate certificates by constructing a certification path (which includes status information) to an accepted trust anchor."
+- name: "MEDIUM | SV-248531 | OL 8, for PKI-based authentication, must validate certificates by constructing a certification path (which includes status information) to an accepted trust anchor."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248531
+    - SV-248531
     - patch
 
-- name: "MEDIUM | V-248532 | OL 8, for certificate-based authentication, must enforce authorized access to the corresponding private key."
+- name: "MEDIUM | SV-248532 | OL 8, for certificate-based authentication, must enforce authorized access to the corresponding private key."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248532
+    - SV-248532
     - patch
 
-- name: "MEDIUM | V-248533 | OL 8 must encrypt all stored passwords with a FIPS 140-2 approved cryptographic hashing algorithm."
+- name: "MEDIUM | SV-248533 | OL 8 must encrypt all stored passwords with a FIPS 140-2 approved cryptographic hashing algorithm."
   block:
     - name: stigrule_248533__etc_login_defs
       lineinfile:
@@ -178,19 +178,19 @@
   tags:
     - cat2
     - medium
-    - V-248533
+    - SV-248533
     - patch
 
-- name: "MEDIUM | V-248534 | OL 8 must employ FIPS 140-2 approved cryptographic hashing algorithms for all stored passwords."
+- name: "MEDIUM | SV-248534 | OL 8 must employ FIPS 140-2 approved cryptographic hashing algorithms for all stored passwords."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248534
+    - SV-248534
     - patch
 
-- name: "MEDIUM | V-248535 | The OL 8 shadow password suite must be configured to use a sufficient number of hashing rounds."
+- name: "MEDIUM | SV-248535 | The OL 8 shadow password suite must be configured to use a sufficient number of hashing rounds."
   block:
     - name: stigrule_248535__etc_login_defs
       lineinfile:
@@ -204,28 +204,28 @@
   tags:
     - cat2
     - medium
-    - V-248535
+    - SV-248535
     - patch
 
-- name: "MEDIUM | V-248538 | OL 8 operating systems booted with United Extensible Firmware Interface (UEFI) must have a unique name for the grub superusers account when booting into single-user mode and maintenance."
+- name: "MEDIUM | SV-248538 | OL 8 operating systems booted with United Extensible Firmware Interface (UEFI) must have a unique name for the grub superusers account when booting into single-user mode and maintenance."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248538
+    - SV-248538
     - patch
 
-- name: "MEDIUM | V-248539 | OL 8 operating systems booted with a BIOS must have a unique name for the grub superusers account when booting into single-user and maintenance modes."
+- name: "MEDIUM | SV-248539 | OL 8 operating systems booted with a BIOS must have a unique name for the grub superusers account when booting into single-user and maintenance modes."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248539
+    - SV-248539
     - patch
 
-- name: "MEDIUM | V-248541 | OL 8 operating systems must require authentication upon booting into rescue mode."
+- name: "MEDIUM | SV-248541 | OL 8 operating systems must require authentication upon booting into rescue mode."
   block:
     - name: stigrule_248541__usr_lib_systemd_system_rescue_service
       ini_file:
@@ -240,10 +240,10 @@
   tags:
     - cat2
     - medium
-    - V-248541
+    - SV-248541
     - patch
 
-- name: "MEDIUM | V-248542 | OL 8 operating systems must require authentication upon booting into emergency mode."
+- name: "MEDIUM | SV-248542 | OL 8 operating systems must require authentication upon booting into emergency mode."
   block:
     - name: stigrule_248542__usr_lib_systemd_system_emergency_service
       ini_file:
@@ -258,37 +258,37 @@
   tags:
     - cat2
     - medium
-    - V-248542
+    - SV-248542
     - patch
 
-- name: "MEDIUM | V-248543 | The OL 8 'pam_unix.so' module must be configured in the system-auth file to use a FIPS 140-2 approved cryptographic hashing algorithm for system authentication."
+- name: "MEDIUM | SV-248543 | The OL 8 'pam_unix.so' module must be configured in the system-auth file to use a FIPS 140-2 approved cryptographic hashing algorithm for system authentication."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248543
+    - SV-248543
     - patch
 
-- name: "MEDIUM | V-248544 | The OL 8 'pam_unix.so' module must be configured in the password-auth file to use a FIPS 140-2 approved cryptographic hashing algorithm for system authentication."
+- name: "MEDIUM | SV-248544 | The OL 8 'pam_unix.so' module must be configured in the password-auth file to use a FIPS 140-2 approved cryptographic hashing algorithm for system authentication."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248544
+    - SV-248544
     - patch
 
-- name: "MEDIUM | V-248545 | OL 8 must prevent system daemons from using Kerberos for authentication."
+- name: "MEDIUM | SV-248545 | OL 8 must prevent system daemons from using Kerberos for authentication."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248545
+    - SV-248545
     - patch
 
-- name: "MEDIUM | V-248546 | The krb5-workstation package must not be installed on OL 8."
+- name: "MEDIUM | SV-248546 | The krb5-workstation package must not be installed on OL 8."
   block:
     - name: stigrule_248546_krb5_workstation
       yum:
@@ -299,19 +299,19 @@
   tags:
     - cat2
     - medium
-    - V-248546
+    - SV-248546
     - patch
 
-- name: "MEDIUM | V-248547 | The krb5-server package must not be installed on OL 8."
+- name: "MEDIUM | SV-248547 | The krb5-server package must not be installed on OL 8."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248547
+    - SV-248547
     - patch
 
-- name: "MEDIUM | V-248548 | OL 8 must use a Linux Security Module configured to enforce limits on system services."
+- name: "MEDIUM | SV-248548 | OL 8 must use a Linux Security Module configured to enforce limits on system services."
   block:
     - name: stigrule_248548__etc_selinux_config
       lineinfile:
@@ -326,19 +326,19 @@
   tags:
     - cat2
     - medium
-    - V-248548
+    - SV-248548
     - patch
 
-- name: "MEDIUM | V-248551 | A sticky bit must be set on all OL 8 public directories to prevent unauthorized and unintended information transferred via shared system resources."
+- name: "MEDIUM | SV-248551 | A sticky bit must be set on all OL 8 public directories to prevent unauthorized and unintended information transferred via shared system resources."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248551
+    - SV-248551
     - patch
 
-- name: "MEDIUM | V-248552 | OL 8 must be configured so that all network connections associated with SSH traffic terminate after becoming unresponsive."
+- name: "MEDIUM | SV-248552 | OL 8 must be configured so that all network connections associated with SSH traffic terminate after becoming unresponsive."
   block:
     - name: stigrule_248552_ClientAliveCountMax
       lineinfile:
@@ -353,10 +353,10 @@
   tags:
     - cat2
     - medium
-    - V-248552
+    - SV-248552
     - patch
 
-- name: "MEDIUM | V-248553 | OL 8 must be configured so that all network connections associated with SSH traffic are terminated after 10 minutes of becoming unresponsive."
+- name: "MEDIUM | SV-248553 | OL 8 must be configured so that all network connections associated with SSH traffic are terminated after 10 minutes of becoming unresponsive."
   block:
     - name: stigrule_248553_ClientAliveInterval
       lineinfile:
@@ -371,100 +371,100 @@
   tags:
     - cat2
     - medium
-    - V-248553
+    - SV-248553
     - patch
 
-- name: "MEDIUM | V-248554 | The OL 8 '/var/log/messages' file must have mode 0640 or less permissive."
+- name: "MEDIUM | SV-248554 | The OL 8 '/var/log/messages' file must have mode 0640 or less permissive."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248554
+    - SV-248554
     - patch
 
-- name: "MEDIUM | V-248555 | The OL 8 '/var/log/messages' file must be owned by root."
+- name: "MEDIUM | SV-248555 | The OL 8 '/var/log/messages' file must be owned by root."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248555
+    - SV-248555
     - patch
 
-- name: "MEDIUM | V-248556 | The OL 8 '/var/log/messages' file must be group-owned by root."
+- name: "MEDIUM | SV-248556 | The OL 8 '/var/log/messages' file must be group-owned by root."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248556
+    - SV-248556
     - patch
 
-- name: "MEDIUM | V-248557 | The OL 8 '/var/log' directory must have mode 0755 or less permissive."
+- name: "MEDIUM | SV-248557 | The OL 8 '/var/log' directory must have mode 0755 or less permissive."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248557
+    - SV-248557
     - patch
 
-- name: "MEDIUM | V-248558 | The OL 8 '/var/log' directory must be owned by root."
+- name: "MEDIUM | SV-248558 | The OL 8 '/var/log' directory must be owned by root."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248558
+    - SV-248558
     - patch
 
-- name: "MEDIUM | V-248559 | The OL 8 '/var/log' directory must be group-owned by root."
+- name: "MEDIUM | SV-248559 | The OL 8 '/var/log' directory must be group-owned by root."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248559
+    - SV-248559
     - patch
 
-- name: "MEDIUM | V-248560 | The OL 8 SSH daemon must be configured to use system-wide crypto policies."
+- name: "MEDIUM | SV-248560 | The OL 8 SSH daemon must be configured to use system-wide crypto policies."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248560
+    - SV-248560
     - patch
 
-- name: "MEDIUM | V-248561 | The OL 8 SSH server must be configured to use only Message Authentication Codes (MACs) employing FIPS 140-3 validated cryptographic hash algorithms to protect the confidentiality of SSH server connections."
+- name: "MEDIUM | SV-248561 | The OL 8 SSH server must be configured to use only Message Authentication Codes (MACs) employing FIPS 140-3 validated cryptographic hash algorithms to protect the confidentiality of SSH server connections."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248561
+    - SV-248561
     - patch
 
-- name: "MEDIUM | V-248562 | The OL 8 SSH server must be configured to use only DOD-approved encryption ciphers employing FIPS 140-3 validated cryptographic hash algorithms to protect the confidentiality of SSH server connections."
+- name: "MEDIUM | SV-248562 | The OL 8 SSH server must be configured to use only DOD-approved encryption ciphers employing FIPS 140-3 validated cryptographic hash algorithms to protect the confidentiality of SSH server connections."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248562
+    - SV-248562
     - patch
 
-- name: "MEDIUM | V-248564 | The OL 8 operating system must implement DOD-approved encryption in the OpenSSL package."
+- name: "MEDIUM | SV-248564 | The OL 8 operating system must implement DOD-approved encryption in the OpenSSL package."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248564
+    - SV-248564
     - patch
 
-- name: "MEDIUM | V-248565 | The OL 8 operating system must implement DoD-approved TLS encryption in the OpenSSL package."
+- name: "MEDIUM | SV-248565 | The OL 8 operating system must implement DoD-approved TLS encryption in the OpenSSL package."
   block:
     - name: stigrule_248565__etc_crypto_policies_back_ends_opensslcnf_config
       lineinfile:
@@ -478,10 +478,10 @@
   tags:
     - cat2
     - medium
-    - V-248565
+    - SV-248565
     - patch
 
-- name: "MEDIUM | V-248566 | The OL 8 operating system must implement DoD-approved TLS encryption in the GnuTLS package."
+- name: "MEDIUM | SV-248566 | The OL 8 operating system must implement DoD-approved TLS encryption in the GnuTLS package."
   block:
     - name: stigrule_248566__etc_crypto_policies_back_ends_opensslcnf_config
       lineinfile:
@@ -494,73 +494,73 @@
   tags:
     - cat2
     - medium
-    - V-248566
+    - SV-248566
     - patch
 
-- name: "MEDIUM | V-248567 | OL 8 system commands must have mode 755 or less permissive."
+- name: "MEDIUM | SV-248567 | OL 8 system commands must have mode 755 or less permissive."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248567
+    - SV-248567
     - patch
 
-- name: "MEDIUM | V-248568 | OL 8 system commands must be owned by root."
+- name: "MEDIUM | SV-248568 | OL 8 system commands must be owned by root."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248568
+    - SV-248568
     - patch
 
-- name: "MEDIUM | V-248569 | OL 8 system commands must be group-owned by root or a system account."
+- name: "MEDIUM | SV-248569 | OL 8 system commands must be group-owned by root or a system account."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248569
+    - SV-248569
     - patch
 
-- name: "MEDIUM | V-248570 | OL 8 library files must have mode 755 or less permissive."
+- name: "MEDIUM | SV-248570 | OL 8 library files must have mode 755 or less permissive."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248570
+    - SV-248570
     - patch
 
-- name: "MEDIUM | V-248571 | OL 8 library files must be owned by root."
+- name: "MEDIUM | SV-248571 | OL 8 library files must be owned by root."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248571
+    - SV-248571
     - patch
 
-- name: "MEDIUM | V-248572 | OL 8 library files must be group-owned by root."
+- name: "MEDIUM | SV-248572 | OL 8 library files must be group-owned by root."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248572
+    - SV-248572
     - patch
 
-- name: "MEDIUM | V-248573 | The OL 8 file integrity tool must notify the system administrator (SA) when changes to the baseline configuration or anomalies in the operation of any security functions are discovered within an organizationally defined frequency."
+- name: "MEDIUM | SV-248573 | The OL 8 file integrity tool must notify the system administrator (SA) when changes to the baseline configuration or anomalies in the operation of any security functions are discovered within an organizationally defined frequency."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248573
+    - SV-248573
     - patch
 
-- name: "MEDIUM | V-248576 | OL 8 must prevent the loading of a new kernel for later execution."
+- name: "MEDIUM | SV-248576 | OL 8 must prevent the loading of a new kernel for later execution."
   block:
     - name: stigrule_248576__etc_sysctl_d_99_sysctl_conf
       lineinfile:
@@ -574,10 +574,10 @@
   tags:
     - cat2
     - medium
-    - V-248576
+    - SV-248576
     - patch
 
-- name: "MEDIUM | V-248577 | OL 8 must enable kernel parameters to enforce Discretionary Access Control (DAC) on symlinks."
+- name: "MEDIUM | SV-248577 | OL 8 must enable kernel parameters to enforce Discretionary Access Control (DAC) on symlinks."
   block:
     - name: stigrule_248577__etc_sysctl_d_99_sysctl_conf
       lineinfile:
@@ -591,10 +591,10 @@
   tags:
     - cat2
     - medium
-    - V-248577
+    - SV-248577
     - patch
 
-- name: "MEDIUM | V-248578 | OL 8 must enable kernel parameters to enforce Discretionary Access Control (DAC) on hardlinks."
+- name: "MEDIUM | SV-248578 | OL 8 must enable kernel parameters to enforce Discretionary Access Control (DAC) on hardlinks."
   block:
     - name: stigrule_248578__etc_sysctl_d_99_sysctl_conf
       lineinfile:
@@ -608,64 +608,64 @@
   tags:
     - cat2
     - medium
-    - V-248578
+    - SV-248578
     - patch
 
-- name: "MEDIUM | V-248581 | OL 8 must require users to provide a password for privilege escalation."
+- name: "MEDIUM | SV-248581 | OL 8 must require users to provide a password for privilege escalation."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248581
+    - SV-248581
     - patch
 
-- name: "MEDIUM | V-248582 | OL 8 must require users to reauthenticate for privilege escalation and changing roles."
+- name: "MEDIUM | SV-248582 | OL 8 must require users to reauthenticate for privilege escalation and changing roles."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248582
+    - SV-248582
     - patch
 
-- name: "MEDIUM | V-248583 | OL 8 must restrict privilege elevation to authorized personnel."
+- name: "MEDIUM | SV-248583 | OL 8 must restrict privilege elevation to authorized personnel."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248583
+    - SV-248583
     - patch
 
-- name: "MEDIUM | V-248584 | OL 8 must use the invoking user's password for privilege escalation when using 'sudo'."
+- name: "MEDIUM | SV-248584 | OL 8 must use the invoking user's password for privilege escalation when using 'sudo'."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248584
+    - SV-248584
     - patch
 
-- name: "MEDIUM | V-248585 | OL 8 must require reauthentication when using the 'sudo' command."
+- name: "MEDIUM | SV-248585 | OL 8 must require reauthentication when using the 'sudo' command."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248585
+    - SV-248585
     - patch
 
-- name: "MEDIUM | V-248587 | OL 8 must implement certificate status checking for multifactor authentication."
+- name: "MEDIUM | SV-248587 | OL 8 must implement certificate status checking for multifactor authentication."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248587
+    - SV-248587
     - patch
 
-- name: "MEDIUM | V-248588 | OL 8 must accept Personal Identity Verification (PIV) credentials."
+- name: "MEDIUM | SV-248588 | OL 8 must accept Personal Identity Verification (PIV) credentials."
   block:
     - name: stigrule_248588_opensc
       yum:
@@ -676,55 +676,55 @@
   tags:
     - cat2
     - medium
-    - V-248588
+    - SV-248588
     - patch
 
-- name: "MEDIUM | V-248589 | OL 8 must implement non-executable data to protect its memory from unauthorized code execution."
+- name: "MEDIUM | SV-248589 | OL 8 must implement non-executable data to protect its memory from unauthorized code execution."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248589
+    - SV-248589
     - patch
 
-- name: "MEDIUM | V-248590 | OL 8 must clear the page allocator to prevent use-after-free attacks."
+- name: "MEDIUM | SV-248590 | OL 8 must clear the page allocator to prevent use-after-free attacks."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248590
+    - SV-248590
     - patch
 
-- name: "MEDIUM | V-248591 | OL 8 must disable virtual syscalls."
+- name: "MEDIUM | SV-248591 | OL 8 must disable virtual syscalls."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248591
+    - SV-248591
     - patch
 
-- name: "MEDIUM | V-248592 | OL 8 must clear memory when it is freed to prevent use-after-free attacks."
+- name: "MEDIUM | SV-248592 | OL 8 must clear memory when it is freed to prevent use-after-free attacks."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248592
+    - SV-248592
     - patch
 
-- name: "MEDIUM | V-248593 | OL 8 must not let Meltdown and Spectre exploit critical vulnerabilities in modern processors."
+- name: "MEDIUM | SV-248593 | OL 8 must not let Meltdown and Spectre exploit critical vulnerabilities in modern processors."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248593
+    - SV-248593
     - patch
 
-- name: "MEDIUM | V-248594 | OL 8 must implement address space layout randomization (ASLR) to protect its memory from unauthorized code execution."
+- name: "MEDIUM | SV-248594 | OL 8 must implement address space layout randomization (ASLR) to protect its memory from unauthorized code execution."
   block:
     - name: stigrule_248594__etc_sysctl_d_99_sysctl_conf
       lineinfile:
@@ -738,10 +738,10 @@
   tags:
     - cat2
     - medium
-    - V-248594
+    - SV-248594
     - patch
 
-- name: "MEDIUM | V-248596 | OL 8 must enable the SELinux targeted policy."
+- name: "MEDIUM | SV-248596 | OL 8 must enable the SELinux targeted policy."
   block:
     - name: stigrule_248596__etc_selinux_config
       lineinfile:
@@ -756,28 +756,28 @@
   tags:
     - cat2
     - medium
-    - V-248596
+    - SV-248596
     - patch
 
-- name: "MEDIUM | V-248601 | The OL 8 SSH public host key files must have mode '0644' or less permissive."
+- name: "MEDIUM | SV-248601 | The OL 8 SSH public host key files must have mode '0644' or less permissive."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248601
+    - SV-248601
     - patch
 
-- name: "MEDIUM | V-248602 | The OL 8 SSH private host key files must have mode '0640' or less permissive."
+- name: "MEDIUM | SV-248602 | The OL 8 SSH private host key files must have mode '0640' or less permissive."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248602
+    - SV-248602
     - patch
 
-- name: "MEDIUM | V-248603 | The OL 8 SSH daemon must perform strict mode checking of home directory configuration files."
+- name: "MEDIUM | SV-248603 | The OL 8 SSH daemon must perform strict mode checking of home directory configuration files."
   block:
     - name: stigrule_248603_StrictModes
       lineinfile:
@@ -792,10 +792,10 @@
   tags:
     - cat2
     - medium
-    - V-248603
+    - SV-248603
     - patch
 
-- name: "MEDIUM | V-248605 | The OL 8 SSH daemon must not allow authentication using known host's authentication."
+- name: "MEDIUM | SV-248605 | The OL 8 SSH daemon must not allow authentication using known host's authentication."
   block:
     - name: stigrule_248605_IgnoreUserKnownHosts
       lineinfile:
@@ -810,10 +810,10 @@
   tags:
     - cat2
     - medium
-    - V-248605
+    - SV-248605
     - patch
 
-- name: "MEDIUM | V-248606 | The OL 8 SSH daemon must not allow Kerberos authentication, except to fulfill documented and validated mission requirements."
+- name: "MEDIUM | SV-248606 | The OL 8 SSH daemon must not allow Kerberos authentication, except to fulfill documented and validated mission requirements."
   block:
     - name: stigrule_248606_KerberosAuthentication
       lineinfile:
@@ -828,10 +828,10 @@
   tags:
     - cat2
     - medium
-    - V-248606
+    - SV-248606
     - patch
 
-- name: "MEDIUM | V-248607 | The OL 8 SSH daemon must not allow GSSAPI authentication, except to fulfill documented and validated mission requirements."
+- name: "MEDIUM | SV-248607 | The OL 8 SSH daemon must not allow GSSAPI authentication, except to fulfill documented and validated mission requirements."
   block:
     - name: stigrule_248607_GSSAPIAuthentication
       lineinfile:
@@ -846,28 +846,28 @@
   tags:
     - cat2
     - medium
-    - V-248607
+    - SV-248607
     - patch
 
-- name: "MEDIUM | V-248611 | OL 8 must use a separate file system for '/tmp'."
+- name: "MEDIUM | SV-248611 | OL 8 must use a separate file system for '/tmp'."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248611
+    - SV-248611
     - patch
 
-- name: "MEDIUM | V-248612 | OL 8 must use a separate file system for /var/tmp."
+- name: "MEDIUM | SV-248612 | OL 8 must use a separate file system for /var/tmp."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248612
+    - SV-248612
     - patch
 
-- name: "MEDIUM | V-248613 | OL 8 must not permit direct logons to the root account using remote access via SSH."
+- name: "MEDIUM | SV-248613 | OL 8 must not permit direct logons to the root account using remote access via SSH."
   block:
     - name: stigrule_248613_PermitRootLogin
       lineinfile:
@@ -882,10 +882,10 @@
   tags:
     - cat2
     - medium
-    - V-248613
+    - SV-248613
     - patch
 
-- name: "MEDIUM | V-248615 | OL 8 must have the rsyslog service enabled and active."
+- name: "MEDIUM | SV-248615 | OL 8 must have the rsyslog service enabled and active."
   block:
     - name: check if rsyslog.service is installed
       shell: ! systemctl list-unit-files | grep "^rsyslog.service[ \t]\+"
@@ -917,109 +917,109 @@
   tags:
     - cat2
     - medium
-    - V-248615
+    - SV-248615
     - patch
 
-- name: "MEDIUM | V-248616 | OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that contain user home directories."
+- name: "MEDIUM | SV-248616 | OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that contain user home directories."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248616
+    - SV-248616
     - patch
 
-- name: "MEDIUM | V-248617 | OL 8 must prevent files with the setuid and setgid bit set from being executed on the /boot directory."
+- name: "MEDIUM | SV-248617 | OL 8 must prevent files with the setuid and setgid bit set from being executed on the /boot directory."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248617
+    - SV-248617
     - patch
 
-- name: "MEDIUM | V-248618 | OL 8 must prevent files with the setuid and setgid bit set from being executed on the /boot/efi directory."
+- name: "MEDIUM | SV-248618 | OL 8 must prevent files with the setuid and setgid bit set from being executed on the /boot/efi directory."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248618
+    - SV-248618
     - patch
 
-- name: "MEDIUM | V-248619 | OL 8 must prevent special devices on nonroot local partitions."
+- name: "MEDIUM | SV-248619 | OL 8 must prevent special devices on nonroot local partitions."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248619
+    - SV-248619
     - patch
 
-- name: "MEDIUM | V-248620 | OL 8 file systems that contain user home directories must not execute binary files."
+- name: "MEDIUM | SV-248620 | OL 8 file systems that contain user home directories must not execute binary files."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248620
+    - SV-248620
     - patch
 
-- name: "MEDIUM | V-248621 | OL 8 file systems must not interpret character or block special devices from untrusted file systems."
+- name: "MEDIUM | SV-248621 | OL 8 file systems must not interpret character or block special devices from untrusted file systems."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248621
+    - SV-248621
     - patch
 
-- name: "MEDIUM | V-248622 | OL 8 file systems must not execute binary files on removable media."
+- name: "MEDIUM | SV-248622 | OL 8 file systems must not execute binary files on removable media."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248622
+    - SV-248622
     - patch
 
-- name: "MEDIUM | V-248623 | OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that are used with removable media."
+- name: "MEDIUM | SV-248623 | OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that are used with removable media."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248623
+    - SV-248623
     - patch
 
-- name: "MEDIUM | V-248624 | OL 8 file systems must not execute binary files that are imported via Network File System (NFS)."
+- name: "MEDIUM | SV-248624 | OL 8 file systems must not execute binary files that are imported via Network File System (NFS)."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248624
+    - SV-248624
     - patch
 
-- name: "MEDIUM | V-248625 | OL 8 file systems must not interpret character or block special devices that are imported via Network File System (NFS)."
+- name: "MEDIUM | SV-248625 | OL 8 file systems must not interpret character or block special devices that are imported via Network File System (NFS)."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248625
+    - SV-248625
     - patch
 
-- name: "MEDIUM | V-248626 | OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that are imported via Network File System (NFS)."
+- name: "MEDIUM | SV-248626 | OL 8 must prevent files with the setuid and setgid bit set from being executed on file systems that are imported via Network File System (NFS)."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248626
+    - SV-248626
     - patch
 
-- name: "MEDIUM | V-248628 | OL 8 must disable kernel dumps unless needed."
+- name: "MEDIUM | SV-248628 | OL 8 must disable kernel dumps unless needed."
   block:
     - name: check if kdump.service is installed
       shell: ! systemctl list-unit-files | grep "^kdump.service[ \t]\+"
@@ -1038,10 +1038,10 @@
   tags:
     - cat2
     - medium
-    - V-248628
+    - SV-248628
     - patch
 
-- name: "MEDIUM | V-248629 | OL 8 must disable the 'kernel.core_pattern'."
+- name: "MEDIUM | SV-248629 | OL 8 must disable the 'kernel.core_pattern'."
   block:
     - name: stigrule_248629__etc_sysctl_d_99_sysctl_conf
       lineinfile:
@@ -1055,19 +1055,19 @@
   tags:
     - cat2
     - medium
-    - V-248629
+    - SV-248629
     - patch
 
-- name: "MEDIUM | V-248630 | OL 8 must disable acquiring, saving, and processing core dumps."
+- name: "MEDIUM | SV-248630 | OL 8 must disable acquiring, saving, and processing core dumps."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248630
+    - SV-248630
     - patch
 
-- name: "MEDIUM | V-248631 | OL 8 must disable core dumps for all users."
+- name: "MEDIUM | SV-248631 | OL 8 must disable core dumps for all users."
   block:
     - name: stigrule_248631__etc_security_limits_conf
       lineinfile:
@@ -1081,10 +1081,10 @@
   tags:
     - cat2
     - medium
-    - V-248631
+    - SV-248631
     - patch
 
-- name: "MEDIUM | V-248632 | OL 8 must disable storing core dumps."
+- name: "MEDIUM | SV-248632 | OL 8 must disable storing core dumps."
   block:
     - name: stigrule_248632__etc_systemd_coredump_conf
       lineinfile:
@@ -1098,10 +1098,10 @@
   tags:
     - cat2
     - medium
-    - V-248632
+    - SV-248632
     - patch
 
-- name: "MEDIUM | V-248633 | OL 8 must disable core dump backtraces."
+- name: "MEDIUM | SV-248633 | OL 8 must disable core dump backtraces."
   block:
     - name: stigrule_248633__etc_systemd_coredump_conf
       lineinfile:
@@ -1115,181 +1115,181 @@
   tags:
     - cat2
     - medium
-    - V-248633
+    - SV-248633
     - patch
 
-- name: "MEDIUM | V-248634 | For OL 8 systems using Domain Name Servers (DNS) resolution, at least two name servers must be configured."
+- name: "MEDIUM | SV-248634 | For OL 8 systems using Domain Name Servers (DNS) resolution, at least two name servers must be configured."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248634
+    - SV-248634
     - patch
 
-- name: "MEDIUM | V-248635 | Executable search paths within the initialization files of all local interactive OL 8 users must only contain paths that resolve to the system default or the user's home directory."
+- name: "MEDIUM | SV-248635 | Executable search paths within the initialization files of all local interactive OL 8 users must only contain paths that resolve to the system default or the user's home directory."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248635
+    - SV-248635
     - patch
 
-- name: "MEDIUM | V-248636 | All OL 8 world-writable directories must be owned by root, sys, bin, or an application user."
+- name: "MEDIUM | SV-248636 | All OL 8 world-writable directories must be owned by root, sys, bin, or an application user."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248636
+    - SV-248636
     - patch
 
-- name: "MEDIUM | V-248637 | All OL 8 world-writable directories must be group-owned by root, sys, bin, or an application group."
+- name: "MEDIUM | SV-248637 | All OL 8 world-writable directories must be group-owned by root, sys, bin, or an application group."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248637
+    - SV-248637
     - patch
 
-- name: "MEDIUM | V-248638 | All OL 8 local interactive users must have a home directory assigned in the '/etc/passwd' file."
+- name: "MEDIUM | SV-248638 | All OL 8 local interactive users must have a home directory assigned in the '/etc/passwd' file."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248638
+    - SV-248638
     - patch
 
-- name: "MEDIUM | V-248639 | All OL 8 local interactive user home directories must have mode '0750' or less permissive."
+- name: "MEDIUM | SV-248639 | All OL 8 local interactive user home directories must have mode '0750' or less permissive."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248639
+    - SV-248639
     - patch
 
-- name: "MEDIUM | V-248640 | All OL 8 local interactive user home directory files must have mode '0750' or less permissive."
+- name: "MEDIUM | SV-248640 | All OL 8 local interactive user home directory files must have mode '0750' or less permissive."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248640
+    - SV-248640
     - patch
 
-- name: "MEDIUM | V-248641 | All OL 8 local interactive user home directories must be group-owned by the home directory owner's primary group."
+- name: "MEDIUM | SV-248641 | All OL 8 local interactive user home directories must be group-owned by the home directory owner's primary group."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248641
+    - SV-248641
     - patch
 
-- name: "MEDIUM | V-248642 | OL 8 must be configured so that all files and directories contained in local interactive user home directories are group-owned by a group of which the home directory owner is a member."
+- name: "MEDIUM | SV-248642 | OL 8 must be configured so that all files and directories contained in local interactive user home directories are group-owned by a group of which the home directory owner is a member."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248642
+    - SV-248642
     - patch
 
-- name: "MEDIUM | V-248643 | All OL 8 local interactive user home directories defined in the '/etc/passwd' file must exist."
+- name: "MEDIUM | SV-248643 | All OL 8 local interactive user home directories defined in the '/etc/passwd' file must exist."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248643
+    - SV-248643
     - patch
 
-- name: "MEDIUM | V-248644 | All OL 8 local interactive user accounts must be assigned a home directory upon creation."
+- name: "MEDIUM | SV-248644 | All OL 8 local interactive user accounts must be assigned a home directory upon creation."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248644
+    - SV-248644
     - patch
 
-- name: "MEDIUM | V-248645 | All OL 8 local initialization files must have mode '0740' or less permissive."
+- name: "MEDIUM | SV-248645 | All OL 8 local initialization files must have mode '0740' or less permissive."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248645
+    - SV-248645
     - patch
 
-- name: "MEDIUM | V-248646 | All OL 8 files and directories must have a valid owner."
+- name: "MEDIUM | SV-248646 | All OL 8 files and directories must have a valid owner."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248646
+    - SV-248646
     - patch
 
-- name: "MEDIUM | V-248647 | All OL 8 files and directories must have a valid group owner."
+- name: "MEDIUM | SV-248647 | All OL 8 files and directories must have a valid group owner."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248647
+    - SV-248647
     - patch
 
-- name: "MEDIUM | V-248648 | A separate OL 8 filesystem must be used for user home directories (such as '/home' or an equivalent)."
+- name: "MEDIUM | SV-248648 | A separate OL 8 filesystem must be used for user home directories (such as '/home' or an equivalent)."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248648
+    - SV-248648
     - patch
 
-- name: "MEDIUM | V-248651 | OL 8 temporary user accounts must be provisioned with an expiration time of 72 hours or less."
+- name: "MEDIUM | SV-248651 | OL 8 temporary user accounts must be provisioned with an expiration time of 72 hours or less."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248651
+    - SV-248651
     - patch
 
-- name: "MEDIUM | V-248652 | OL 8 systems below version 8.2 must automatically lock an account when three unsuccessful logon attempts occur."
+- name: "MEDIUM | SV-248652 | OL 8 systems below version 8.2 must automatically lock an account when three unsuccessful logon attempts occur."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248652
+    - SV-248652
     - patch
 
-- name: "MEDIUM | V-248653 | OL 8 systems, versions 8.2 and above, must automatically lock an account when three unsuccessful logon attempts occur."
+- name: "MEDIUM | SV-248653 | OL 8 systems, versions 8.2 and above, must automatically lock an account when three unsuccessful logon attempts occur."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248653
+    - SV-248653
     - patch
 
-- name: "MEDIUM | V-248654 | OL 8 systems below version 8.2 must automatically lock an account when three unsuccessful logon attempts occur during a 15-minute time period."
+- name: "MEDIUM | SV-248654 | OL 8 systems below version 8.2 must automatically lock an account when three unsuccessful logon attempts occur during a 15-minute time period."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248654
+    - SV-248654
     - patch
 
-- name: "MEDIUM | V-248655 | OL 8 systems, versions 8.2 and above, must automatically lock an account when three unsuccessful logon attempts occur during a 15-minute time period."
+- name: "MEDIUM | SV-248655 | OL 8 systems, versions 8.2 and above, must automatically lock an account when three unsuccessful logon attempts occur during a 15-minute time period."
   block:
     - name: stigrule_248655__etc_security_faillock_conf
       lineinfile:
@@ -1303,91 +1303,91 @@
   tags:
     - cat2
     - medium
-    - V-248655
+    - SV-248655
     - patch
 
-- name: "MEDIUM | V-248656 | OL 8 systems below version 8.2 must automatically lock an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
+- name: "MEDIUM | SV-248656 | OL 8 systems below version 8.2 must automatically lock an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248656
+    - SV-248656
     - patch
 
-- name: "MEDIUM | V-248657 | OL 8 systems, versions 8.2 and above, must automatically lock an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
+- name: "MEDIUM | SV-248657 | OL 8 systems, versions 8.2 and above, must automatically lock an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248657
+    - SV-248657
     - patch
 
-- name: "MEDIUM | V-248658 | OL 8 systems below version 8.2 must ensure account lockouts persist."
+- name: "MEDIUM | SV-248658 | OL 8 systems below version 8.2 must ensure account lockouts persist."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248658
+    - SV-248658
     - patch
 
-- name: "MEDIUM | V-248659 | OL 8 systems, versions 8.2 and above, must ensure account lockouts persist."
+- name: "MEDIUM | SV-248659 | OL 8 systems, versions 8.2 and above, must ensure account lockouts persist."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248659
+    - SV-248659
     - patch
 
-- name: "MEDIUM | V-248660 | OL 8 systems below version 8.2 must prevent system messages from being presented when three unsuccessful logon attempts occur."
+- name: "MEDIUM | SV-248660 | OL 8 systems below version 8.2 must prevent system messages from being presented when three unsuccessful logon attempts occur."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248660
+    - SV-248660
     - patch
 
-- name: "MEDIUM | V-248661 | OL 8 systems, versions 8.2 and above, must prevent system messages from being presented when three unsuccessful logon attempts occur."
+- name: "MEDIUM | SV-248661 | OL 8 systems, versions 8.2 and above, must prevent system messages from being presented when three unsuccessful logon attempts occur."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248661
+    - SV-248661
     - patch
 
-- name: "MEDIUM | V-248662 | OL 8 systems below version 8.2 must log user name information when unsuccessful logon attempts occur."
+- name: "MEDIUM | SV-248662 | OL 8 systems below version 8.2 must log user name information when unsuccessful logon attempts occur."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248662
+    - SV-248662
     - patch
 
-- name: "MEDIUM | V-248663 | OL 8 systems, versions 8.2 and above, must log user name information when unsuccessful logon attempts occur."
+- name: "MEDIUM | SV-248663 | OL 8 systems, versions 8.2 and above, must log user name information when unsuccessful logon attempts occur."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248663
+    - SV-248663
     - patch
 
-- name: "MEDIUM | V-248664 | OL 8 systems below version 8.2 must include root when automatically locking an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
+- name: "MEDIUM | SV-248664 | OL 8 systems below version 8.2 must include root when automatically locking an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248664
+    - SV-248664
     - patch
 
-- name: "MEDIUM | V-248665 | OL 8 systems, versions 8.2 and above, must include root when automatically locking an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
+- name: "MEDIUM | SV-248665 | OL 8 systems, versions 8.2 and above, must include root when automatically locking an account until the locked account is released by an administrator when three unsuccessful logon attempts occur during a 15-minute time period."
   block:
     - name: stigrule_248665__etc_security_faillock_conf
       lineinfile:
@@ -1400,10 +1400,10 @@
   tags:
     - cat2
     - medium
-    - V-248665
+    - SV-248665
     - patch
 
-- name: "MEDIUM | V-248667 | OL 8 must configure the use of the pam_faillock.so module in the /etc/pam.d/system-auth file."
+- name: "MEDIUM | SV-248667 | OL 8 must configure the use of the pam_faillock.so module in the /etc/pam.d/system-auth file."
   block:
     - name: stigrule_248667_ensure_openssh_server_x86_64_is_installed
       yum:
@@ -1427,37 +1427,37 @@
   tags:
     - cat2
     - medium
-    - V-248667
+    - SV-248667
     - patch
 
-- name: "MEDIUM | V-248668 | OL 8 must configure the use of the pam_faillock.so module in the /etc/pam.d/password-auth file."
+- name: "MEDIUM | SV-248668 | OL 8 must configure the use of the pam_faillock.so module in the /etc/pam.d/password-auth file."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248668
+    - SV-248668
     - patch
 
-- name: "MEDIUM | V-248669 | OL 8 systems, versions 8.2 and above, must configure SELinux context type to allow the use of a non-default faillock tally directory."
+- name: "MEDIUM | SV-248669 | OL 8 systems, versions 8.2 and above, must configure SELinux context type to allow the use of a non-default faillock tally directory."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248669
+    - SV-248669
     - patch
 
-- name: "MEDIUM | V-248670 | OL 8 systems below version 8.2 must configure SELinux context type to allow the use of a non-default faillock tally directory."
+- name: "MEDIUM | SV-248670 | OL 8 systems below version 8.2 must configure SELinux context type to allow the use of a non-default faillock tally directory."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248670
+    - SV-248670
     - patch
 
-- name: "MEDIUM | V-248671 | OL 8 must enable a user session lock until that user reestablishes access using established identification and authentication procedures for graphical user sessions."
+- name: "MEDIUM | SV-248671 | OL 8 must enable a user session lock until that user reestablishes access using established identification and authentication procedures for graphical user sessions."
   block:
     - name: stigrule_248671__etc_dconf_db_local_d_00_screensaver
       ini_file:
@@ -1474,10 +1474,10 @@
   tags:
     - cat2
     - medium
-    - V-248671
+    - SV-248671
     - patch
 
-- name: "MEDIUM | V-248672 | OL 8 must initiate a session lock for graphical user interfaces when the screensaver is activated."
+- name: "MEDIUM | SV-248672 | OL 8 must initiate a session lock for graphical user interfaces when the screensaver is activated."
   block:
     - name: stigrule_248672__etc_dconf_db_local_d_00_screensaver
       ini_file:
@@ -1494,10 +1494,10 @@
   tags:
     - cat2
     - medium
-    - V-248672
+    - SV-248672
     - patch
 
-- name: "MEDIUM | V-248673 | OL 8 must disable the user list at logon for graphical user interfaces."
+- name: "MEDIUM | SV-248673 | OL 8 must disable the user list at logon for graphical user interfaces."
   block:
     - name: stigrule_248673__etc_dconf_db_local_d_02_login_screen
       ini_file:
@@ -1514,28 +1514,28 @@
   tags:
     - cat2
     - medium
-    - V-248673
+    - SV-248673
     - patch
 
-- name: "MEDIUM | V-248678 | OL 8 must enable a user session lock until that user reestablishes access using established identification and authentication procedures for command line sessions."
+- name: "MEDIUM | SV-248678 | OL 8 must enable a user session lock until that user reestablishes access using established identification and authentication procedures for command line sessions."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248678
+    - SV-248678
     - patch
 
-- name: "MEDIUM | V-248679 | OL 8 must be able to initiate directly a session lock for all connection types using smartcard when the smartcard is removed."
+- name: "MEDIUM | SV-248679 | OL 8 must be able to initiate directly a session lock for all connection types using smartcard when the smartcard is removed."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248679
+    - SV-248679
     - patch
 
-- name: "MEDIUM | V-248680 | OL 8 must automatically lock graphical user sessions after 15 minutes of inactivity."
+- name: "MEDIUM | SV-248680 | OL 8 must automatically lock graphical user sessions after 15 minutes of inactivity."
   block:
     - name: stigrule_248680__etc_dconf_db_local_d_00_screensaver
       ini_file:
@@ -1552,10 +1552,10 @@
   tags:
     - cat2
     - medium
-    - V-248680
+    - SV-248680
     - patch
 
-- name: "MEDIUM | V-248682 | OL 8 must prevent a user from overriding the session lock-delay setting for the graphical user interface."
+- name: "MEDIUM | SV-248682 | OL 8 must prevent a user from overriding the session lock-delay setting for the graphical user interface."
   block:
     - name: stigrule_248682__etc_dconf_db_local_d_locks_session_lock_delay
       lineinfile:
@@ -1568,10 +1568,10 @@
   tags:
     - cat2
     - medium
-    - V-248682
+    - SV-248682
     - patch
 
-- name: "MEDIUM | V-248683 | OL 8 must prevent a user from overriding the session idle-delay setting for the graphical user interface."
+- name: "MEDIUM | SV-248683 | OL 8 must prevent a user from overriding the session idle-delay setting for the graphical user interface."
   block:
     - name: stigrule_248683__etc_dconf_db_local_d_locks_session_idle_delay
       lineinfile:
@@ -1584,10 +1584,10 @@
   tags:
     - cat2
     - medium
-    - V-248683
+    - SV-248683
     - patch
 
-- name: "MEDIUM | V-248684 | OL 8 must prevent a user from overriding the session lock-enabled setting for the graphical user interface."
+- name: "MEDIUM | SV-248684 | OL 8 must prevent a user from overriding the session lock-enabled setting for the graphical user interface."
   block:
     - name: stigrule_248684__etc_dconf_db_local_d_locks_session_lock_enabled
       lineinfile:
@@ -1600,28 +1600,28 @@
   tags:
     - cat2
     - medium
-    - V-248684
+    - SV-248684
     - patch
 
-- name: "MEDIUM | V-248685 | OL 8 must map the authenticated identity to the user or group account for PKI-based authentication."
+- name: "MEDIUM | SV-248685 | OL 8 must map the authenticated identity to the user or group account for PKI-based authentication."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248685
+    - SV-248685
     - patch
 
-- name: "MEDIUM | V-248686 | OL 8 must ensure the password complexity module is enabled in the password-auth file."
+- name: "MEDIUM | SV-248686 | OL 8 must ensure the password complexity module is enabled in the password-auth file."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248686
+    - SV-248686
     - patch
 
-- name: "MEDIUM | V-248690 | OL 8 must require the maximum number of repeating characters of the same character class be limited to four when passwords are changed."
+- name: "MEDIUM | SV-248690 | OL 8 must require the maximum number of repeating characters of the same character class be limited to four when passwords are changed."
   block:
     - name: stigrule_248690__etc_security_pwquality_conf
       lineinfile:
@@ -1635,10 +1635,10 @@
   tags:
     - cat2
     - medium
-    - V-248690
+    - SV-248690
     - patch
 
-- name: "MEDIUM | V-248691 | OL 8 must require the maximum number of repeating characters be limited to three when passwords are changed."
+- name: "MEDIUM | SV-248691 | OL 8 must require the maximum number of repeating characters be limited to three when passwords are changed."
   block:
     - name: stigrule_248691__etc_security_pwquality_conf
       lineinfile:
@@ -1652,10 +1652,10 @@
   tags:
     - cat2
     - medium
-    - V-248691
+    - SV-248691
     - patch
 
-- name: "MEDIUM | V-248692 | OL 8 must require the change of at least four character classes when passwords are changed."
+- name: "MEDIUM | SV-248692 | OL 8 must require the change of at least four character classes when passwords are changed."
   block:
     - name: stigrule_248692__etc_security_pwquality_conf
       lineinfile:
@@ -1669,19 +1669,19 @@
   tags:
     - cat2
     - medium
-    - V-248692
+    - SV-248692
     - patch
 
-- name: "MEDIUM | V-248694 | OL 8 passwords for new users or password changes must have a 24 hours/one day minimum password lifetime restriction in '/etc/shadow'."
+- name: "MEDIUM | SV-248694 | OL 8 passwords for new users or password changes must have a 24 hours/one day minimum password lifetime restriction in '/etc/shadow'."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248694
+    - SV-248694
     - patch
 
-- name: "MEDIUM | V-248695 | OL 8 passwords for new users or password changes must have a 24 hours/one day minimum password lifetime restriction in '/etc/login.defs'."
+- name: "MEDIUM | SV-248695 | OL 8 passwords for new users or password changes must have a 24 hours/one day minimum password lifetime restriction in '/etc/login.defs'."
   block:
     - name: stigrule_248695__etc_login_defs
       lineinfile:
@@ -1695,10 +1695,10 @@
   tags:
     - cat2
     - medium
-    - V-248695
+    - SV-248695
     - patch
 
-- name: "MEDIUM | V-248696 | OL 8 user account passwords must have a 60-day maximum password lifetime restriction."
+- name: "MEDIUM | SV-248696 | OL 8 user account passwords must have a 60-day maximum password lifetime restriction."
   block:
     - name: stigrule_248696__etc_login_defs
       lineinfile:
@@ -1712,19 +1712,19 @@
   tags:
     - cat2
     - medium
-    - V-248696
+    - SV-248696
     - patch
 
-- name: "MEDIUM | V-248697 | OL 8 user account passwords must be configured so that existing passwords are restricted to a 60-day maximum lifetime."
+- name: "MEDIUM | SV-248697 | OL 8 user account passwords must be configured so that existing passwords are restricted to a 60-day maximum lifetime."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248697
+    - SV-248697
     - patch
 
-- name: "MEDIUM | V-248699 | OL 8 passwords must have a minimum of 15 characters."
+- name: "MEDIUM | SV-248699 | OL 8 passwords must have a minimum of 15 characters."
   block:
     - name: stigrule_248699__etc_security_pwquality_conf
       lineinfile:
@@ -1738,10 +1738,10 @@
   tags:
     - cat2
     - medium
-    - V-248699
+    - SV-248699
     - patch
 
-- name: "MEDIUM | V-248700 | OL 8 passwords for new users must have a minimum of 15 characters."
+- name: "MEDIUM | SV-248700 | OL 8 passwords for new users must have a minimum of 15 characters."
   block:
     - name: stigrule_248700__etc_login_defs
       lineinfile:
@@ -1755,91 +1755,91 @@
   tags:
     - cat2
     - medium
-    - V-248700
+    - SV-248700
     - patch
 
-- name: "MEDIUM | V-248701 | OL 8 duplicate User IDs (UIDs) must not exist for interactive users."
+- name: "MEDIUM | SV-248701 | OL 8 duplicate User IDs (UIDs) must not exist for interactive users."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248701
+    - SV-248701
     - patch
 
-- name: "MEDIUM | V-248702 | OL 8 must implement multifactor authentication for access to interactive accounts."
+- name: "MEDIUM | SV-248702 | OL 8 must implement multifactor authentication for access to interactive accounts."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248702
+    - SV-248702
     - patch
 
-- name: "MEDIUM | V-248703 | The OL 8 system-auth file must disable access to the system for account identifiers (individuals, groups, roles, and devices) with 35 days of inactivity."
+- name: "MEDIUM | SV-248703 | The OL 8 system-auth file must disable access to the system for account identifiers (individuals, groups, roles, and devices) with 35 days of inactivity."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248703
+    - SV-248703
     - patch
 
-- name: "MEDIUM | V-248704 | The OL 8 password-auth file must disable access to the system for account identifiers (individuals, groups, roles, and devices) with 35 days of inactivity."
+- name: "MEDIUM | SV-248704 | The OL 8 password-auth file must disable access to the system for account identifiers (individuals, groups, roles, and devices) with 35 days of inactivity."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248704
+    - SV-248704
     - patch
 
-- name: "MEDIUM | V-248705 | The OL 8 lastlog command must have a mode of '0750' or less permissive."
+- name: "MEDIUM | SV-248705 | The OL 8 lastlog command must have a mode of '0750' or less permissive."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248705
+    - SV-248705
     - patch
 
-- name: "MEDIUM | V-248706 | The OL 8 lastlog command must be owned by root."
+- name: "MEDIUM | SV-248706 | The OL 8 lastlog command must be owned by root."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248706
+    - SV-248706
     - patch
 
-- name: "MEDIUM | V-248707 | The OL 8 lastlog command must be group-owned by root."
+- name: "MEDIUM | SV-248707 | The OL 8 lastlog command must be group-owned by root."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248707
+    - SV-248707
     - patch
 
-- name: "MEDIUM | V-248708 | OL 8 must automatically expire temporary accounts within 72 hours."
+- name: "MEDIUM | SV-248708 | OL 8 must automatically expire temporary accounts within 72 hours."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248708
+    - SV-248708
     - patch
 
-- name: "MEDIUM | V-248710 | OL 8 must prohibit the use of cached authentications after one day."
+- name: "MEDIUM | SV-248710 | OL 8 must prohibit the use of cached authentications after one day."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248710
+    - SV-248710
     - patch
 
-- name: "MEDIUM | V-248711 | OL 8 must prevent the use of dictionary words for passwords."
+- name: "MEDIUM | SV-248711 | OL 8 must prevent the use of dictionary words for passwords."
   block:
     - name: stigrule_248711__etc_security_pwquality_conf
       lineinfile:
@@ -1853,10 +1853,10 @@
   tags:
     - cat2
     - medium
-    - V-248711
+    - SV-248711
     - patch
 
-- name: "MEDIUM | V-248712 | OL 8 must enforce a delay of at least four seconds between logon prompts following a failed logon attempt."
+- name: "MEDIUM | SV-248712 | OL 8 must enforce a delay of at least four seconds between logon prompts following a failed logon attempt."
   block:
     - name: stigrule_248712__etc_login_defs
       lineinfile:
@@ -1870,19 +1870,19 @@
   tags:
     - cat2
     - medium
-    - V-248712
+    - SV-248712
     - patch
 
-- name: "MEDIUM | V-248713 | OL 8 must not have unnecessary accounts."
+- name: "MEDIUM | SV-248713 | OL 8 must not have unnecessary accounts."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248713
+    - SV-248713
     - patch
 
-- name: "MEDIUM | V-248718 | OL 8 must display the date and time of the last successful account logon upon an SSH logon."
+- name: "MEDIUM | SV-248718 | OL 8 must display the date and time of the last successful account logon upon an SSH logon."
   block:
     - name: stigrule_248718_PrintLastLog
       lineinfile:
@@ -1897,10 +1897,10 @@
   tags:
     - cat2
     - medium
-    - V-248718
+    - SV-248718
     - patch
 
-- name: "MEDIUM | V-248719 | OL 8 default permissions must be defined in such a way that all authenticated users can read and modify only their own files."
+- name: "MEDIUM | SV-248719 | OL 8 default permissions must be defined in such a way that all authenticated users can read and modify only their own files."
   block:
     - name: stigrule_248719__etc_login_defs
       lineinfile:
@@ -1914,28 +1914,28 @@
   tags:
     - cat2
     - medium
-    - V-248719
+    - SV-248719
     - patch
 
-- name: "MEDIUM | V-248720 | OL 8 must set the umask value to 077 for all local interactive user accounts."
+- name: "MEDIUM | SV-248720 | OL 8 must set the umask value to 077 for all local interactive user accounts."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248720
+    - SV-248720
     - patch
 
-- name: "MEDIUM | V-248721 | OL 8 must define default permissions for logon and non-logon shells."
+- name: "MEDIUM | SV-248721 | OL 8 must define default permissions for logon and non-logon shells."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248721
+    - SV-248721
     - patch
 
-- name: "MEDIUM | V-248722 | The OL 8 audit system must be configured to audit the execution of privileged functions and prevent all software from executing at higher privilege levels than users executing the software."
+- name: "MEDIUM | SV-248722 | The OL 8 audit system must be configured to audit the execution of privileged functions and prevent all software from executing at higher privilege levels than users executing the software."
   block:
     - name: stigrule_248722__etc_audit_rules_d_audit_rules_execve_uid_b32
       lineinfile:
@@ -1969,10 +1969,10 @@
   tags:
     - cat2
     - medium
-    - V-248722
+    - SV-248722
     - patch
 
-- name: "MEDIUM | V-248723 | Cron logging must be implemented in OL 8."
+- name: "MEDIUM | SV-248723 | Cron logging must be implemented in OL 8."
   block:
     - name: stigrule_248723__etc_rsyslog_conf
       lineinfile:
@@ -1985,10 +1985,10 @@
   tags:
     - cat2
     - medium
-    - V-248723
+    - SV-248723
     - patch
 
-- name: "MEDIUM | V-248724 | The OL 8 System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) must be alerted of an audit processing failure event."
+- name: "MEDIUM | SV-248724 | The OL 8 System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) must be alerted of an audit processing failure event."
   block:
     - name: stigrule_248724__etc_audit_auditd_conf
       lineinfile:
@@ -2003,10 +2003,10 @@
   tags:
     - cat2
     - medium
-    - V-248724
+    - SV-248724
     - patch
 
-- name: "MEDIUM | V-248725 | The OL 8 Information System Security Officer (ISSO) and System Administrator (SA) (at a minimum) must have mail aliases to be notified of an audit processing failure."
+- name: "MEDIUM | SV-248725 | The OL 8 Information System Security Officer (ISSO) and System Administrator (SA) (at a minimum) must have mail aliases to be notified of an audit processing failure."
   block:
     - name: stigrule_248725__etc_aliases
       lineinfile:
@@ -2020,10 +2020,10 @@
   tags:
     - cat2
     - medium
-    - V-248725
+    - SV-248725
     - patch
 
-- name: "MEDIUM | V-248726 | The OL 8 System must take appropriate action when an audit processing failure occurs."
+- name: "MEDIUM | SV-248726 | The OL 8 System must take appropriate action when an audit processing failure occurs."
   block:
     - name: stigrule_248726__etc_audit_auditd_conf
       lineinfile:
@@ -2038,10 +2038,10 @@
   tags:
     - cat2
     - medium
-    - V-248726
+    - SV-248726
     - patch
 
-- name: "MEDIUM | V-248728 | The OL 8 audit system must take appropriate action when the audit storage volume is full."
+- name: "MEDIUM | SV-248728 | The OL 8 audit system must take appropriate action when the audit storage volume is full."
   block:
     - name: stigrule_248728__etc_audit_auditd_conf
       lineinfile:
@@ -2056,10 +2056,10 @@
   tags:
     - cat2
     - medium
-    - V-248728
+    - SV-248728
     - patch
 
-- name: "MEDIUM | V-248729 | The OL 8 audit system must audit local events."
+- name: "MEDIUM | SV-248729 | The OL 8 audit system must audit local events."
   block:
     - name: stigrule_248729__etc_audit_auditd_conf
       lineinfile:
@@ -2074,10 +2074,10 @@
   tags:
     - cat2
     - medium
-    - V-248729
+    - SV-248729
     - patch
 
-- name: "MEDIUM | V-248730 | OL 8 must label all offloaded audit logs before sending them to the central log server."
+- name: "MEDIUM | SV-248730 | OL 8 must label all offloaded audit logs before sending them to the central log server."
   block:
     - name: stigrule_248730__etc_audit_auditd_conf
       lineinfile:
@@ -2092,10 +2092,10 @@
   tags:
     - cat2
     - medium
-    - V-248730
+    - SV-248730
     - patch
 
-- name: "MEDIUM | V-248731 | OL 8 must resolve audit information before writing to disk."
+- name: "MEDIUM | SV-248731 | OL 8 must resolve audit information before writing to disk."
   block:
     - name: stigrule_248731__etc_audit_auditd_conf
       lineinfile:
@@ -2110,10 +2110,10 @@
   tags:
     - cat2
     - medium
-    - V-248731
+    - SV-248731
     - patch
 
-- name: "MEDIUM | V-248732 | OL 8 audit logs must have a mode of '0600' or less permissive to prevent unauthorized read access."
+- name: "MEDIUM | SV-248732 | OL 8 audit logs must have a mode of '0600' or less permissive to prevent unauthorized read access."
   block:
     - name: stigrule_248732__etc_audit_auditd_conf
       lineinfile:
@@ -2128,55 +2128,55 @@
   tags:
     - cat2
     - medium
-    - V-248732
+    - SV-248732
     - patch
 
-- name: "MEDIUM | V-248733 | OL 8 audit logs must be owned by root to prevent unauthorized read access."
+- name: "MEDIUM | SV-248733 | OL 8 audit logs must be owned by root to prevent unauthorized read access."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248733
+    - SV-248733
     - patch
 
-- name: "MEDIUM | V-248734 | OL 8 audit logs must be group-owned by root to prevent unauthorized read access."
+- name: "MEDIUM | SV-248734 | OL 8 audit logs must be group-owned by root to prevent unauthorized read access."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248734
+    - SV-248734
     - patch
 
-- name: "MEDIUM | V-248735 | The OL 8 audit log directory must be owned by root to prevent unauthorized read access."
+- name: "MEDIUM | SV-248735 | The OL 8 audit log directory must be owned by root to prevent unauthorized read access."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248735
+    - SV-248735
     - patch
 
-- name: "MEDIUM | V-248736 | The OL 8 audit log directory must be group-owned by root to prevent unauthorized read access."
+- name: "MEDIUM | SV-248736 | The OL 8 audit log directory must be group-owned by root to prevent unauthorized read access."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248736
+    - SV-248736
     - patch
 
-- name: "MEDIUM | V-248737 | The OL 8 audit log directory must have a mode of 0700 or less permissive to prevent unauthorized read access."
+- name: "MEDIUM | SV-248737 | The OL 8 audit log directory must have a mode of 0700 or less permissive to prevent unauthorized read access."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248737
+    - SV-248737
     - patch
 
-- name: "MEDIUM | V-248738 | The OL 8 audit system must protect auditing rules from unauthorized change."
+- name: "MEDIUM | SV-248738 | The OL 8 audit system must protect auditing rules from unauthorized change."
   block:
     - name: stigrule_248738__etc_audit_rules_d_audit_rules_e2
       lineinfile:
@@ -2189,10 +2189,10 @@
   tags:
     - cat2
     - medium
-    - V-248738
+    - SV-248738
     - patch
 
-- name: "MEDIUM | V-248739 | The OL 8 audit system must protect logon UIDs from unauthorized change."
+- name: "MEDIUM | SV-248739 | The OL 8 audit system must protect logon UIDs from unauthorized change."
   block:
     - name: stigrule_248739__etc_audit_rules_d_audit_rules_loginuid_immutable
       lineinfile:
@@ -2205,10 +2205,10 @@
   tags:
     - cat2
     - medium
-    - V-248739
+    - SV-248739
     - patch
 
-- name: "MEDIUM | V-248740 | OL 8 must generate audit records for all account creation events that affect '/etc/shadow'."
+- name: "MEDIUM | SV-248740 | OL 8 must generate audit records for all account creation events that affect '/etc/shadow'."
   block:
     - name: stigrule_248740__etc_audit_rules_d_audit_rules__etc_shadow
       lineinfile:
@@ -2221,10 +2221,10 @@
   tags:
     - cat2
     - medium
-    - V-248740
+    - SV-248740
     - patch
 
-- name: "MEDIUM | V-248741 | OL 8 must generate audit records for all account creation events that affect '/etc/security/opasswd'."
+- name: "MEDIUM | SV-248741 | OL 8 must generate audit records for all account creation events that affect '/etc/security/opasswd'."
   block:
     - name: stigrule_248741__etc_audit_rules_d_audit_rules__etc_security_opasswd
       lineinfile:
@@ -2237,10 +2237,10 @@
   tags:
     - cat2
     - medium
-    - V-248741
+    - SV-248741
     - patch
 
-- name: "MEDIUM | V-248742 | OL 8 must generate audit records for all account creation events that affect '/etc/passwd'."
+- name: "MEDIUM | SV-248742 | OL 8 must generate audit records for all account creation events that affect '/etc/passwd'."
   block:
     - name: stigrule_248742__etc_audit_rules_d_audit_rules__etc_passwd
       lineinfile:
@@ -2253,10 +2253,10 @@
   tags:
     - cat2
     - medium
-    - V-248742
+    - SV-248742
     - patch
 
-- name: "MEDIUM | V-248743 | OL 8 must generate audit records for all account creation events that affect '/etc/gshadow'."
+- name: "MEDIUM | SV-248743 | OL 8 must generate audit records for all account creation events that affect '/etc/gshadow'."
   block:
     - name: stigrule_248743__etc_audit_rules_d_audit_rules__etc_gshadow
       lineinfile:
@@ -2269,10 +2269,10 @@
   tags:
     - cat2
     - medium
-    - V-248743
+    - SV-248743
     - patch
 
-- name: "MEDIUM | V-248744 | OL 8 must generate audit records for all account creation events that affect '/etc/group'."
+- name: "MEDIUM | SV-248744 | OL 8 must generate audit records for all account creation events that affect '/etc/group'."
   block:
     - name: stigrule_248744__etc_audit_rules_d_audit_rules__etc_group
       lineinfile:
@@ -2285,10 +2285,10 @@
   tags:
     - cat2
     - medium
-    - V-248744
+    - SV-248744
     - patch
 
-- name: "MEDIUM | V-248745 | OL 8 must generate audit records for all account creations, modifications, disabling, and termination events that affect '/etc/sudoers'."
+- name: "MEDIUM | SV-248745 | OL 8 must generate audit records for all account creations, modifications, disabling, and termination events that affect '/etc/sudoers'."
   block:
     - name: stigrule_248745__etc_audit_rules_d_audit_rules__etc_sudoers
       lineinfile:
@@ -2301,10 +2301,10 @@
   tags:
     - cat2
     - medium
-    - V-248745
+    - SV-248745
     - patch
 
-- name: "MEDIUM | V-248746 | OL 8 must generate audit records for all account creations, modifications, disabling, and termination events that affect '/etc/sudoers.d/'."
+- name: "MEDIUM | SV-248746 | OL 8 must generate audit records for all account creations, modifications, disabling, and termination events that affect '/etc/sudoers.d/'."
   block:
     - name: stigrule_248746__etc_audit_rules_d_audit_rules__etc_sudoers_d_
       lineinfile:
@@ -2317,10 +2317,10 @@
   tags:
     - cat2
     - medium
-    - V-248746
+    - SV-248746
     - patch
 
-- name: "MEDIUM | V-248747 | OL 8 must generate audit records for any use of the 'su' command."
+- name: "MEDIUM | SV-248747 | OL 8 must generate audit records for any use of the 'su' command."
   block:
     - name: stigrule_248747__etc_audit_rules_d_audit_rules__usr_bin_su
       lineinfile:
@@ -2333,10 +2333,10 @@
   tags:
     - cat2
     - medium
-    - V-248747
+    - SV-248747
     - patch
 
-- name: "MEDIUM | V-248748 | The OL 8 audit system must be configured to audit any use of the 'setxattr', 'fsetxattr', 'lsetxattr', 'removexattr', 'fremovexattr', and 'lremovexattr' system calls."
+- name: "MEDIUM | SV-248748 | The OL 8 audit system must be configured to audit any use of the 'setxattr', 'fsetxattr', 'lsetxattr', 'removexattr', 'fremovexattr', and 'lremovexattr' system calls."
   block:
     - name: stigrule_248748__etc_audit_rules_d_audit_rules_lremovexattr_b32_unset
       lineinfile:
@@ -2370,10 +2370,10 @@
   tags:
     - cat2
     - medium
-    - V-248748
+    - SV-248748
     - patch
 
-- name: "MEDIUM | V-248753 | OL 8 must generate audit records for any use of the 'chage' command."
+- name: "MEDIUM | SV-248753 | OL 8 must generate audit records for any use of the 'chage' command."
   block:
     - name: stigrule_248753__etc_audit_rules_d_audit_rules__usr_bin_chage
       lineinfile:
@@ -2386,10 +2386,10 @@
   tags:
     - cat2
     - medium
-    - V-248753
+    - SV-248753
     - patch
 
-- name: "MEDIUM | V-248754 | OL 8 must generate audit records for any uses of the 'chcon' command."
+- name: "MEDIUM | SV-248754 | OL 8 must generate audit records for any uses of the 'chcon' command."
   block:
     - name: stigrule_248754__etc_audit_rules_d_audit_rules__usr_bin_chcon
       lineinfile:
@@ -2402,10 +2402,10 @@
   tags:
     - cat2
     - medium
-    - V-248754
+    - SV-248754
     - patch
 
-- name: "MEDIUM | V-248756 | OL 8 must generate audit records for any use of the 'ssh-agent' command."
+- name: "MEDIUM | SV-248756 | OL 8 must generate audit records for any use of the 'ssh-agent' command."
   block:
     - name: stigrule_248756__etc_audit_rules_d_audit_rules__usr_bin_ssh_agent
       lineinfile:
@@ -2418,10 +2418,10 @@
   tags:
     - cat2
     - medium
-    - V-248756
+    - SV-248756
     - patch
 
-- name: "MEDIUM | V-248757 | OL 8 must generate audit records for any use of the 'passwd' command."
+- name: "MEDIUM | SV-248757 | OL 8 must generate audit records for any use of the 'passwd' command."
   block:
     - name: stigrule_248757__etc_audit_rules_d_audit_rules__usr_bin_passwd
       lineinfile:
@@ -2434,10 +2434,10 @@
   tags:
     - cat2
     - medium
-    - V-248757
+    - SV-248757
     - patch
 
-- name: "MEDIUM | V-248758 | OL 8 must generate audit records for any use of the 'mount' command."
+- name: "MEDIUM | SV-248758 | OL 8 must generate audit records for any use of the 'mount' command."
   block:
     - name: stigrule_248758__etc_audit_rules_d_audit_rules__usr_bin_mount
       lineinfile:
@@ -2450,10 +2450,10 @@
   tags:
     - cat2
     - medium
-    - V-248758
+    - SV-248758
     - patch
 
-- name: "MEDIUM | V-248759 | OL 8 must generate audit records for any use of the 'umount' command."
+- name: "MEDIUM | SV-248759 | OL 8 must generate audit records for any use of the 'umount' command."
   block:
     - name: stigrule_248759__etc_audit_rules_d_audit_rules__usr_bin_umount
       lineinfile:
@@ -2466,10 +2466,10 @@
   tags:
     - cat2
     - medium
-    - V-248759
+    - SV-248759
     - patch
 
-- name: "MEDIUM | V-248760 | OL 8 must generate audit records for any use of the 'mount' syscall."
+- name: "MEDIUM | SV-248760 | OL 8 must generate audit records for any use of the 'mount' syscall."
   block:
     - name: stigrule_248760__etc_audit_rules_d_audit_rules_mount_b32
       lineinfile:
@@ -2489,10 +2489,10 @@
   tags:
     - cat2
     - medium
-    - V-248760
+    - SV-248760
     - patch
 
-- name: "MEDIUM | V-248761 | OL 8 must generate audit records for any use of the 'unix_update' command."
+- name: "MEDIUM | SV-248761 | OL 8 must generate audit records for any use of the 'unix_update' command."
   block:
     - name: stigrule_248761__etc_audit_rules_d_audit_rules__usr_sbin_unix_update
       lineinfile:
@@ -2505,10 +2505,10 @@
   tags:
     - cat2
     - medium
-    - V-248761
+    - SV-248761
     - patch
 
-- name: "MEDIUM | V-248762 | OL 8 must generate audit records for any use of the 'postdrop' command."
+- name: "MEDIUM | SV-248762 | OL 8 must generate audit records for any use of the 'postdrop' command."
   block:
     - name: stigrule_248762__etc_audit_rules_d_audit_rules__usr_sbin_postdrop
       lineinfile:
@@ -2521,10 +2521,10 @@
   tags:
     - cat2
     - medium
-    - V-248762
+    - SV-248762
     - patch
 
-- name: "MEDIUM | V-248763 | OL 8 must generate audit records for any use of the 'postqueue' command."
+- name: "MEDIUM | SV-248763 | OL 8 must generate audit records for any use of the 'postqueue' command."
   block:
     - name: stigrule_248763__etc_audit_rules_d_audit_rules__usr_sbin_postqueue
       lineinfile:
@@ -2537,10 +2537,10 @@
   tags:
     - cat2
     - medium
-    - V-248763
+    - SV-248763
     - patch
 
-- name: "MEDIUM | V-248764 | OL 8 must generate audit records for any use of the 'semanage' command."
+- name: "MEDIUM | SV-248764 | OL 8 must generate audit records for any use of the 'semanage' command."
   block:
     - name: stigrule_248764__etc_audit_rules_d_audit_rules__usr_sbin_semanage
       lineinfile:
@@ -2553,10 +2553,10 @@
   tags:
     - cat2
     - medium
-    - V-248764
+    - SV-248764
     - patch
 
-- name: "MEDIUM | V-248765 | OL 8 must generate audit records for any use of the 'setfiles' command."
+- name: "MEDIUM | SV-248765 | OL 8 must generate audit records for any use of the 'setfiles' command."
   block:
     - name: stigrule_248765__etc_audit_rules_d_audit_rules__usr_sbin_setfiles
       lineinfile:
@@ -2569,10 +2569,10 @@
   tags:
     - cat2
     - medium
-    - V-248765
+    - SV-248765
     - patch
 
-- name: "MEDIUM | V-248766 | OL 8 must generate audit records for any use of the 'userhelper' command."
+- name: "MEDIUM | SV-248766 | OL 8 must generate audit records for any use of the 'userhelper' command."
   block:
     - name: stigrule_248766__etc_audit_rules_d_audit_rules__usr_sbin_userhelper
       lineinfile:
@@ -2585,10 +2585,10 @@
   tags:
     - cat2
     - medium
-    - V-248766
+    - SV-248766
     - patch
 
-- name: "MEDIUM | V-248767 | OL 8 must generate audit records for any use of the 'setsebool' command."
+- name: "MEDIUM | SV-248767 | OL 8 must generate audit records for any use of the 'setsebool' command."
   block:
     - name: stigrule_248767__etc_audit_rules_d_audit_rules__usr_sbin_setsebool
       lineinfile:
@@ -2601,10 +2601,10 @@
   tags:
     - cat2
     - medium
-    - V-248767
+    - SV-248767
     - patch
 
-- name: "MEDIUM | V-248768 | OL 8 must generate audit records for any use of the 'unix_chkpwd' command."
+- name: "MEDIUM | SV-248768 | OL 8 must generate audit records for any use of the 'unix_chkpwd' command."
   block:
     - name: stigrule_248768__etc_audit_rules_d_audit_rules__usr_sbin_unix_chkpwd
       lineinfile:
@@ -2617,10 +2617,10 @@
   tags:
     - cat2
     - medium
-    - V-248768
+    - SV-248768
     - patch
 
-- name: "MEDIUM | V-248769 | OL 8 must generate audit records for any use of the 'ssh-keysign' command."
+- name: "MEDIUM | SV-248769 | OL 8 must generate audit records for any use of the 'ssh-keysign' command."
   block:
     - name: stigrule_248769__etc_audit_rules_d_audit_rules__usr_libexec_openssh_ssh_keysign
       lineinfile:
@@ -2633,10 +2633,10 @@
   tags:
     - cat2
     - medium
-    - V-248769
+    - SV-248769
     - patch
 
-- name: "MEDIUM | V-248770 | OL 8 must generate audit records for any use of the 'setfacl' command."
+- name: "MEDIUM | SV-248770 | OL 8 must generate audit records for any use of the 'setfacl' command."
   block:
     - name: stigrule_248770__etc_audit_rules_d_audit_rules__usr_bin_setfacl
       lineinfile:
@@ -2649,10 +2649,10 @@
   tags:
     - cat2
     - medium
-    - V-248770
+    - SV-248770
     - patch
 
-- name: "MEDIUM | V-248771 | OL 8 must generate audit records for any use of the 'pam_timestamp_check' command."
+- name: "MEDIUM | SV-248771 | OL 8 must generate audit records for any use of the 'pam_timestamp_check' command."
   block:
     - name: stigrule_248771__etc_audit_rules_d_audit_rules__usr_sbin_pam_timestamp_check
       lineinfile:
@@ -2665,10 +2665,10 @@
   tags:
     - cat2
     - medium
-    - V-248771
+    - SV-248771
     - patch
 
-- name: "MEDIUM | V-248772 | OL 8 must generate audit records for any use of the 'newgrp' command."
+- name: "MEDIUM | SV-248772 | OL 8 must generate audit records for any use of the 'newgrp' command."
   block:
     - name: stigrule_248772__etc_audit_rules_d_audit_rules__usr_bin_newgrp
       lineinfile:
@@ -2681,10 +2681,10 @@
   tags:
     - cat2
     - medium
-    - V-248772
+    - SV-248772
     - patch
 
-- name: "MEDIUM | V-248773 | OL 8 must generate audit records for any use of the 'init_module' and 'finit_module' system calls."
+- name: "MEDIUM | SV-248773 | OL 8 must generate audit records for any use of the 'init_module' and 'finit_module' system calls."
   block:
     - name: stigrule_248773__etc_audit_rules_d_audit_rules_init_module_b32
       lineinfile:
@@ -2704,10 +2704,10 @@
   tags:
     - cat2
     - medium
-    - V-248773
+    - SV-248773
     - patch
 
-- name: "MEDIUM | V-248774 | OL 8 must generate audit records for any use of the 'rename', 'unlink', 'rmdir', 'renameat', and 'unlinkat' system calls."
+- name: "MEDIUM | SV-248774 | OL 8 must generate audit records for any use of the 'rename', 'unlink', 'rmdir', 'renameat', and 'unlinkat' system calls."
   block:
     - name: stigrule_248774__etc_audit_rules_d_audit_rules_rename_b32
       lineinfile:
@@ -2727,10 +2727,10 @@
   tags:
     - cat2
     - medium
-    - V-248774
+    - SV-248774
     - patch
 
-- name: "MEDIUM | V-248779 | OL 8 must generate audit records for any use of the 'gpasswd' command."
+- name: "MEDIUM | SV-248779 | OL 8 must generate audit records for any use of the 'gpasswd' command."
   block:
     - name: stigrule_248779__etc_audit_rules_d_audit_rules__usr_bin_gpasswd
       lineinfile:
@@ -2743,10 +2743,10 @@
   tags:
     - cat2
     - medium
-    - V-248779
+    - SV-248779
     - patch
 
-- name: "MEDIUM | V-248781 | OL 8 must generate audit records for any use of the delete_module syscall."
+- name: "MEDIUM | SV-248781 | OL 8 must generate audit records for any use of the delete_module syscall."
   block:
     - name: stigrule_248781__etc_audit_rules_d_audit_rules_delete_module_b32
       lineinfile:
@@ -2766,10 +2766,10 @@
   tags:
     - cat2
     - medium
-    - V-248781
+    - SV-248781
     - patch
 
-- name: "MEDIUM | V-248782 | OL 8 must generate audit records for any use of the 'crontab' command."
+- name: "MEDIUM | SV-248782 | OL 8 must generate audit records for any use of the 'crontab' command."
   block:
     - name: stigrule_248782__etc_audit_rules_d_audit_rules__usr_bin_crontab
       lineinfile:
@@ -2782,10 +2782,10 @@
   tags:
     - cat2
     - medium
-    - V-248782
+    - SV-248782
     - patch
 
-- name: "MEDIUM | V-248783 | OL 8 must generate audit records for any use of the 'chsh' command."
+- name: "MEDIUM | SV-248783 | OL 8 must generate audit records for any use of the 'chsh' command."
   block:
     - name: stigrule_248783__etc_audit_rules_d_audit_rules__usr_bin_chsh
       lineinfile:
@@ -2798,10 +2798,10 @@
   tags:
     - cat2
     - medium
-    - V-248783
+    - SV-248783
     - patch
 
-- name: "MEDIUM | V-248784 | OL 8 must generate audit records for any use of the 'truncate', 'ftruncate', 'creat', 'open', 'openat', and 'open_by_handle_at' system calls."
+- name: "MEDIUM | SV-248784 | OL 8 must generate audit records for any use of the 'truncate', 'ftruncate', 'creat', 'open', 'openat', and 'open_by_handle_at' system calls."
   block:
     - name: stigrule_248784__etc_audit_rules_d_audit_rules_truncate_EPERM_b32
       lineinfile:
@@ -2835,10 +2835,10 @@
   tags:
     - cat2
     - medium
-    - V-248784
+    - SV-248784
     - patch
 
-- name: "MEDIUM | V-248790 | OL 8 must generate audit records for any use of the 'chown', 'fchown', 'fchownat', and 'lchown' system calls."
+- name: "MEDIUM | SV-248790 | OL 8 must generate audit records for any use of the 'chown', 'fchown', 'fchownat', and 'lchown' system calls."
   block:
     - name: stigrule_248790__etc_audit_rules_d_audit_rules_chown_b32
       lineinfile:
@@ -2858,10 +2858,10 @@
   tags:
     - cat2
     - medium
-    - V-248790
+    - SV-248790
     - patch
 
-- name: "MEDIUM | V-248791 | OL 8 must generate audit records for any use of the 'chmod', 'fchmod', and 'fchmodat' system calls."
+- name: "MEDIUM | SV-248791 | OL 8 must generate audit records for any use of the 'chmod', 'fchmod', and 'fchmodat' system calls."
   block:
     - name: stigrule_248791__etc_audit_rules_d_audit_rules_chmod_b32
       lineinfile:
@@ -2881,10 +2881,10 @@
   tags:
     - cat2
     - medium
-    - V-248791
+    - SV-248791
     - patch
 
-- name: "MEDIUM | V-248797 | OL 8 must generate audit records for any use of the 'sudo' command."
+- name: "MEDIUM | SV-248797 | OL 8 must generate audit records for any use of the 'sudo' command."
   block:
     - name: stigrule_248797__etc_audit_rules_d_audit_rules__usr_bin_sudo
       lineinfile:
@@ -2897,10 +2897,10 @@
   tags:
     - cat2
     - medium
-    - V-248797
+    - SV-248797
     - patch
 
-- name: "MEDIUM | V-248798 | OL 8 must generate audit records for any use of the 'usermod' command."
+- name: "MEDIUM | SV-248798 | OL 8 must generate audit records for any use of the 'usermod' command."
   block:
     - name: stigrule_248798__etc_audit_rules_d_audit_rules__usr_sbin_usermod
       lineinfile:
@@ -2913,10 +2913,10 @@
   tags:
     - cat2
     - medium
-    - V-248798
+    - SV-248798
     - patch
 
-- name: "MEDIUM | V-248799 | OL 8 must generate audit records for any use of the 'chacl' command."
+- name: "MEDIUM | SV-248799 | OL 8 must generate audit records for any use of the 'chacl' command."
   block:
     - name: stigrule_248799__etc_audit_rules_d_audit_rules__usr_bin_chacl
       lineinfile:
@@ -2929,10 +2929,10 @@
   tags:
     - cat2
     - medium
-    - V-248799
+    - SV-248799
     - patch
 
-- name: "MEDIUM | V-248800 | OL 8 must generate audit records for any use of the 'kmod' command."
+- name: "MEDIUM | SV-248800 | OL 8 must generate audit records for any use of the 'kmod' command."
   block:
     - name: stigrule_248800__etc_audit_rules_d_audit_rules__usr_bin_kmod
       lineinfile:
@@ -2945,10 +2945,10 @@
   tags:
     - cat2
     - medium
-    - V-248800
+    - SV-248800
     - patch
 
-- name: "MEDIUM | V-248801 | OL 8 must generate audit records for any attempted modifications to the 'faillock' log file."
+- name: "MEDIUM | SV-248801 | OL 8 must generate audit records for any attempted modifications to the 'faillock' log file."
   block:
     - name: stigrule_248801__etc_audit_rules_d_audit_rules__var_log_faillock
       lineinfile:
@@ -2961,10 +2961,10 @@
   tags:
     - cat2
     - medium
-    - V-248801
+    - SV-248801
     - patch
 
-- name: "MEDIUM | V-248802 | OL 8 must generate audit records for any attempted modifications to the 'lastlog' file."
+- name: "MEDIUM | SV-248802 | OL 8 must generate audit records for any attempted modifications to the 'lastlog' file."
   block:
     - name: stigrule_248802__etc_audit_rules_d_audit_rules__var_log_lastlog
       lineinfile:
@@ -2977,82 +2977,82 @@
   tags:
     - cat2
     - medium
-    - V-248802
+    - SV-248802
     - patch
 
-- name: "MEDIUM | V-248803 | OL 8 must enable auditing of processes that start prior to the audit daemon."
+- name: "MEDIUM | SV-248803 | OL 8 must enable auditing of processes that start prior to the audit daemon."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248803
+    - SV-248803
     - patch
 
-- name: "MEDIUM | V-248805 | OL 8 must enable Linux audit logging for the USBGuard daemon."
+- name: "MEDIUM | SV-248805 | OL 8 must enable Linux audit logging for the USBGuard daemon."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248805
+    - SV-248805
     - patch
 
-- name: "MEDIUM | V-248806 | OL 8 must allow only the Information System Security Manager (ISSM) (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited."
+- name: "MEDIUM | SV-248806 | OL 8 must allow only the Information System Security Manager (ISSM) (or individuals or roles appointed by the ISSM) to select which auditable events are to be audited."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248806
+    - SV-248806
     - patch
 
-- name: "MEDIUM | V-248807 | OL 8 audit tools must have a mode of '0755' or less permissive."
+- name: "MEDIUM | SV-248807 | OL 8 audit tools must have a mode of '0755' or less permissive."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248807
+    - SV-248807
     - patch
 
-- name: "MEDIUM | V-248808 | OL 8 audit tools must be owned by root."
+- name: "MEDIUM | SV-248808 | OL 8 audit tools must be owned by root."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248808
+    - SV-248808
     - patch
 
-- name: "MEDIUM | V-248809 | OL 8 audit tools must be group-owned by root."
+- name: "MEDIUM | SV-248809 | OL 8 audit tools must be group-owned by root."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248809
+    - SV-248809
     - patch
 
-- name: "MEDIUM | V-248810 | OL 8 must use cryptographic mechanisms to protect the integrity of audit tools."
+- name: "MEDIUM | SV-248810 | OL 8 must use cryptographic mechanisms to protect the integrity of audit tools."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248810
+    - SV-248810
     - patch
 
-- name: "MEDIUM | V-248811 | OL 8 must allocate audit record storage capacity to store at least one week of audit records when audit records are not immediately sent to a central audit record storage facility."
+- name: "MEDIUM | SV-248811 | OL 8 must allocate audit record storage capacity to store at least one week of audit records when audit records are not immediately sent to a central audit record storage facility."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248811
+    - SV-248811
     - patch
 
-- name: "MEDIUM | V-248812 | OL 8 must have the packages required for offloading audit logs installed."
+- name: "MEDIUM | SV-248812 | OL 8 must have the packages required for offloading audit logs installed."
   block:
     - name: stigrule_248812_rsyslog
       yum:
@@ -3063,19 +3063,19 @@
   tags:
     - cat2
     - medium
-    - V-248812
+    - SV-248812
     - patch
 
-- name: "MEDIUM | V-248813 | OL 8 must have the packages required for encrypting offloaded audit logs installed."
+- name: "MEDIUM | SV-248813 | OL 8 must have the packages required for encrypting offloaded audit logs installed."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248813
+    - SV-248813
     - patch
 
-- name: "MEDIUM | V-248814 | The OL 8 audit records must be offloaded onto a different system or storage media from the system being audited."
+- name: "MEDIUM | SV-248814 | The OL 8 audit records must be offloaded onto a different system or storage media from the system being audited."
   block:
     - name: stigrule_248814_rsyslog_gnutls
       yum:
@@ -3086,10 +3086,10 @@
   tags:
     - cat2
     - medium
-    - V-248814
+    - SV-248814
     - patch
 
-- name: "MEDIUM | V-248815 | OL 8 must take appropriate action when the internal event queue is full."
+- name: "MEDIUM | SV-248815 | OL 8 must take appropriate action when the internal event queue is full."
   block:
     - name: stigrule_248815__etc_audit_auditd_conf
       lineinfile:
@@ -3104,10 +3104,10 @@
   tags:
     - cat2
     - medium
-    - V-248815
+    - SV-248815
     - patch
 
-- name: "MEDIUM | V-248816 | OL 8 must encrypt the transfer of audit records offloaded onto a different system or media from the system being audited."
+- name: "MEDIUM | SV-248816 | OL 8 must encrypt the transfer of audit records offloaded onto a different system or media from the system being audited."
   block:
     - name: stigrule_248816__etc_rsyslog_conf_DefaultNetstreamDriver
       lineinfile:
@@ -3127,10 +3127,10 @@
   tags:
     - cat2
     - medium
-    - V-248816
+    - SV-248816
     - patch
 
-- name: "MEDIUM | V-248817 | OL 8 must authenticate the remote logging server for offloading audit logs."
+- name: "MEDIUM | SV-248817 | OL 8 must authenticate the remote logging server for offloading audit logs."
   block:
     - name: stigrule_248817__etc_rsyslog_conf_DefaultNetstreamDriver
       lineinfile:
@@ -3143,10 +3143,10 @@
   tags:
     - cat2
     - medium
-    - V-248817
+    - SV-248817
     - patch
 
-- name: "MEDIUM | V-248818 | OL 8 must take action when allocated audit record storage volume reaches 75 percent of the repository maximum audit record storage capacity."
+- name: "MEDIUM | SV-248818 | OL 8 must take action when allocated audit record storage volume reaches 75 percent of the repository maximum audit record storage capacity."
   block:
     - name: stigrule_248818__etc_audit_auditd_conf_space_left
       lineinfile:
@@ -3161,10 +3161,10 @@
   tags:
     - cat2
     - medium
-    - V-248818
+    - SV-248818
     - patch
 
-- name: "MEDIUM | V-248819 | OL 8 must notify the System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) when allocated audit record storage volume 75 percent utilization."
+- name: "MEDIUM | SV-248819 | OL 8 must notify the System Administrator (SA) and Information System Security Officer (ISSO) (at a minimum) when allocated audit record storage volume 75 percent utilization."
   block:
     - name: stigrule_248819__etc_audit_auditd_conf_space_left_action
       lineinfile:
@@ -3179,19 +3179,19 @@
   tags:
     - cat2
     - medium
-    - V-248819
+    - SV-248819
     - patch
 
-- name: "MEDIUM | V-248820 | OL 8 must compare internal information system clocks at least every 24 hours with a server synchronized to an authoritative time source, such as the United States Naval Observatory (USNO) time servers, or a time server designated for the appropriate DOD network (NIPRNet/SIPRNet), and/or the Global Positioning System (GPS)."
+- name: "MEDIUM | SV-248820 | OL 8 must compare internal information system clocks at least every 24 hours with a server synchronized to an authoritative time source, such as the United States Naval Observatory (USNO) time servers, or a time server designated for the appropriate DOD network (NIPRNet/SIPRNet), and/or the Global Positioning System (GPS)."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248820
+    - SV-248820
     - patch
 
-- name: "MEDIUM | V-248824 | OL 8 must not have any automated bug reporting tools installed."
+- name: "MEDIUM | SV-248824 | OL 8 must not have any automated bug reporting tools installed."
   block:
     - name: stigrule_248824_abrt_
       yum:
@@ -3202,10 +3202,10 @@
   tags:
     - cat2
     - medium
-    - V-248824
+    - SV-248824
     - patch
 
-- name: "MEDIUM | V-248825 | OL 8 must not have the sendmail package installed."
+- name: "MEDIUM | SV-248825 | OL 8 must not have the sendmail package installed."
   block:
     - name: stigrule_248825_sendmail
       yum:
@@ -3216,55 +3216,55 @@
   tags:
     - cat2
     - medium
-    - V-248825
+    - SV-248825
     - patch
 
-- name: "MEDIUM | V-248828 | OL 8 must cover or disable the built-in or attached camera when not in use."
+- name: "MEDIUM | SV-248828 | OL 8 must cover or disable the built-in or attached camera when not in use."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248828
+    - SV-248828
     - patch
 
-- name: "MEDIUM | V-248829 | OL 8 must not have the asynchronous transfer mode (ATM) kernel module installed if not required for operational support."
+- name: "MEDIUM | SV-248829 | OL 8 must not have the asynchronous transfer mode (ATM) kernel module installed if not required for operational support."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248829
+    - SV-248829
     - patch
 
-- name: "MEDIUM | V-248830 | OL 8 must not have the Controller Area Network (CAN) kernel module installed if not required for operational support."
+- name: "MEDIUM | SV-248830 | OL 8 must not have the Controller Area Network (CAN) kernel module installed if not required for operational support."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248830
+    - SV-248830
     - patch
 
-- name: "MEDIUM | V-248831 | OL 8 must not have the stream control transmission protocol (SCTP) kernel module installed if not required for operational support."
+- name: "MEDIUM | SV-248831 | OL 8 must not have the stream control transmission protocol (SCTP) kernel module installed if not required for operational support."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248831
+    - SV-248831
     - patch
 
-- name: "MEDIUM | V-248835 | OL 8 must be configured to prohibit or restrict the use of functions, ports, protocols, and/or services as defined in the Ports, Protocols, and Services Management (PPSM) Category Assignments List (CAL) and vulnerability assessments."
+- name: "MEDIUM | SV-248835 | OL 8 must be configured to prohibit or restrict the use of functions, ports, protocols, and/or services as defined in the Ports, Protocols, and Services Management (PPSM) Category Assignments List (CAL) and vulnerability assessments."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248835
+    - SV-248835
     - patch
 
-- name: "MEDIUM | V-248836 | The OL 8 file system automounter must be disabled."
+- name: "MEDIUM | SV-248836 | The OL 8 file system automounter must be disabled."
   block:
     - name: check if autofs.service is installed
       shell: ! systemctl list-unit-files | grep "^autofs.service[ \t]\+"
@@ -3296,28 +3296,28 @@
   tags:
     - cat2
     - medium
-    - V-248836
+    - SV-248836
     - patch
 
-- name: "MEDIUM | V-248837 | OL 8 must be configured to disable the ability to use USB mass storage devices."
+- name: "MEDIUM | SV-248837 | OL 8 must be configured to disable the ability to use USB mass storage devices."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248837
+    - SV-248837
     - patch
 
-- name: "MEDIUM | V-248839 | An OL 8 firewall must employ a deny-all, allow-by-exception policy for allowing connections to other systems."
+- name: "MEDIUM | SV-248839 | An OL 8 firewall must employ a deny-all, allow-by-exception policy for allowing connections to other systems."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248839
+    - SV-248839
     - patch
 
-- name: "MEDIUM | V-248840 | A firewall must be installed on OL 8."
+- name: "MEDIUM | SV-248840 | A firewall must be installed on OL 8."
   block:
     - name: stigrule_248840_firewalld_noarch
       yum:
@@ -3328,10 +3328,10 @@
   tags:
     - cat2
     - medium
-    - V-248840
+    - SV-248840
     - patch
 
-- name: "MEDIUM | V-248841 | A firewall must be active on OL 8."
+- name: "MEDIUM | SV-248841 | A firewall must be active on OL 8."
   block:
     - name: check if firewalld.service is installed
       shell: ! systemctl list-unit-files | grep "^firewalld.service[ \t]\+"
@@ -3363,10 +3363,10 @@
   tags:
     - cat2
     - medium
-    - V-248841
+    - SV-248841
     - patch
 
-- name: "MEDIUM | V-248842 | OL 8 wireless network adapters must be disabled."
+- name: "MEDIUM | SV-248842 | OL 8 wireless network adapters must be disabled."
   block:
     - name: check if wireless network adapters are disabled
       shell: "[[ $(nmcli radio wifi) == 'enabled' ]]"
@@ -3383,217 +3383,217 @@
   tags:
     - cat2
     - medium
-    - V-248842
+    - SV-248842
     - patch
 
-- name: "MEDIUM | V-248843 | OL 8 Bluetooth must be disabled."
+- name: "MEDIUM | SV-248843 | OL 8 Bluetooth must be disabled."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248843
+    - SV-248843
     - patch
 
-- name: "MEDIUM | V-248844 | OL 8 must mount '/dev/shm' with the 'nodev' option."
+- name: "MEDIUM | SV-248844 | OL 8 must mount '/dev/shm' with the 'nodev' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248844
+    - SV-248844
     - patch
 
-- name: "MEDIUM | V-248845 | OL 8 must mount '/dev/shm' with the 'nosuid' option."
+- name: "MEDIUM | SV-248845 | OL 8 must mount '/dev/shm' with the 'nosuid' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248845
+    - SV-248845
     - patch
 
-- name: "MEDIUM | V-248846 | OL 8 must mount '/dev/shm' with the 'noexec' option."
+- name: "MEDIUM | SV-248846 | OL 8 must mount '/dev/shm' with the 'noexec' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248846
+    - SV-248846
     - patch
 
-- name: "MEDIUM | V-248847 | OL 8 must mount '/tmp' with the 'nodev' option."
+- name: "MEDIUM | SV-248847 | OL 8 must mount '/tmp' with the 'nodev' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248847
+    - SV-248847
     - patch
 
-- name: "MEDIUM | V-248848 | OL 8 must mount '/tmp' with the 'nosuid' option."
+- name: "MEDIUM | SV-248848 | OL 8 must mount '/tmp' with the 'nosuid' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248848
+    - SV-248848
     - patch
 
-- name: "MEDIUM | V-248849 | OL 8 must mount '/tmp' with the 'noexec' option."
+- name: "MEDIUM | SV-248849 | OL 8 must mount '/tmp' with the 'noexec' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248849
+    - SV-248849
     - patch
 
-- name: "MEDIUM | V-248850 | OL 8 must mount '/var/log' with the 'nodev' option."
+- name: "MEDIUM | SV-248850 | OL 8 must mount '/var/log' with the 'nodev' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248850
+    - SV-248850
     - patch
 
-- name: "MEDIUM | V-248851 | OL 8 must mount '/var/log' with the 'nosuid' option."
+- name: "MEDIUM | SV-248851 | OL 8 must mount '/var/log' with the 'nosuid' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248851
+    - SV-248851
     - patch
 
-- name: "MEDIUM | V-248852 | OL 8 must mount '/var/log' with the 'noexec' option."
+- name: "MEDIUM | SV-248852 | OL 8 must mount '/var/log' with the 'noexec' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248852
+    - SV-248852
     - patch
 
-- name: "MEDIUM | V-248853 | OL 8 must mount '/var/log/audit' with the 'nodev' option."
+- name: "MEDIUM | SV-248853 | OL 8 must mount '/var/log/audit' with the 'nodev' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248853
+    - SV-248853
     - patch
 
-- name: "MEDIUM | V-248854 | OL 8 must mount '/var/log/audit' with the 'nosuid' option."
+- name: "MEDIUM | SV-248854 | OL 8 must mount '/var/log/audit' with the 'nosuid' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248854
+    - SV-248854
     - patch
 
-- name: "MEDIUM | V-248855 | OL 8 must mount '/var/log/audit' with the 'noexec' option."
+- name: "MEDIUM | SV-248855 | OL 8 must mount '/var/log/audit' with the 'noexec' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248855
+    - SV-248855
     - patch
 
-- name: "MEDIUM | V-248856 | OL 8 must mount '/var/tmp' with the 'nodev' option."
+- name: "MEDIUM | SV-248856 | OL 8 must mount '/var/tmp' with the 'nodev' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248856
+    - SV-248856
     - patch
 
-- name: "MEDIUM | V-248857 | OL 8 must mount '/var/tmp' with the 'nosuid' option."
+- name: "MEDIUM | SV-248857 | OL 8 must mount '/var/tmp' with the 'nosuid' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248857
+    - SV-248857
     - patch
 
-- name: "MEDIUM | V-248858 | OL 8 must mount '/var/tmp' with the 'noexec' option."
+- name: "MEDIUM | SV-248858 | OL 8 must mount '/var/tmp' with the 'noexec' option."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248858
+    - SV-248858
     - patch
 
-- name: "MEDIUM | V-248859 | The OL 8 'fapolicy' module must be installed."
+- name: "MEDIUM | SV-248859 | The OL 8 'fapolicy' module must be installed."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248859
+    - SV-248859
     - patch
 
-- name: "MEDIUM | V-248860 | The OL 8 'fapolicy' module must be enabled."
+- name: "MEDIUM | SV-248860 | The OL 8 'fapolicy' module must be enabled."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248860
+    - SV-248860
     - patch
 
-- name: "MEDIUM | V-248861 | The OL 8 fapolicy module must be configured to employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs."
+- name: "MEDIUM | SV-248861 | The OL 8 fapolicy module must be configured to employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248861
+    - SV-248861
     - patch
 
-- name: "MEDIUM | V-248862 | OL 8 must have the USBGuard installed."
+- name: "MEDIUM | SV-248862 | OL 8 must have the USBGuard installed."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248862
+    - SV-248862
     - patch
 
-- name: "MEDIUM | V-248863 | OL 8 must block unauthorized peripherals before establishing a connection."
+- name: "MEDIUM | SV-248863 | OL 8 must block unauthorized peripherals before establishing a connection."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248863
+    - SV-248863
     - patch
 
-- name: "MEDIUM | V-248864 | OL 8 must enable the USBGuard."
+- name: "MEDIUM | SV-248864 | OL 8 must enable the USBGuard."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248864
+    - SV-248864
     - patch
 
-- name: "MEDIUM | V-248865 | A firewall must be able to protect against or limit the effects of denial-of-service (DoS) attacks by ensuring OL 8 can implement rate-limiting measures on impacted network interfaces."
+- name: "MEDIUM | SV-248865 | A firewall must be able to protect against or limit the effects of denial-of-service (DoS) attacks by ensuring OL 8 can implement rate-limiting measures on impacted network interfaces."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248865
+    - SV-248865
     - patch
 
-- name: "MEDIUM | V-248866 | All OL 8 networked systems must have SSH installed."
+- name: "MEDIUM | SV-248866 | All OL 8 networked systems must have SSH installed."
   block:
     - name: stigrule_248866_openssh_server_x86_64
       yum:
@@ -3604,19 +3604,19 @@
   tags:
     - cat2
     - medium
-    - V-248866
+    - SV-248866
     - patch
 
-- name: "MEDIUM | V-248867 | All OL 8 networked systems must have and implement SSH to protect the confidentiality and integrity of transmitted and received information, as well as information during preparation for transmission."
+- name: "MEDIUM | SV-248867 | All OL 8 networked systems must have and implement SSH to protect the confidentiality and integrity of transmitted and received information, as well as information during preparation for transmission."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248867
+    - SV-248867
     - patch
 
-- name: "MEDIUM | V-248868 | OL 8 must force a frequent session key renegotiation for SSH connections to the server."
+- name: "MEDIUM | SV-248868 | OL 8 must force a frequent session key renegotiation for SSH connections to the server."
   block:
     - name: stigrule_248868_RekeyLimit
       lineinfile:
@@ -3631,10 +3631,10 @@
   tags:
     - cat2
     - medium
-    - V-248868
+    - SV-248868
     - patch
 
-- name: "MEDIUM | V-248871 | OL 8 must disable the systemd Ctrl-Alt-Delete burst key sequence."
+- name: "MEDIUM | SV-248871 | OL 8 must disable the systemd Ctrl-Alt-Delete burst key sequence."
   block:
     - name: stigrule_248871__etc_systemd_system_conf_d_55_CtrlAltDel_BurstAction
       ini_file:
@@ -3651,10 +3651,10 @@
   tags:
     - cat2
     - medium
-    - V-248871
+    - SV-248871
     - patch
 
-- name: "MEDIUM | V-248875 | OL 8 must prevent IPv4 Internet Control Message Protocol (ICMP) redirect messages from being accepted."
+- name: "MEDIUM | SV-248875 | OL 8 must prevent IPv4 Internet Control Message Protocol (ICMP) redirect messages from being accepted."
   block:
     - name: stigrule_248875_net_ipv4_conf_default_accept_redirects
       sysctl:
@@ -3668,28 +3668,28 @@
   tags:
     - cat2
     - medium
-    - V-248875
+    - SV-248875
     - patch
 
-- name: "MEDIUM | V-248876 | OL 8 must prevent IPv6 Internet Control Message Protocol (ICMP) redirect messages from being accepted."
+- name: "MEDIUM | SV-248876 | OL 8 must prevent IPv6 Internet Control Message Protocol (ICMP) redirect messages from being accepted."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248876
+    - SV-248876
     - patch
 
-- name: "MEDIUM | V-248877 | OL 8 must not send Internet Control Message Protocol (ICMP) redirects."
+- name: "MEDIUM | SV-248877 | OL 8 must not send Internet Control Message Protocol (ICMP) redirects."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248877
+    - SV-248877
     - patch
 
-- name: "MEDIUM | V-248878 | OL 8 must not respond to Internet Control Message Protocol (ICMP) echoes sent to a broadcast address."
+- name: "MEDIUM | SV-248878 | OL 8 must not respond to Internet Control Message Protocol (ICMP) echoes sent to a broadcast address."
   block:
     - name: stigrule_248878_net_ipv4_icmp_echo_ignore_broadcasts
       sysctl:
@@ -3703,10 +3703,10 @@
   tags:
     - cat2
     - medium
-    - V-248878
+    - SV-248878
     - patch
 
-- name: "MEDIUM | V-248879 | OL 8 must not forward IPv4 source-routed packets."
+- name: "MEDIUM | SV-248879 | OL 8 must not forward IPv4 source-routed packets."
   block:
     - name: stigrule_248879_net_ipv4_conf_all_accept_source_route
       sysctl:
@@ -3720,10 +3720,10 @@
   tags:
     - cat2
     - medium
-    - V-248879
+    - SV-248879
     - patch
 
-- name: "MEDIUM | V-248880 | OL 8 must not forward IPv6 source-routed packets."
+- name: "MEDIUM | SV-248880 | OL 8 must not forward IPv6 source-routed packets."
   block:
     - name: check if ipv6 is enabled
       shell: "[[ $(cat /sys/module/ipv6/parameters/disable) == '0' ]]"
@@ -3744,10 +3744,10 @@
   tags:
     - cat2
     - medium
-    - V-248880
+    - SV-248880
     - patch
 
-- name: "MEDIUM | V-248881 | OL 8 must not forward IPv4 source-routed packets by default."
+- name: "MEDIUM | SV-248881 | OL 8 must not forward IPv4 source-routed packets by default."
   block:
     - name: stigrule_248881_net_ipv4_conf_default_accept_source_route
       sysctl:
@@ -3761,10 +3761,10 @@
   tags:
     - cat2
     - medium
-    - V-248881
+    - SV-248881
     - patch
 
-- name: "MEDIUM | V-248882 | OL 8 must not forward IPv6 source-routed packets by default."
+- name: "MEDIUM | SV-248882 | OL 8 must not forward IPv6 source-routed packets by default."
   block:
     - name: check if ipv6 is enabled
       shell: "[[ $(cat /sys/module/ipv6/parameters/disable) == '0' ]]"
@@ -3785,10 +3785,10 @@
   tags:
     - cat2
     - medium
-    - V-248882
+    - SV-248882
     - patch
 
-- name: "MEDIUM | V-248883 | OL 8 must not enable IPv6 packet forwarding unless the system is a router."
+- name: "MEDIUM | SV-248883 | OL 8 must not enable IPv6 packet forwarding unless the system is a router."
   block:
     - name: check if ipv6 is enabled
       shell: "[[ $(cat /sys/module/ipv6/parameters/disable) == '0' ]]"
@@ -3809,10 +3809,10 @@
   tags:
     - cat2
     - medium
-    - V-248883
+    - SV-248883
     - patch
 
-- name: "MEDIUM | V-248884 | OL 8 must not accept router advertisements on all IPv6 interfaces."
+- name: "MEDIUM | SV-248884 | OL 8 must not accept router advertisements on all IPv6 interfaces."
   block:
     - name: check if ipv6 is enabled
       shell: "[[ $(cat /sys/module/ipv6/parameters/disable) == '0' ]]"
@@ -3833,10 +3833,10 @@
   tags:
     - cat2
     - medium
-    - V-248884
+    - SV-248884
     - patch
 
-- name: "MEDIUM | V-248885 | OL 8 must not accept router advertisements on all IPv6 interfaces by default."
+- name: "MEDIUM | SV-248885 | OL 8 must not accept router advertisements on all IPv6 interfaces by default."
   block:
     - name: check if ipv6 is enabled
       shell: "[[ $(cat /sys/module/ipv6/parameters/disable) == '0' ]]"
@@ -3857,10 +3857,10 @@
   tags:
     - cat2
     - medium
-    - V-248885
+    - SV-248885
     - patch
 
-- name: "MEDIUM | V-248886 | OL 8 must not allow interfaces to perform Internet Control Message Protocol (ICMP) redirects by default."
+- name: "MEDIUM | SV-248886 | OL 8 must not allow interfaces to perform Internet Control Message Protocol (ICMP) redirects by default."
   block:
     - name: stigrule_248886_net_ipv4_conf_default_send_redirects
       sysctl:
@@ -3874,10 +3874,10 @@
   tags:
     - cat2
     - medium
-    - V-248886
+    - SV-248886
     - patch
 
-- name: "MEDIUM | V-248887 | OL 8 must ignore IPv4 Internet Control Message Protocol (ICMP) redirect messages."
+- name: "MEDIUM | SV-248887 | OL 8 must ignore IPv4 Internet Control Message Protocol (ICMP) redirect messages."
   block:
     - name: stigrule_248887_net_ipv4_conf_all_accept_redirects
       sysctl:
@@ -3891,10 +3891,10 @@
   tags:
     - cat2
     - medium
-    - V-248887
+    - SV-248887
     - patch
 
-- name: "MEDIUM | V-248888 | OL 8 must ignore IPv6 Internet Control Message Protocol (ICMP) redirect messages."
+- name: "MEDIUM | SV-248888 | OL 8 must ignore IPv6 Internet Control Message Protocol (ICMP) redirect messages."
   block:
     - name: check if ipv6 is enabled
       shell: "[[ $(cat /sys/module/ipv6/parameters/disable) == '0' ]]"
@@ -3915,10 +3915,10 @@
   tags:
     - cat2
     - medium
-    - V-248888
+    - SV-248888
     - patch
 
-- name: "MEDIUM | V-248889 | OL 8 must disable access to the network 'bpf' syscall from nonprivileged processes."
+- name: "MEDIUM | SV-248889 | OL 8 must disable access to the network 'bpf' syscall from nonprivileged processes."
   block:
     - name: stigrule_248889__etc_sysctl_d_99_sysctl_conf
       lineinfile:
@@ -3933,10 +3933,10 @@
   tags:
     - cat2
     - medium
-    - V-248889
+    - SV-248889
     - patch
 
-- name: "MEDIUM | V-248890 | OL 8 must restrict the use of 'ptrace' to descendant processes."
+- name: "MEDIUM | SV-248890 | OL 8 must restrict the use of 'ptrace' to descendant processes."
   block:
     - name: stigrule_248890_kernel_yama_ptrace_scope
       sysctl:
@@ -3950,10 +3950,10 @@
   tags:
     - cat2
     - medium
-    - V-248890
+    - SV-248890
     - patch
 
-- name: "MEDIUM | V-248891 | OL 8 must restrict exposed kernel pointer addresses access."
+- name: "MEDIUM | SV-248891 | OL 8 must restrict exposed kernel pointer addresses access."
   block:
     - name: stigrule_248891__etc_sysctl_d_99_sysctl_conf
       lineinfile:
@@ -3968,10 +3968,10 @@
   tags:
     - cat2
     - medium
-    - V-248891
+    - SV-248891
     - patch
 
-- name: "MEDIUM | V-248892 | OL 8 must disable the use of user namespaces."
+- name: "MEDIUM | SV-248892 | OL 8 must disable the use of user namespaces."
   block:
     - name: stigrule_248892_user_max_user_namespaces
       sysctl:
@@ -3985,10 +3985,10 @@
   tags:
     - cat2
     - medium
-    - V-248892
+    - SV-248892
     - patch
 
-- name: "MEDIUM | V-248893 | OL 8 must use reverse path filtering on all IPv4 interfaces."
+- name: "MEDIUM | SV-248893 | OL 8 must use reverse path filtering on all IPv4 interfaces."
   block:
     - name: stigrule_248893__etc_sysctl_d_99_sysctl_conf
       lineinfile:
@@ -4003,10 +4003,10 @@
   tags:
     - cat2
     - medium
-    - V-248893
+    - SV-248893
     - patch
 
-- name: "MEDIUM | V-248894 | OL 8 must enable hardening for the Berkeley Packet Filter Just-in-time compiler."
+- name: "MEDIUM | SV-248894 | OL 8 must enable hardening for the Berkeley Packet Filter Just-in-time compiler."
   block:
     - name: stigrule_248894__etc_sysctl_d_99_sysctl_conf
       lineinfile:
@@ -4021,37 +4021,37 @@
   tags:
     - cat2
     - medium
-    - V-248894
+    - SV-248894
     - patch
 
-- name: "MEDIUM | V-248895 | OL 8 must be configured to prevent unrestricted mail relaying."
+- name: "MEDIUM | SV-248895 | OL 8 must be configured to prevent unrestricted mail relaying."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248895
+    - SV-248895
     - patch
 
-- name: "MEDIUM | V-248898 | The graphical display manager must not be installed on OL 8 unless approved."
+- name: "MEDIUM | SV-248898 | The graphical display manager must not be installed on OL 8 unless approved."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248898
+    - SV-248898
     - patch
 
-- name: "MEDIUM | V-248899 | OL 8 network interfaces must not be in promiscuous mode."
+- name: "MEDIUM | SV-248899 | OL 8 network interfaces must not be in promiscuous mode."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248899
+    - SV-248899
     - patch
 
-- name: "MEDIUM | V-248900 | OL 8 remote X connections for interactive users must be disabled unless to fulfill documented and validated mission requirements."
+- name: "MEDIUM | SV-248900 | OL 8 remote X connections for interactive users must be disabled unless to fulfill documented and validated mission requirements."
   block:
     - name: stigrule_248900_X11Forwarding
       lineinfile:
@@ -4066,10 +4066,10 @@
   tags:
     - cat2
     - medium
-    - V-248900
+    - SV-248900
     - patch
 
-- name: "MEDIUM | V-248901 | The OL 8 SSH daemon must prevent remote hosts from connecting to the proxy display."
+- name: "MEDIUM | SV-248901 | The OL 8 SSH daemon must prevent remote hosts from connecting to the proxy display."
   block:
     - name: stigrule_248901_X11UseLocalhost
       lineinfile:
@@ -4084,19 +4084,19 @@
   tags:
     - cat2
     - medium
-    - V-248901
+    - SV-248901
     - patch
 
-- name: "MEDIUM | V-248902 | If the Trivial File Transfer Protocol (TFTP) server is required, the OL 8 TFTP daemon must be configured to operate in secure mode."
+- name: "MEDIUM | SV-248902 | If the Trivial File Transfer Protocol (TFTP) server is required, the OL 8 TFTP daemon must be configured to operate in secure mode."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248902
+    - SV-248902
     - patch
 
-- name: "MEDIUM | V-248904 | OL 8 must not have the 'gssproxy' package installed if not required for operational support."
+- name: "MEDIUM | SV-248904 | OL 8 must not have the 'gssproxy' package installed if not required for operational support."
   block:
     - name: stigrule_248904_gssproxy
       yum:
@@ -4107,10 +4107,10 @@
   tags:
     - cat2
     - medium
-    - V-248904
+    - SV-248904
     - patch
 
-- name: "MEDIUM | V-248905 | OL 8 must not have the 'iprutils' package installed if not required for operational support."
+- name: "MEDIUM | SV-248905 | OL 8 must not have the 'iprutils' package installed if not required for operational support."
   block:
     - name: stigrule_248905_iprutils
       yum:
@@ -4121,10 +4121,10 @@
   tags:
     - cat2
     - medium
-    - V-248905
+    - SV-248905
     - patch
 
-- name: "MEDIUM | V-248906 | OL 8 must not have the 'tuned' package installed if not required for operational support."
+- name: "MEDIUM | SV-248906 | OL 8 must not have the 'tuned' package installed if not required for operational support."
   block:
     - name: stigrule_248906_tuned
       yum:
@@ -4135,145 +4135,145 @@
   tags:
     - cat2
     - medium
-    - V-248906
+    - SV-248906
     - patch
 
-- name: "MEDIUM | V-248907 | OL 8 must prevent nonprivileged users from executing privileged functions, including disabling, circumventing, or altering implemented security safeguards/countermeasures."
+- name: "MEDIUM | SV-248907 | OL 8 must prevent nonprivileged users from executing privileged functions, including disabling, circumventing, or altering implemented security safeguards/countermeasures."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-248907
+    - SV-248907
     - patch
 
-- name: "MEDIUM | V-252651 | OL 8 library directories must have mode 755 or less permissive."
+- name: "MEDIUM | SV-252651 | OL 8 library directories must have mode 755 or less permissive."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-252651
+    - SV-252651
     - patch
 
-- name: "MEDIUM | V-252652 | OL 8 library directories must be owned by root."
+- name: "MEDIUM | SV-252652 | OL 8 library directories must be owned by root."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-252652
+    - SV-252652
     - patch
 
-- name: "MEDIUM | V-252653 | OL 8 library directories must be group-owned by root or a system account."
+- name: "MEDIUM | SV-252653 | OL 8 library directories must be group-owned by root or a system account."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-252653
+    - SV-252653
     - patch
 
-- name: "MEDIUM | V-252654 | The OL 8 operating system must use a file integrity tool to verify correct operation of all security functions."
+- name: "MEDIUM | SV-252654 | The OL 8 operating system must use a file integrity tool to verify correct operation of all security functions."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-252654
+    - SV-252654
     - patch
 
-- name: "MEDIUM | V-252655 | OL 8 must specify the default 'include' directory for the /etc/sudoers file."
+- name: "MEDIUM | SV-252655 | OL 8 must specify the default 'include' directory for the /etc/sudoers file."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-252655
+    - SV-252655
     - patch
 
-- name: "MEDIUM | V-252656 | The OL 8 operating system must not be configured to bypass password requirements for privilege escalation."
+- name: "MEDIUM | SV-252656 | The OL 8 operating system must not be configured to bypass password requirements for privilege escalation."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-252656
+    - SV-252656
     - patch
 
-- name: "MEDIUM | V-252657 | OL 8 must ensure the password complexity module is enabled in the system-auth file."
+- name: "MEDIUM | SV-252657 | OL 8 must ensure the password complexity module is enabled in the system-auth file."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-252657
+    - SV-252657
     - patch
 
-- name: "MEDIUM | V-252658 | OL 8 systems below version 8.4 must ensure the password complexity module in the system-auth file is configured for three retries or less."
+- name: "MEDIUM | SV-252658 | OL 8 systems below version 8.4 must ensure the password complexity module in the system-auth file is configured for three retries or less."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-252658
+    - SV-252658
     - patch
 
-- name: "MEDIUM | V-252659 | OL 8 systems below version 8.4 must ensure the password complexity module in the password-auth file is configured for three retries or less."
+- name: "MEDIUM | SV-252659 | OL 8 systems below version 8.4 must ensure the password complexity module in the password-auth file is configured for three retries or less."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-252659
+    - SV-252659
     - patch
 
-- name: "MEDIUM | V-252660 | OL 8 systems, version 8.4 and above, must ensure the password complexity module is configured for three retries or less."
+- name: "MEDIUM | SV-252660 | OL 8 systems, version 8.4 and above, must ensure the password complexity module is configured for three retries or less."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-252660
+    - SV-252660
     - patch
 
-- name: "MEDIUM | V-252662 | OL 8 must not enable IPv4 packet forwarding unless the system is a router."
+- name: "MEDIUM | SV-252662 | OL 8 must not enable IPv4 packet forwarding unless the system is a router."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-252662
+    - SV-252662
     - patch
 
-- name: "MEDIUM | V-252663 | The graphical display manager must not be the default target on OL 8 unless approved."
+- name: "MEDIUM | SV-252663 | The graphical display manager must not be the default target on OL 8 unless approved."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-252663
+    - SV-252663
     - patch
 
-- name: "MEDIUM | V-255898 | OL 8 SSH server must be configured to use only FIPS-validated key exchange algorithms."
+- name: "MEDIUM | SV-255898 | OL 8 SSH server must be configured to use only FIPS-validated key exchange algorithms."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-255898
+    - SV-255898
     - patch
 
-- name: "MEDIUM | V-256978 | OL 8 must ensure cryptographic verification of vendor software packages."
+- name: "MEDIUM | SV-256978 | OL 8 must ensure cryptographic verification of vendor software packages."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-256978
+    - SV-256978
     - patch
 
-- name: "MEDIUM | V-256979 | OL 8 must be configured to allow sending email notifications of unauthorized configuration changes to designated personnel."
+- name: "MEDIUM | SV-256979 | OL 8 must be configured to allow sending email notifications of unauthorized configuration changes to designated personnel."
   block:
     - name: stigrule_256979_mailx
       yum:
@@ -4284,19 +4284,19 @@
   tags:
     - cat2
     - medium
-    - V-256979
+    - SV-256979
     - patch
 
-- name: "MEDIUM | V-257259 | OL 8 must terminate idle user sessions."
+- name: "MEDIUM | SV-257259 | OL 8 must terminate idle user sessions."
   command: /bin/true
   ignore_errors: true
   tags:
     - cat2
     - medium
-    - V-257259
+    - SV-257259
     - patch
 
-- name: "MEDIUM | V-274876 | OL 8  must audit any script or executable called by cron as root or by any privileged user."
+- name: "MEDIUM | SV-274876 | OL 8  must audit any script or executable called by cron as root or by any privileged user."
   block:
     - name: stigrule_274876__etc_audit_rules_d_audit_rules__etc_cron_d__cronjobs
       lineinfile:
@@ -4316,10 +4316,10 @@
   tags:
     - cat2
     - medium
-    - V-274876
+    - SV-274876
     - patch
 
-- name: "MEDIUM | V-279934 | OL 8 must automatically exit interactive command shell user sessions after 10 minutes of inactivity."
+- name: "MEDIUM | SV-279934 | OL 8 must automatically exit interactive command shell user sessions after 10 minutes of inactivity."
   block:
     - name: stigrule_279934__etc_profile_d_tmout_sh
       copy:
@@ -4331,5 +4331,5 @@
   tags:
     - cat2
     - medium
-    - V-279934
+    - SV-279934
     - patch
